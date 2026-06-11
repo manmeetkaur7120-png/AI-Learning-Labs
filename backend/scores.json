@@ -1,0 +1,76 @@
+{
+  "scores": [
+    {
+      "id": 1,
+      "userId": 1,
+      "userName": "John Doe",
+      "userEmail": "john@test.com",
+      "quizId": 1,
+      "quizTitle": "ML Fundamentals Quiz",
+      "score": 7,
+      "total": 8,
+      "percentage": 87,
+      "timestamp": "2024-06-09T10:30:00Z"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "userName": "John Doe",
+      "userEmail": "john@test.com",
+      "quizId": 2,
+      "quizTitle": "Neural Networks Basics Quiz",
+      "score": 8,
+      "total": 8,
+      "percentage": 100,
+      "timestamp": "2024-06-09T11:00:00Z"
+    },
+    {
+      "id": 3,
+      "userId": 1,
+      "userName": "John Doe",
+      "userEmail": "john@test.com",
+      "quizId": 3,
+      "quizTitle": "Deep Learning Quiz",
+      "score": 6,
+      "total": 8,
+      "percentage": 75,
+      "timestamp": "2024-06-09T11:30:00Z"
+    },
+    {
+      "id": 4,
+      "userId": 2,
+      "userName": "Jane Smith",
+      "userEmail": "jane@test.com",
+      "quizId": 1,
+      "quizTitle": "ML Fundamentals Quiz",
+      "score": 8,
+      "total": 8,
+      "percentage": 100,
+      "timestamp": "2024-06-09T09:00:00Z"
+    },
+    {
+      "id": 5,
+      "userId": 2,
+      "userName": "Jane Smith",
+      "userEmail": "jane@test.com",
+      "quizId": 2,
+      "quizTitle": "Neural Networks Basics Quiz",
+      "score": 7,
+      "total": 8,
+      "percentage": 87,
+      "timestamp": "2024-06-09T09:30:00Z"
+    },
+    {
+      "id": 6,
+      "userId": 3,
+      "userName": "Alex Johnson",
+      "userEmail": "alex@test.com",
+      "quizId": 1,
+      "quizTitle": "ML Fundamentals Quiz",
+      "score": 5,
+      "total": 8,
+      "percentage": 62,
+      "timestamp": "2024-06-09T08:00:00Z"
+    }
+  ]
+}

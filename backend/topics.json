@@ -1,0 +1,364 @@
+{
+  "topics": [
+    {
+      "id": 1,
+      "title": "What is Machine Learning?",
+      "category": "Fundamentals",
+      "difficulty": "Beginner",
+      "summary": "Machine Learning is a subset of Artificial Intelligence that enables systems to learn and improve from experience without being explicitly programmed. It focuses on developing computer programs that can access data and use it to learn for themselves. ML algorithms build mathematical models based on sample data, known as training data, to make predictions or decisions without being explicitly programmed to perform these tasks. The three main types are supervised learning (learning from labeled data), unsupervised learning (finding patterns in unlabeled data), and reinforcement learning (learning through interaction and rewards). ML is foundational to modern AI applications.",
+      "keyPoints": ["Data-driven learning", "Pattern recognition", "Predictive analytics", "Automation", "Continuous improvement"],
+      "prerequisites": []
+    },
+    {
+      "id": 2,
+      "title": "Supervised Learning Basics",
+      "category": "Fundamentals",
+      "difficulty": "Beginner",
+      "summary": "Supervised Learning is a machine learning approach where models are trained on labeled datasets. Each training example consists of an input and its corresponding output. The algorithm learns to map inputs to outputs by minimizing prediction errors. Common applications include regression (predicting continuous values) and classification (predicting categories). Examples include linear regression for house price prediction, logistic regression for binary classification, and decision trees for multi-class problems. Supervised learning requires labeled data which can be expensive and time-consuming to obtain, but it generally produces highly accurate models when sufficient quality data is available.",
+      "keyPoints": ["Labeled data", "Input-output mapping", "Regression", "Classification", "Error minimization"],
+      "prerequisites": [1]
+    },
+    {
+      "id": 3,
+      "title": "Unsupervised Learning Basics",
+      "category": "Fundamentals",
+      "difficulty": "Beginner",
+      "summary": "Unsupervised Learning deals with unlabeled data and focuses on discovering hidden patterns, structures, or relationships within the data. Unlike supervised learning, there are no predefined target outputs. Common techniques include clustering (grouping similar data points together) and dimensionality reduction (reducing the number of features while preserving information). K-means clustering, hierarchical clustering, and DBSCAN are popular clustering algorithms. Principal Component Analysis (PCA) is widely used for dimensionality reduction. Unsupervised learning is valuable for exploratory data analysis, customer segmentation, and data preprocessing.",
+      "keyPoints": ["Unlabeled data", "Pattern discovery", "Clustering", "Dimensionality reduction", "Exploratory analysis"],
+      "prerequisites": [1]
+    },
+    {
+      "id": 4,
+      "title": "Reinforcement Learning Basics",
+      "category": "Fundamentals",
+      "difficulty": "Beginner",
+      "summary": "Reinforcement Learning (RL) is a paradigm where an agent learns to make decisions by interacting with an environment. The agent takes actions and receives rewards or penalties based on its performance. The goal is to maximize cumulative rewards over time. Key concepts include states (current situation), actions (choices available), rewards (feedback), and policies (strategy for action selection). RL powers game-playing AIs, robotics, autonomous vehicles, and recommendation systems. Q-learning and Deep Q-Networks (DQN) are fundamental RL algorithms. Unlike supervised learning, RL doesn't require labeled data but instead learns through trial-and-error exploration.",
+      "keyPoints": ["Agent-environment interaction", "Reward system", "Policy learning", "Trial and error", "Cumulative reward optimization"],
+      "prerequisites": [1]
+    },
+    {
+      "id": 5,
+      "title": "Data Preprocessing and Feature Engineering",
+      "category": "Fundamentals",
+      "difficulty": "Beginner",
+      "summary": "Data preprocessing is the crucial first step in any ML pipeline. It involves cleaning raw data, handling missing values, removing outliers, and normalizing features. Feature engineering is the process of selecting, transforming, and creating features that improve model performance. Techniques include scaling (standardization and normalization), encoding categorical variables, creating polynomial features, and feature selection. Data quality directly impacts model performance; garbage in means garbage out. Proper preprocessing can improve model accuracy by 10-30%. This phase often takes 60-70% of a data scientist's time but is essential for building robust ML systems.",
+      "keyPoints": ["Data cleaning", "Missing value handling", "Feature scaling", "Categorical encoding", "Feature selection"],
+      "prerequisites": [1]
+    },
+    {
+      "id": 6,
+      "title": "Model Evaluation and Metrics",
+      "category": "Fundamentals",
+      "difficulty": "Beginner",
+      "summary": "Model evaluation is essential to understand how well your machine learning model performs. Different metrics are appropriate for different problems. For regression tasks, common metrics include Mean Squared Error (MSE), Root Mean Squared Error (RMSE), and Mean Absolute Error (MAE). For classification, accuracy, precision, recall, F1-score, and ROC-AUC are widely used. Cross-validation techniques help assess model generalization. Confusion matrices provide detailed classification performance breakdown. Overfitting occurs when a model learns training data too well but fails on new data; underfitting is when a model is too simple. Understanding these concepts is crucial for building reliable ML systems.",
+      "keyPoints": ["Accuracy metrics", "Precision and recall", "Cross-validation", "Confusion matrix", "Overfitting prevention"],
+      "prerequisites": [1, 2]
+    },
+    {
+      "id": 7,
+      "title": "Linear Regression",
+      "category": "Fundamentals",
+      "difficulty": "Intermediate",
+      "summary": "Linear Regression is a fundamental supervised learning algorithm used for predicting continuous numerical values. It models the linear relationship between input features and output by fitting a straight line (or hyperplane in multiple dimensions) through the data. The model minimizes the sum of squared errors between predicted and actual values. Simple linear regression has one input variable, while multiple linear regression has several. Key concepts include slope, intercept, and the least squares method. Linear regression assumes a linear relationship exists in the data. Despite its simplicity, it remains widely used in business forecasting, trend analysis, and as a baseline for more complex models.",
+      "keyPoints": ["Linear relationships", "Least squares method", "Coefficients", "Residuals", "Simple vs multiple regression"],
+      "prerequisites": [2, 5]
+    },
+    {
+      "id": 8,
+      "title": "Logistic Regression",
+      "category": "Fundamentals",
+      "difficulty": "Intermediate",
+      "summary": "Logistic Regression is a classification algorithm despite having 'regression' in its name. It predicts the probability of a binary outcome (0 or 1, yes or no, true or false). The algorithm uses the logistic function (sigmoid) to map any input to a probability between 0 and 1. When the probability exceeds a threshold (typically 0.5), it predicts the positive class. Logistic regression is interpretable, computationally efficient, and works well for linearly separable data. It forms the foundation for many neural network architectures. Applications include email spam detection, disease diagnosis, credit approval, and customer churn prediction. Multi-class logistic regression extends it to multiple categories.",
+      "keyPoints": ["Binary classification", "Sigmoid function", "Probability modeling", "Decision boundary", "Interpretability"],
+      "prerequisites": [2, 5]
+    },
+    {
+      "id": 9,
+      "title": "Decision Trees",
+      "category": "Fundamentals",
+      "difficulty": "Intermediate",
+      "summary": "Decision Trees are versatile algorithms that can handle both classification and regression tasks. They recursively partition the data by asking yes/no questions about features, creating a tree-like structure. Each node represents a feature, edges represent decision rules, and leaves represent outcomes. Decision trees are easy to understand and interpret, even for non-technical stakeholders. They require no data preprocessing and handle non-linear relationships well. However, they can overfit easily. Tree depth, minimum sample splits, and minimum leaf sizes are important hyperparameters. Random Forests and Gradient Boosting improve upon single decision trees by combining multiple trees. Decision trees form the basis of ensemble methods.",
+      "keyPoints": ["Recursive partitioning", "Feature splitting", "Leaf nodes", "Tree depth", "Interpretability"],
+      "prerequisites": [2, 5]
+    },
+    {
+      "id": 10,
+      "title": "Random Forest",
+      "category": "Fundamentals",
+      "difficulty": "Intermediate",
+      "summary": "Random Forest is an ensemble learning method that combines multiple decision trees to improve performance and reduce overfitting. It creates random subsets of data and features, trains separate decision trees on each subset, and combines predictions through voting (classification) or averaging (regression). This randomness and averaging significantly reduce variance compared to single trees. Random Forests are robust, handle missing values well, and provide feature importance rankings. They're widely used in industry for both classification and regression tasks. The algorithm is less interpretable than single trees but more powerful. Key hyperparameters include the number of trees, tree depth, and minimum sample splits.",
+      "keyPoints": ["Ensemble learning", "Bootstrap aggregating", "Feature randomness", "Variance reduction", "Feature importance"],
+      "prerequisites": [9]
+    },
+    {
+      "id": 11,
+      "title": "Support Vector Machines (SVM)",
+      "category": "Fundamentals",
+      "difficulty": "Intermediate",
+      "summary": "Support Vector Machines (SVM) are powerful supervised learning algorithms for classification and regression. SVMs find the optimal hyperplane that maximally separates classes while maximizing the margin (distance to nearest data points). For non-linearly separable data, kernel functions (linear, RBF, polynomial) transform data into higher dimensions. SVMs work well on high-dimensional data and with small to medium-sized datasets. They're memory-efficient and effective for both binary and multi-class problems. SVMs require careful feature scaling and hyperparameter tuning (C, gamma). While computationally expensive on very large datasets, they remain powerful and popular in practical applications.",
+      "keyPoints": ["Maximum margin", "Support vectors", "Kernel tricks", "Hyperplane optimization", "Non-linear separation"],
+      "prerequisites": [2, 5]
+    },
+    {
+      "id": 12,
+      "title": "K-Means Clustering",
+      "category": "Fundamentals",
+      "difficulty": "Intermediate",
+      "summary": "K-Means is a popular unsupervised learning algorithm for clustering data into K distinct groups. The algorithm iteratively assigns data points to the nearest cluster center and updates centers as the mean of assigned points. It's simple, scalable, and computationally efficient. K-Means is widely used for customer segmentation, image compression, and document clustering. Key challenges include choosing the optimal number of clusters K and sensitivity to initialization. The Elbow Method helps determine K by plotting within-cluster sum of squares. K-Means assumes spherical clusters of similar sizes. Variations like K-Means++ improve initialization and stability.",
+      "keyPoints": ["Cluster centers", "Iterative assignment", "Within-cluster sum of squares", "Elbow method", "Centroid updates"],
+      "prerequisites": [3, 5]
+    },
+    {
+      "id": 13,
+      "title": "Hierarchical Clustering",
+      "category": "Fundamentals",
+      "difficulty": "Intermediate",
+      "summary": "Hierarchical Clustering creates a tree-like hierarchy of clusters, allowing analysis at multiple levels of granularity. There are two approaches: agglomerative (bottom-up, starting with individual points and merging) and divisive (top-down, starting with all points and splitting). Dendrograms visualize the hierarchical structure, showing how clusters merge or split. Linkage methods (single, complete, average, Ward) determine how cluster similarity is measured. Unlike K-Means, hierarchical clustering doesn't require specifying the number of clusters in advance. It's interpretable and useful for exploratory analysis. Drawbacks include higher computational complexity and sensitivity to outliers.",
+      "keyPoints": ["Dendrogram", "Agglomerative approach", "Linkage methods", "Distance metrics", "Multi-level analysis"],
+      "prerequisites": [3, 5]
+    },
+    {
+      "id": 14,
+      "title": "Principal Component Analysis (PCA)",
+      "category": "Fundamentals",
+      "difficulty": "Intermediate",
+      "summary": "Principal Component Analysis (PCA) is a dimensionality reduction technique that transforms high-dimensional data into a lower-dimensional space while preserving maximum variance. It identifies principal components—new uncorrelated features that capture the most important patterns in data. PCA is useful for visualization, noise reduction, and speeding up training of other algorithms. The first principal component explains the most variance, the second captures the next most, and so on. PCA assumes linear relationships and is sensitive to feature scaling, requiring standardization. Applications include face recognition, image compression, and exploratory data analysis. Explained variance ratio helps determine how many components to keep.",
+      "keyPoints": ["Variance maximization", "Eigenvectors", "Covariance matrix", "Explained variance", "Feature transformation"],
+      "prerequisites": [3, 5]
+    },
+    {
+      "id": 15,
+      "title": "Naive Bayes Classification",
+      "category": "Fundamentals",
+      "difficulty": "Intermediate",
+      "summary": "Naive Bayes is a probabilistic classification algorithm based on Bayes' theorem. It assumes independence between features (the 'naive' assumption, which is often violated in practice but doesn't prevent good performance). The algorithm calculates the probability of each class given the input features and selects the class with highest probability. Naive Bayes is fast, requires little training data, and works well for text classification, spam detection, and sentiment analysis. Variations include Multinomial Naive Bayes (for counts), Gaussian Naive Bayes (for continuous features), and Bernoulli Naive Bayes (for binary features). Despite its simplistic assumptions, Naive Bayes often performs surprisingly well and serves as an effective baseline.",
+      "keyPoints": ["Bayes theorem", "Conditional probability", "Feature independence", "Text classification", "Computational efficiency"],
+      "prerequisites": [2, 5]
+    },
+    {
+      "id": 16,
+      "title": "Neural Networks Basics",
+      "category": "Deep Learning",
+      "difficulty": "Intermediate",
+      "summary": "Neural Networks are computing systems inspired by biological brains, consisting of interconnected layers of neurons (nodes). Each neuron receives inputs, applies weights and bias, and passes through an activation function. The input layer receives data, hidden layers process information, and the output layer produces predictions. Backpropagation trains networks by computing gradients and updating weights. Neural networks can model complex non-linear relationships and are universal function approximators. They require substantial training data and computational power. Key concepts include weights, biases, activation functions, loss functions, and optimization algorithms. Neural networks form the foundation of deep learning and power modern AI applications.",
+      "keyPoints": ["Neurons and layers", "Weights and biases", "Activation functions", "Backpropagation", "Loss functions"],
+      "prerequisites": [1, 5]
+    },
+    {
+      "id": 17,
+      "title": "Convolutional Neural Networks (CNN)",
+      "category": "Deep Learning",
+      "difficulty": "Intermediate",
+      "summary": "Convolutional Neural Networks (CNNs) are specialized neural networks for processing grid-like data, particularly images. They use convolutional layers with learnable filters (kernels) that slide across the input to detect local patterns. Pooling layers reduce spatial dimensions and computational cost. CNNs have fewer parameters than fully-connected networks due to weight sharing and local connectivity. They've achieved state-of-the-art performance in image classification, object detection, and semantic segmentation. Famous architectures include LeNet, AlexNet, VGG, ResNet, and MobileNet. CNNs automatically learn hierarchical features: early layers detect edges and textures, deeper layers identify objects. They revolutionized computer vision.",
+      "keyPoints": ["Convolutional layers", "Filters and kernels", "Pooling", "Feature hierarchy", "Image processing"],
+      "prerequisites": [16]
+    },
+    {
+      "id": 18,
+      "title": "Recurrent Neural Networks (RNN)",
+      "category": "Deep Learning",
+      "difficulty": "Intermediate",
+      "summary": "Recurrent Neural Networks (RNNs) are designed to process sequential data where the order matters. They maintain hidden states that capture information from previous time steps, allowing them to have 'memory'. RNNs are powerful for sequence modeling tasks like natural language processing, time series prediction, and speech recognition. However, vanilla RNNs suffer from vanishing/exploding gradients during backpropagation through time (BPTT). This limits their ability to capture long-range dependencies. Long Short-Term Memory (LSTM) and Gated Recurrent Units (GRU) solve this problem with gating mechanisms. Modern architectures like Transformers have largely replaced RNNs but understanding them is foundational.",
+      "keyPoints": ["Sequence processing", "Hidden states", "BPTT", "LSTM", "GRU"],
+      "prerequisites": [16]
+    },
+    {
+      "id": 19,
+      "title": "Long Short-Term Memory (LSTM)",
+      "category": "Deep Learning",
+      "difficulty": "Advanced",
+      "summary": "Long Short-Term Memory (LSTM) networks address the vanishing gradient problem in RNNs with sophisticated gating mechanisms. LSTMs have three gates—forget, input, and output—that control information flow. The forget gate decides what information to discard, the input gate determines what new information to add, and the output gate controls what to output. A cell state carries information across time steps, allowing LSTM to maintain and modify long-term dependencies. LSTMs significantly improved performance on tasks requiring learning long-range patterns like language modeling, machine translation, and time series forecasting. Despite being somewhat replaced by Transformers, LSTMs remain valuable for certain applications and serve as educational milestones for understanding sequence models.",
+      "keyPoints": ["Forget gate", "Input gate", "Output gate", "Cell state", "Long-range dependencies"],
+      "prerequisites": [18]
+    },
+    {
+      "id": 20,
+      "title": "Transformers and Attention Mechanisms",
+      "category": "Deep Learning",
+      "difficulty": "Advanced",
+      "summary": "Transformers revolutionized deep learning by introducing attention mechanisms that allow models to focus on relevant parts of input. Self-attention computes relationships between all positions in a sequence simultaneously, unlike RNNs which process sequentially. The multi-head attention mechanism allows the model to attend to different representation subspaces. Transformers are highly parallelizable, scalable, and achieve state-of-the-art performance on NLP tasks. Key components include embeddings, positional encoding, self-attention, feed-forward networks, and layer normalization. Famous transformer models include BERT, GPT, and T5. Transformers have become foundational to modern NLP, powering systems like ChatGPT. They've also been adapted for vision (Vision Transformers) and multimodal tasks.",
+      "keyPoints": ["Self-attention", "Multi-head attention", "Positional encoding", "Parallel processing", "State-of-the-art NLP"],
+      "prerequisites": [16, 18]
+    },
+    {
+      "id": 21,
+      "title": "Generative Adversarial Networks (GANs)",
+      "category": "Deep Learning",
+      "difficulty": "Advanced",
+      "summary": "Generative Adversarial Networks (GANs) consist of two neural networks—a generator and a discriminator—that compete in a game-theoretic framework. The generator creates fake samples trying to fool the discriminator, while the discriminator tries to distinguish real from fake samples. This adversarial process drives both networks to improve iteratively. GANs can generate remarkably realistic synthetic images, videos, and data. Applications include image synthesis, style transfer, data augmentation, and anomaly detection. Training GANs is notoriously unstable and requires careful hyperparameter tuning. Variants like DCGAN, StyleGAN, and CycleGAN improve stability and quality. GANs represent a major breakthrough in generative modeling.",
+      "keyPoints": ["Generator network", "Discriminator network", "Adversarial training", "Min-max game", "Synthetic generation"],
+      "prerequisites": [16, 17]
+    },
+    {
+      "id": 22,
+      "title": "Variational Autoencoders (VAE)",
+      "category": "Deep Learning",
+      "difficulty": "Advanced",
+      "summary": "Variational Autoencoders (VAEs) are generative models that learn to encode data into a latent (hidden) space and decode it back. Unlike standard autoencoders, VAEs enforce a probabilistic structure on the latent space, typically a Gaussian distribution. The encoder outputs mean and variance parameters; samples are drawn from this distribution. The decoder reconstructs data from these samples. VAEs balance reconstruction accuracy (via reconstruction loss) with matching the latent distribution to a prior (via KL divergence). This enables generating new samples by sampling from the latent space. VAEs are more stable than GANs but produce less sharp images. Applications include data generation, anomaly detection, and disentangled representations.",
+      "keyPoints": ["Encoder", "Latent space", "KL divergence", "Reconstruction loss", "Probabilistic modeling"],
+      "prerequisites": [16]
+    },
+    {
+      "id": 23,
+      "title": "Transfer Learning",
+      "category": "Deep Learning",
+      "difficulty": "Intermediate",
+      "summary": "Transfer Learning leverages knowledge learned from one task or domain to improve performance on another related task. Pre-trained models trained on large datasets (like ImageNet for images or Wikipedia for text) capture generalizable features that transfer well to smaller datasets. Fine-tuning involves adapting pre-trained models to new tasks by training on task-specific data, usually with lower learning rates. Transfer learning dramatically reduces training time and data requirements. It's especially valuable when task-specific data is limited. Applications include domain adaptation, multi-task learning, and few-shot learning. Pre-trained models like BERT, GPT, and ResNet enable practitioners without massive computational resources to build state-of-the-art applications.",
+      "keyPoints": ["Pre-trained models", "Fine-tuning", "Feature extraction", "Domain adaptation", "Reduced data requirements"],
+      "prerequisites": [16, 17]
+    },
+    {
+      "id": 24,
+      "title": "Natural Language Processing Fundamentals",
+      "category": "Specialized Domains",
+      "difficulty": "Intermediate",
+      "summary": "Natural Language Processing (NLP) is a subfield of AI focused on understanding and processing human language. Key tasks include text classification, sentiment analysis, named entity recognition, machine translation, and question answering. Fundamental concepts include tokenization (splitting text into words/sentences), word embeddings (representing words as vectors), and language models (predicting next words). Modern NLP is dominated by transformer-based models like BERT and GPT. Challenges include handling ambiguity, context dependency, and linguistic variations across languages. NLP powers applications like chatbots, virtual assistants, translation services, and content recommendation. Understanding linguistic concepts and probability is foundational for NLP.",
+      "keyPoints": ["Tokenization", "Word embeddings", "Language models", "Text classification", "Sentiment analysis"],
+      "prerequisites": [1, 16]
+    },
+    {
+      "id": 25,
+      "title": "Word Embeddings and Word2Vec",
+      "category": "Specialized Domains",
+      "difficulty": "Intermediate",
+      "summary": "Word Embeddings represent words as dense numerical vectors in a high-dimensional space where semantically similar words are close together. Word2Vec, developed by Google, is a widely-used technique that learns embeddings through predicting context words (Skip-gram) or predicting a word from context (CBOW). The intuition is that words appearing in similar contexts have similar meanings. Word2Vec embeddings are fast to compute and capture semantic relationships—famously, 'king' - 'man' + 'woman' ≈ 'queen'. Other embedding techniques include GloVe, FastText, and more recently, contextual embeddings like ELMo and BERT which generate different embeddings based on context. Word embeddings are foundational for modern NLP applications.",
+      "keyPoints": ["Dense vectors", "Skip-gram", "CBOW", "Semantic relationships", "Word similarity"],
+      "prerequisites": [24]
+    },
+    {
+      "id": 26,
+      "title": "Computer Vision Basics",
+      "category": "Specialized Domains",
+      "difficulty": "Intermediate",
+      "summary": "Computer Vision is the field that enables computers to understand and interpret visual information from images and videos. Core tasks include image classification (categorizing images), object detection (locating and identifying objects), semantic segmentation (labeling each pixel), instance segmentation, and pose estimation. Computer vision uses deep learning, especially CNNs, to achieve state-of-the-art performance. Key concepts include image preprocessing, feature extraction, and model architecture selection. Applications span healthcare (medical imaging), autonomous vehicles, surveillance, augmented reality, and social media. Challenges include handling variations in lighting, viewpoint, occlusion, and scale. Modern pre-trained models enable accessible computer vision applications.",
+      "keyPoints": ["Image classification", "Object detection", "Segmentation", "CNN architectures", "Image preprocessing"],
+      "prerequisites": [1, 17]
+    },
+    {
+      "id": 27,
+      "title": "Object Detection",
+      "category": "Specialized Domains",
+      "difficulty": "Advanced",
+      "summary": "Object Detection goes beyond image classification to locate multiple objects within an image and identify their categories. Key challenges include handling objects of different scales, aspect ratios, and positions. Famous architectures include R-CNN (and variants Fast R-CNN, Faster R-CNN), YOLO (You Only Look Once), and SSD (Single Shot MultiBox Detector). YOLO frames detection as a regression problem, enabling real-time performance. Faster R-CNN uses region proposals and is highly accurate. Detection requires data with bounding box annotations. Evaluation metrics include mAP (mean Average Precision). Applications include autonomous driving, surveillance, medical imaging, and augmented reality. Modern models achieve impressive speed and accuracy trade-offs.",
+      "keyPoints": ["Bounding boxes", "Region proposals", "YOLO", "Faster R-CNN", "Real-time detection"],
+      "prerequisites": [26]
+    },
+    {
+      "id": 28,
+      "title": "Semantic Segmentation",
+      "category": "Specialized Domains",
+      "difficulty": "Advanced",
+      "summary": "Semantic Segmentation classifies each pixel in an image into predefined categories. Unlike object detection which locates objects with bounding boxes, segmentation provides pixel-level precision. Architectures like FCN (Fully Convolutional Networks), U-Net, and DeepLab achieve state-of-the-art performance. U-Net's encoder-decoder structure with skip connections is particularly effective for medical image segmentation. Key components include downsampling (to extract features) and upsampling (to restore spatial resolution). Challenges include class imbalance and maintaining fine spatial details. Applications include medical image analysis, autonomous driving, satellite image analysis, and scene understanding. Semantic segmentation requires pixel-level annotations, which are labor-intensive to create.",
+      "keyPoints": ["Pixel-level classification", "Encoder-decoder", "U-Net", "Upsampling", "Spatial precision"],
+      "prerequisites": [26]
+    },
+    {
+      "id": 29,
+      "title": "Reinforcement Learning Applications",
+      "category": "Specialized Domains",
+      "difficulty": "Advanced",
+      "summary": "Reinforcement Learning powers game-playing AIs, robotics, autonomous systems, and recommendation engines. AlphaGo demonstrated RL's potential by defeating world champions at Go through self-play and tree search. Deep Q-Learning enables agents to learn complex tasks from high-dimensional inputs like images. Policy gradient methods directly optimize the action selection policy. Actor-Critic methods combine value-based and policy-based approaches. Challenges include sample efficiency (requiring millions of interactions), exploration-exploitation trade-off, and credit assignment. Applications include robotic control, resource allocation, traffic management, and personalized recommendations. RL agents learn through interaction, making them adaptable to new environments.",
+      "keyPoints": ["Deep Q-Networks", "Policy gradients", "Actor-Critic", "Self-play", "Credit assignment"],
+      "prerequisites": [4, 16]
+    },
+    {
+      "id": 30,
+      "title": "Optimization Algorithms",
+      "category": "Fundamentals",
+      "difficulty": "Intermediate",
+      "summary": "Optimization algorithms minimize loss functions during neural network training. Gradient Descent updates weights in the direction opposite to gradients, reducing loss. Variants include Batch GD (all data), Stochastic GD (single samples), and Mini-batch GD (balance). Momentum adds inertia to accelerate convergence and navigate plateaus. Adaptive methods like Adam combine momentum with per-parameter learning rates, adapting to each parameter's gradient history. RMSprop and AdaGrad are other important adaptive optimizers. Choosing the right optimizer and learning rate significantly impacts training speed and final performance. Modern practice often defaults to Adam, though SGD with momentum remains popular. Understanding optimization is crucial for effectively training deep learning models.",
+      "keyPoints": ["Gradient descent", "Learning rate", "Momentum", "Adam optimizer", "Convergence"],
+      "prerequisites": [16]
+    },
+    {
+      "id": 31,
+      "title": "Regularization Techniques",
+      "category": "Fundamentals",
+      "difficulty": "Intermediate",
+      "summary": "Regularization prevents overfitting by constraining model complexity or penalizing large weights. L1 regularization (Lasso) encourages sparse models with feature selection. L2 regularization (Ridge) penalizes large weights, encouraging smaller weights. Elastic Net combines both L1 and L2. Dropout randomly deactivates neurons during training, preventing co-adaptation and improving generalization. Early stopping halts training when validation performance plateaus, preventing overfitting. Data augmentation increases effective dataset size through transformations. Batch normalization normalizes layer inputs, stabilizing training and allowing higher learning rates. Combining multiple regularization techniques improves model robustness. Regularization is essential for building models that generalize well to unseen data.",
+      "keyPoints": ["L1 and L2 regularization", "Dropout", "Early stopping", "Data augmentation", "Batch normalization"],
+      "prerequisites": [16]
+    },
+    {
+      "id": 32,
+      "title": "Hyperparameter Tuning",
+      "category": "Fundamentals",
+      "difficulty": "Intermediate",
+      "summary": "Hyperparameters are configuration settings set before training (unlike weights learned during training). They include learning rate, batch size, number of epochs, network architecture, dropout rate, and regularization strength. Suboptimal hyperparameters hurt performance significantly. Grid Search systematically tests combinations but is computationally expensive. Random Search samples randomly and often finds good hyperparameters efficiently. Bayesian Optimization builds a probabilistic model of the objective and intelligently samples promising regions. Hyperband allocates resources adaptively to promising trials. AutoML tools automate hyperparameter optimization. Best practice: start with established defaults, then fine-tune based on validation performance. Hyperparameter importance varies by problem.",
+      "keyPoints": ["Learning rate", "Batch size", "Grid search", "Random search", "Bayesian optimization"],
+      "prerequisites": [16, 30]
+    },
+    {
+      "id": 33,
+      "title": "Ensemble Methods",
+      "category": "Fundamentals",
+      "difficulty": "Intermediate",
+      "summary": "Ensemble methods combine multiple models to achieve better performance than any single model. Bagging (Bootstrap Aggregating) trains models on random subsets with replacement and averages predictions. Random Forests are powerful bagging ensembles. Boosting sequentially trains models on errors from previous models, progressively focusing on hard examples. AdaBoost, Gradient Boosting, and XGBoost are famous boosting algorithms. Stacking trains a meta-learner on predictions from base models. Blending divides data and trains models on different splits. Ensembles reduce variance and bias, improving generalization. They're widely used in kaggle competitions and real-world applications. The key principle: diverse models make better collective decisions.",
+      "keyPoints": ["Bagging", "Boosting", "Stacking", "Diversity", "Aggregation"],
+      "prerequisites": [9, 10]
+    },
+    {
+      "id": 34,
+      "title": "Time Series Forecasting",
+      "category": "Specialized Domains",
+      "difficulty": "Intermediate",
+      "summary": "Time Series Forecasting predicts future values based on historical observations where temporal order matters. Traditional methods include ARIMA (AutoRegressive Integrated Moving Average) which models temporal dependencies. Exponential Smoothing assigns exponentially decreasing weights to older observations. Modern deep learning approaches use RNNs and LSTMs to capture temporal patterns. Transformers with self-attention have also shown promise for time series. Key concepts include trend (long-term direction), seasonality (repeating patterns), and stationarity (statistical properties over time). Challenges include handling concept drift, missing values, and making accurate long-horizon predictions. Applications include stock prices, weather forecasting, demand prediction, and network traffic.",
+      "keyPoints": ["Trend and seasonality", "ARIMA", "LSTM", "Stationarity", "Autocorrelation"],
+      "prerequisites": [18, 24]
+    },
+    {
+      "id": 35,
+      "title": "Anomaly Detection",
+      "category": "Specialized Domains",
+      "difficulty": "Intermediate",
+      "summary": "Anomaly Detection identifies unusual patterns or outliers that deviate from normal behavior. Applications include fraud detection, network intrusion detection, equipment failure prediction, and health monitoring. Statistical methods assume normal data follows a known distribution and flag deviations. Distance-based methods (Isolation Forest, LOF) identify points far from others. Reconstruction-based methods (Autoencoders, One-class SVM) model normal data and flag high reconstruction errors. Time series anomaly detection uses LSTM autoencoders to detect temporal anomalies. Challenges include defining 'normal', handling concept drift, and balancing sensitivity/specificity. Labeled anomalies are often scarce, making unsupervised methods valuable.",
+      "keyPoints": ["Outlier detection", "Isolation Forest", "Autoencoders", "One-class SVM", "Reconstruction error"],
+      "prerequisites": [3, 16]
+    },
+    {
+      "id": 36,
+      "title": "Recommendation Systems",
+      "category": "Specialized Domains",
+      "difficulty": "Intermediate",
+      "summary": "Recommendation Systems predict user preferences to suggest items. Collaborative Filtering learns from user-item interactions; similar users like similar items. Content-based filtering recommends items similar to those users previously liked. Matrix Factorization decomposes user-item matrices into low-rank factors. Deep learning approaches use neural networks to model complex user-item relationships. Hybrid systems combine multiple approaches. Challenges include cold-start problems (new users/items), data sparsity, and computational scalability. Evaluation metrics include precision@k, recall@k, and NDCG. Applications power Netflix suggestions, Amazon recommendations, and Spotify playlists. Personalization significantly improves user experience and business metrics.",
+      "keyPoints": ["Collaborative filtering", "Content-based", "Matrix factorization", "Cold-start", "Personalization"],
+      "prerequisites": [1, 3]
+    },
+    {
+      "id": 37,
+      "title": "Model Interpretability and Explainability",
+      "category": "Advanced Topics",
+      "difficulty": "Advanced",
+      "summary": "Model Interpretability helps understand how machine learning models make predictions. This is crucial for high-stakes domains like healthcare and finance. Linear models are inherently interpretable. Tree-based models show decision paths. Black-box models (deep neural networks) require explanation techniques. LIME (Local Interpretable Model-agnostic Explanations) approximates local model behavior with interpretable models. SHAP (SHapley Additive exPlanations) uses game theory to compute feature contributions. Feature importance ranking shows which inputs most influence predictions. Attention visualization shows what model focuses on. Saliency maps highlight important image regions. Understanding model predictions builds trust, aids debugging, and satisfies regulatory requirements.",
+      "keyPoints": ["LIME", "SHAP", "Feature importance", "Attention mechanisms", "Trust and compliance"],
+      "prerequisites": [1, 16]
+    },
+    {
+      "id": 38,
+      "title": "Federated Learning",
+      "category": "Advanced Topics",
+      "difficulty": "Advanced",
+      "summary": "Federated Learning trains models across decentralized data sources without centralizing data. Each participant trains locally, then shares model updates with a central server which aggregates them. This preserves privacy and security while benefiting from collective data. Challenges include communication efficiency (high bandwidth requirements), statistical heterogeneity (non-IID data), and system heterogeneity (diverse devices). Differential privacy adds noise to protect individual privacy. Applications include training keyboard prediction on phones and medical AI on sensitive patient data. Federated Learning is crucial for regulatory compliance (GDPR, HIPAA). The approach is gaining importance as privacy concerns increase and regulations tighten.",
+      "keyPoints": ["Decentralized training", "Privacy preservation", "Model aggregation", "Differential privacy", "Regulatory compliance"],
+      "prerequisites": [1, 16]
+    },
+    {
+      "id": 39,
+      "title": "Meta-Learning (Learning to Learn)",
+      "category": "Advanced Topics",
+      "difficulty": "Advanced",
+      "summary": "Meta-Learning trains models to quickly adapt to new tasks with limited data. Few-shot learning learns from only a handful of examples. Model-Agnostic Meta-Learning (MAML) learns initial weights that adapt quickly through gradient descent. Prototypical Networks learn metric spaces where similar classes cluster together. Memory-augmented networks store task knowledge. Applications include quickly adapting to new characters in handwriting recognition or new languages. Meta-learning mimics how humans learn—leveraging past experience to learn new concepts quickly. Challenges include designing appropriate task distributions and computational efficiency. Meta-learning is valuable for robotics, adaptive AI systems, and scenarios with limited task-specific data.",
+      "keyPoints": ["Few-shot learning", "MAML", "Task adaptation", "Quick convergence", "Limited data learning"],
+      "prerequisites": [1, 16, 23]
+    },
+    {
+      "id": 40,
+      "title": "AI Ethics and Responsible AI",
+      "category": "Advanced Topics",
+      "difficulty": "Advanced",
+      "summary": "AI Ethics addresses fairness, accountability, transparency, and societal impact of AI systems. Bias in training data leads to discriminatory predictions affecting hiring, lending, and criminal justice. Fairness metrics quantify disparate impact across demographic groups. Adversarial robustness ensures models resist adversarial attacks. Transparency helps stakeholders understand model decisions. Data privacy protects individual information. Environmental impact of training large models is increasingly important. Responsible AI requires cross-disciplinary collaboration between ML engineers, domain experts, ethicists, and policymakers. Regulatory frameworks like GDPR and AI Act increasingly mandate compliance. Organizations adopting ethical AI practices build trust and reduce legal/reputational risks. Ethical considerations must be integrated throughout the ML pipeline.",
+      "keyPoints": ["Bias and fairness", "Adversarial robustness", "Transparency", "Privacy", "Sustainability"],
+      "prerequisites": [1, 6, 37]
+    }
+  ]
+}

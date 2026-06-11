@@ -1,0 +1,256 @@
+.lab-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f5f5f5;
+}
+
+.lab-content {
+  display: flex;
+  flex: 1;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.experiments-sidebar {
+  width: 280px;
+  background: white;
+  padding: 2rem;
+  border-right: 1px solid #e0e0e0;
+  height: calc(100vh - 80px);
+  overflow-y: auto;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.experiments-sidebar h3 {
+  color: #667eea;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.experiments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.experiment-item {
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 3px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: #333;
+}
+
+.experiment-item:hover {
+  background: #f0f0f0;
+  border-left-color: #667eea;
+  transform: translateX(5px);
+}
+
+.experiment-item.active {
+  background: #eef2ff;
+  border-left-color: #667eea;
+  font-weight: bold;
+  color: #667eea;
+}
+
+.exp-icon {
+  font-size: 1.5rem;
+}
+
+.exp-name {
+  font-weight: 500;
+}
+
+.experiment-area {
+  flex: 1;
+  padding: 3rem;
+  overflow-y: auto;
+}
+
+.experiment-header {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.experiment-header h2 {
+  color: #333;
+  margin-bottom: 0.8rem;
+  font-size: 2rem;
+}
+
+.experiment-description {
+  color: #666;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.experiment-setup {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.experiment-setup h3 {
+  color: #667eea;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.inputs-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.input-group input {
+  padding: 0.8rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.param-hint {
+  color: #999;
+  font-size: 0.85rem;
+  margin-top: 0.3rem;
+}
+
+.run-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  grid-column: 1 / -1;
+}
+
+.run-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.run-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.results-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  animation: slideUp 0.5s ease;
+}
+
+.results-section h3 {
+  color: #667eea;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.results-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.result-visualization {
+  background: #f9f9f9;
+  padding: 2rem;
+  border-radius: 8px;
+  min-height: 300px;
+}
+
+.result-data h4 {
+  color: #667eea;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.result-value {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #2ecc71;
+  margin-bottom: 1rem;
+}
+
+.result-data p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  color: #999;
+  font-size: 1.2rem;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .lab-content {
+    flex-direction: column;
+  }
+
+  .experiments-sidebar {
+    width: 100%;
+    max-height: 200px;
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .experiment-area {
+    padding: 1.5rem;
+  }
+
+  .results-content {
+    grid-template-columns: 1fr;
+  }
+}

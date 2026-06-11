@@ -1,0 +1,532 @@
+/* ============================================
+   TOPICS CONTAINER & LAYOUT
+   ============================================ */
+
+.topics-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ============================================
+   HEADER SECTION
+   ============================================ */
+
+.topics-header {
+  text-align: center;
+  margin-bottom: 50px;
+  animation: slideDown 0.6s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.topics-container h1 {
+  color: white;
+  font-size: 52px;
+  font-weight: 900;
+  margin-bottom: 15px;
+  letter-spacing: -1.5px;
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.topics-subtitle {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* ============================================
+   STATS BAR
+   ============================================ */
+
+.topics-stats-bar {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 35px;
+  border-radius: 20px;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 25px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.stat-box {
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 48px;
+  font-weight: 900;
+  color: white;
+  margin-bottom: 8px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.stat-label {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.9);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+}
+
+/* ============================================
+   FILTER SECTION
+   ============================================ */
+
+.filter-section {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  margin-bottom: 50px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  border: 2px solid #f0f0f0;
+}
+
+.search-box {
+  width: 100%;
+  padding: 18px 25px;
+  border: 3px solid #e0e0e0;
+  border-radius: 15px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  margin-bottom: 30px;
+  background: #f8f9ff;
+}
+
+.search-box::placeholder {
+  color: #bbb;
+}
+
+.search-box:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 5px rgba(102, 126, 234, 0.15);
+  background: white;
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.filter-group:last-child {
+  margin-bottom: 0;
+}
+
+.filter-group label {
+  font-weight: 800;
+  color: #333;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  min-width: 120px;
+  color: #667eea;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.filter-btn {
+  padding: 12px 20px;
+  border: 2px solid #ddd;
+  background: white;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  color: #666;
+  transition: all 0.3s ease;
+  text-transform: capitalize;
+}
+
+.filter-btn:hover {
+  border-color: #667eea;
+  color: #667eea;
+  background: #f0f4ff;
+}
+
+.filter-btn.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-color: transparent;
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+}
+
+/* ============================================
+   CATEGORY SECTION
+   ============================================ */
+
+.category-section {
+  margin-bottom: 70px;
+}
+
+.category-title {
+  font-size: 32px;
+  font-weight: 900;
+  color: white;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 5px solid rgba(255, 255, 255, 0.4);
+  display: inline-block;
+  letter-spacing: -0.5px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.category-description {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 16px;
+  margin-bottom: 40px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+/* ============================================
+   TOPICS GRID - MAIN STYLING
+   ============================================ */
+
+.topics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 35px;
+  padding: 0;
+  margin: 0;
+}
+
+/* ============================================
+   TOPIC CARD - THE MAIN BOX
+   ============================================ */
+
+.topic-card {
+  background: #f0f4ff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 3px solid #e8ecff;
+  position: relative;
+}
+
+.topic-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 25px 50px rgba(102, 126, 234, 0.25);
+  border-color: #667eea;
+}
+
+.topic-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 10;
+}
+
+.topic-card:hover::before {
+  opacity: 1;
+}
+
+/* ============================================
+   TOPIC CARD HEADER
+   ============================================ */
+
+.topic-card-header {
+  padding: 30px;
+  background: linear-gradient(135deg, #e8ecff 0%, #f0f4ff 100%);
+  border-bottom: 3px solid #dde5ff;
+  position: relative;
+}
+
+.topic-card-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 15px;
+  font-weight: 900;
+  font-size: 24px;
+  margin-bottom: 18px;
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+}
+
+.topic-card h3 {
+  color: #2c3e50;
+  font-size: 22px;
+  font-weight: 900;
+  margin: 0;
+  line-height: 1.4;
+  letter-spacing: -0.3px;
+}
+
+/* ============================================
+   TOPIC CARD BODY
+   ============================================ */
+
+.topic-card-body {
+  padding: 30px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  background: white;
+}
+
+.topic-card p {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.8;
+  margin: 0 0 25px 0;
+  flex-grow: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-weight: 500;
+}
+
+/* ============================================
+   TOPIC METADATA
+   ============================================ */
+
+.topic-metadata {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 20px 0;
+  border-top: 2px solid #f0f0f0;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+/* Difficulty Badge */
+.difficulty {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.difficulty.beginner {
+  background-color: #d4edda;
+  color: #0d7c4f;
+  border: 2px solid #b3e5d4;
+}
+
+.difficulty.intermediate {
+  background-color: #fff3cd;
+  color: #b8860b;
+  border: 2px solid #ffe4a3;
+}
+
+.difficulty.advanced {
+  background-color: #ffe7e7;
+  color: #c41e3a;
+  border: 2px solid #ffc4c4;
+}
+
+/* Category Badge */
+.category-badge {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-size: 12px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #e8eaf6 0%, #f3f5ff 100%);
+  color: #667eea;
+  border: 2px solid #c5cae9;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+}
+
+/* ============================================
+   TOPIC STATS
+   ============================================ */
+
+.topic-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 25px;
+  padding: 0;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 700;
+  color: #555;
+}
+
+.stat-icon {
+  font-size: 18px;
+}
+
+/* ============================================
+   TOPIC PROGRESS BAR
+   ============================================ */
+
+.topic-progress {
+  width: 100%;
+  height: 6px;
+  background: #e8e8e8;
+  border-radius: 10px;
+  margin: 25px 0;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  border-radius: 10px;
+  transition: width 0.3s ease;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+
+/* ============================================
+   TOPIC ACTION BUTTONS
+   ============================================ */
+
+.topic-actions {
+  display: flex;
+  gap: 16px;
+  margin-top: auto;
+}
+
+.btn-learn,
+.btn-quiz {
+  flex: 1;
+  padding: 16px 18px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 13px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: inherit;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-learn {
+  background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+  color: white;
+  border: none;
+}
+
+.btn-learn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(76, 175, 80, 0.35);
+}
+
+.btn-learn:active {
+  transform: translateY(-1px);
+}
+
+.btn-quiz {
+  background: linear-gradient(135deg, #2196F3 0%, #0b7dda 100%);
+  color: white;
+  border: none;
+}
+
+.btn-quiz:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(33, 150, 243, 0.35);
+}
+
+.btn-quiz:active {
+  transform: translateY(-1px);
+}
+
+/* ============================================
+   EMPTY STATE
+   ============================================ */
+
+.empty-state {
+  text-align: center;
+  padding: 120px 20px;
+  color: white;
+  grid-column: 1 / -1;
+}
+
+.empty-state-icon {
+  font-size: 100px;
+  margin-bottom: 30px;
+  opacity: 0.8;
+}
+
+.empty-state p {
+  font-size: 28px;
+  margin-bottom: 15px;
+  font-weight: 800;
+  color: white;
+}
+
+.empty-state-subtitle {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* ============================================
+   RESPONSIVE DESIGN - TABLET
+   ============================================ */
+
+@media (max-width: 1024px) {
+  .topics-container {
+    padding: 40px 20px;
+  }
+
+  .topics-header {
+    margin-bottom: 40px;
+  }
+
+  .topics-container h1 {
+    font-size: 40px;
+  }
+
+  .topics-gri*
+

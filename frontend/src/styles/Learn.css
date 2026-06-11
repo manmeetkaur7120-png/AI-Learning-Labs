@@ -1,0 +1,156 @@
+.learn-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+}
+
+.back-btn {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 2px solid white;
+  padding: 12px 24px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 30px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background: white;
+  color: #667eea;
+}
+
+.learn-content {
+  background: white;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.learn-content h1 {
+  color: #2c3e50;
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.topic-meta {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.difficulty {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.difficulty.beginner {
+  background: #d4edda;
+  color: #0d7c4f;
+}
+
+.difficulty.intermediate {
+  background: #fff3cd;
+  color: #b8860b;
+}
+
+.difficulty.advanced {
+  background: #ffe7e7;
+  color: #c41e3a;
+}
+
+.category {
+  background: #e8eaf6;
+  color: #667eea;
+  padding: 10px 18px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.learn-section {
+  margin-bottom: 40px;
+}
+
+.learn-section h2 {
+  color: #667eea;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.learn-section p {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.key-points {
+  list-style: none;
+  padding: 0;
+}
+
+.key-points li {
+  background: #f8f9ff;
+  padding: 16px 20px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  border-left: 4px solid #667eea;
+  color: #555;
+  font-size: 16px;
+}
+
+.learn-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.action-btn {
+  flex: 1;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.quiz-btn {
+  background: linear-gradient(135deg, #2196F3 0%, #0b7dda 100%);
+  color: white;
+}
+
+.quiz-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(33, 150, 243, 0.3);
+}
+
+.back-btn2 {
+  background: #f0f0f0;
+  color: #333;
+}
+
+.back-btn2:hover {
+  background: #e0e0e0;
+}
+
+@media (max-width: 768px) {
+  .learn-content {
+    padding: 30px;
+  }
+
+  .learn-content h1 {
+    font-size: 28px;
+  }
+
+  .learn-actions {
+    flex-direction: column;
+  }
+}

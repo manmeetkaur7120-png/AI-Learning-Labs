@@ -1,0 +1,77 @@
+.error-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+  padding: 2rem;
+  text-align: center;
+  gap: 1.5rem;
+}
+
+.error-icon {
+  font-size: 5rem;
+  animation: shake 0.5s ease-in-out;
+}
+
+.error-container h3 {
+  font-size: 2rem;
+  color: #d63031;
+  margin: 0;
+}
+
+.error-container p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 500px;
+  line-height: 1.6;
+}
+
+.retry-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.retry-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  75% {
+    transform: translateX(10px);
+  }
+}
+
+@media (max-width: 768px) {
+  .error-icon {
+    font-size: 3rem;
+  }
+
+  .error-container h3 {
+    font-size: 1.5rem;
+  }
+
+  .error-container p {
+    font-size: 1rem;
+  }
+
+  .retry-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}

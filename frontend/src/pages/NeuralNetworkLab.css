@@ -1,0 +1,344 @@
+.nn-lab-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.nn-header {
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.nn-header h1 {
+  color: #333;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.nn-header p {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.btn-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 20px;
+  background-color: #888;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-back:hover {
+  background-color: #666;
+}
+
+/* Messages */
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #f5c6cb;
+}
+
+.success-message {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #c3e6cb;
+}
+
+/* Main Content */
+.nn-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+}
+
+.config-panel,
+.training-panel,
+.info-panel {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.config-panel h2,
+.training-panel h2,
+.info-panel h2 {
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 20px;
+  border-bottom: 2px solid #4CAF50;
+  padding-bottom: 10px;
+}
+
+/* Config Group */
+.config-group {
+  margin-bottom: 20px;
+}
+
+.config-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+  font-size: 14px;
+}
+
+.config-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.config-group input:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.1);
+}
+
+.config-group input:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+}
+
+.config-group small {
+  display: block;
+  margin-top: 6px;
+  color: #999;
+  font-size: 12px;
+}
+
+/* Buttons */
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+.btn-success {
+  background-color: #2196F3;
+  color: white;
+}
+
+.btn-success:hover:not(:disabled) {
+  background-color: #0b7dda;
+}
+
+.btn-secondary {
+  background-color: #888;
+  color: white;
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background-color: #666;
+}
+
+/* Training Info */
+.training-info {
+  background: #f5f5f5;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.training-info p {
+  margin: 8px 0;
+  color: #333;
+  font-size: 14px;
+}
+
+.training-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.training-buttons .btn {
+  flex: 1;
+  margin-top: 0;
+}
+
+/* Training History */
+.training-history {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 2px solid #e0e0e0;
+}
+
+.training-history h3 {
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.history-chart {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  border: 1px solid #e0e0e0;
+}
+
+.history-chart svg {
+  width: 100%;
+  height: 200px;
+}
+
+.history-table {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+}
+
+.history-table h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.table-scroll {
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.history-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 13px;
+}
+
+.history-row:last-child {
+  border-bottom: none;
+}
+
+.history-row .epoch {
+  font-weight: bold;
+  color: #666;
+}
+
+.history-row .loss {
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+/* Info Panel */
+.info-content h3 {
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.info-content h3:first-child {
+  margin-top: 0;
+}
+
+.info-content ul,
+.info-content ol {
+  margin: 0 0 15px 20px;
+  padding: 0;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.info-content li {
+  margin-bottom: 8px;
+}
+
+.info-content dl {
+  margin: 0;
+  font-size: 13px;
+}
+
+.info-content dt {
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+}
+
+.info-content dd {
+  margin: 0 0 10px 20px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.info-content p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .nn-content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .info-panel {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .nn-content {
+    grid-template-columns: 1fr;
+  }
+
+  .nn-header {
+    margin-bottom: 20px;
+  }
+
+  .btn-back {
+    position: static;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .info-panel {
+    grid-column: auto;
+  }
+}

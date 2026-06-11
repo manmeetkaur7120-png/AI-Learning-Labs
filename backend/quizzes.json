@@ -1,0 +1,628 @@
+{
+  "quizzes": [
+    {
+      "id": 1,
+      "topicId": 1,
+      "title": "ML Fundamentals Quiz",
+      "description": "Test your knowledge on supervised, unsupervised, and reinforcement learning",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is the main goal of supervised learning?",
+          "options": [
+            "To find patterns without labels",
+            "To predict output based on labeled input data",
+            "To maximize rewards through interaction",
+            "To cluster similar data points"
+          ],
+          "correct": 1,
+          "explanation": "Supervised learning uses labeled data to train models to make predictions."
+        },
+        {
+          "id": 2,
+          "question": "Which learning type uses reinforcement?",
+          "options": [
+            "Teaching a model with labeled examples",
+            "Discovering hidden patterns in data",
+            "Learning through trial and error with rewards",
+            "Sorting data into categories"
+          ],
+          "correct": 2,
+          "explanation": "Reinforcement learning learns by interacting with an environment and receiving rewards."
+        },
+        {
+          "id": 3,
+          "question": "Unsupervised learning is best for:",
+          "options": [
+            "Predicting house prices",
+            "Email spam detection",
+            "Finding hidden groups in customer data",
+            "Recognizing faces in photos"
+          ],
+          "correct": 2,
+          "explanation": "Unsupervised learning finds patterns and groups in unlabeled data."
+        },
+        {
+          "id": 4,
+          "question": "What is a supervised learning algorithm?",
+          "options": [
+            "K-means clustering",
+            "Decision Trees",
+            "Genetic Algorithm",
+            "Q-Learning"
+          ],
+          "correct": 1,
+          "explanation": "Decision Trees are supervised learning algorithms used for classification and regression tasks."
+        },
+        {
+          "id": 5,
+          "question": "In unsupervised learning, what do we NOT have?",
+          "options": [
+            "Input features",
+            "Output labels",
+            "Training data",
+            "Model parameters"
+          ],
+          "correct": 1,
+          "explanation": "Unsupervised learning works with data that doesn't have labeled outputs."
+        },
+        {
+          "id": 6,
+          "question": "Which is an example of reinforcement learning?",
+          "options": [
+            "Email filtering",
+            "Game playing AI",
+            "Image classification",
+            "Customer segmentation"
+          ],
+          "correct": 1,
+          "explanation": "Game playing AI learns through interaction and rewards - a key characteristic of reinforcement learning."
+        },
+        {
+          "id": 7,
+          "question": "What does 'labeled data' mean in supervised learning?",
+          "options": [
+            "Data that has been organized",
+            "Data with input features and corresponding correct output values",
+            "Data stored in a database",
+            "Data that is cleaned"
+          ],
+          "correct": 1,
+          "explanation": "Labeled data includes both input features and their corresponding target outputs for training."
+        },
+        {
+          "id": 8,
+          "question": "Which statement is true about machine learning?",
+          "options": [
+            "It requires explicit programming for every task",
+            "It learns patterns from data",
+            "It can only handle structured data",
+            "It replaces all human decision-making"
+          ],
+          "correct": 1,
+          "explanation": "Machine learning's core principle is learning patterns from data rather than explicit programming."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "topicId": 2,
+      "title": "Neural Networks Basics Quiz",
+      "description": "Test your understanding of neurons, layers, and activation functions",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is the basic building block of a neural network?",
+          "options": [
+            "Nodes",
+            "Neurons",
+            "Layers",
+            "Weights"
+          ],
+          "correct": 1,
+          "explanation": "Neurons (or nodes) are the basic computational units in neural networks."
+        },
+        {
+          "id": 2,
+          "question": "What does an activation function do?",
+          "options": [
+            "Compresses data",
+            "Introduces non-linearity to the network",
+            "Stores weights",
+            "Normalizes inputs"
+          ],
+          "correct": 1,
+          "explanation": "Activation functions introduce non-linearity, allowing networks to learn complex patterns."
+        },
+        {
+          "id": 3,
+          "question": "What are layers in a neural network?",
+          "options": [
+            "Types of data",
+            "Groups of neurons arranged sequentially",
+            "Training stages",
+            "Loss calculations"
+          ],
+          "correct": 1,
+          "explanation": "Layers are groups of neurons that process information sequentially."
+        },
+        {
+          "id": 4,
+          "question": "What is the purpose of weights in a neural network?",
+          "options": [
+            "To store data",
+            "To scale and modify input signals",
+            "To count neurons",
+            "To measure accuracy"
+          ],
+          "correct": 1,
+          "explanation": "Weights are parameters that scale the inputs, and they are adjusted during training to learn patterns."
+        },
+        {
+          "id": 5,
+          "question": "Which activation function is commonly used?",
+          "options": [
+            "Linear",
+            "ReLU (Rectified Linear Unit)",
+            "Addition",
+            "Multiplication"
+          ],
+          "correct": 1,
+          "explanation": "ReLU is one of the most popular activation functions due to its simplicity and effectiveness."
+        },
+        {
+          "id": 6,
+          "question": "What is backpropagation?",
+          "options": [
+            "Moving data backward",
+            "A method to update weights based on error",
+            "Reversing a neural network",
+            "Testing the model"
+          ],
+          "correct": 1,
+          "explanation": "Backpropagation is the algorithm used to calculate gradients and update weights during training."
+        },
+        {
+          "id": 7,
+          "question": "What does a bias term do in a neuron?",
+          "options": [
+            "Adds randomness",
+            "Allows the neuron to shift its activation threshold",
+            "Reduces model complexity",
+            "Increases processing speed"
+          ],
+          "correct": 1,
+          "explanation": "Bias allows neurons to shift their activation threshold, improving model flexibility."
+        },
+        {
+          "id": 8,
+          "question": "How many layers does a deep neural network have?",
+          "options": [
+            "Only 1 layer",
+            "At most 3 layers",
+            "More than 3 hidden layers",
+            "Exactly 5 layers"
+          ],
+          "correct": 2,
+          "explanation": "Deep neural networks have multiple hidden layers (more than 3), allowing them to learn hierarchical features."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "topicId": 3,
+      "title": "Deep Learning Quiz",
+      "description": "Test your knowledge on CNNs, RNNs, and deep architectures",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is CNN best used for?",
+          "options": [
+            "Time series prediction",
+            "Image recognition and processing",
+            "Text analysis",
+            "Numerical calculations"
+          ],
+          "correct": 1,
+          "explanation": "CNNs (Convolutional Neural Networks) excel at image recognition and processing."
+        },
+        {
+          "id": 2,
+          "question": "RNNs are specialized for:",
+          "options": [
+            "Image classification",
+            "Sequence and time series data",
+            "Static data analysis",
+            "Regression problems"
+          ],
+          "correct": 1,
+          "explanation": "RNNs (Recurrent Neural Networks) are designed for sequential data like text and time series."
+        },
+        {
+          "id": 3,
+          "question": "What is a benefit of deep learning?",
+          "options": [
+            "It's always faster",
+            "It requires no data",
+            "It can learn complex patterns automatically",
+            "It eliminates all errors"
+          ],
+          "correct": 2,
+          "explanation": "Deep learning can automatically learn complex patterns from large amounts of data."
+        },
+        {
+          "id": 4,
+          "question": "What are convolutional filters in CNNs used for?",
+          "options": [
+            "Storing images",
+            "Detecting features like edges and textures",
+            "Displaying results",
+            "Cleaning data"
+          ],
+          "correct": 1,
+          "explanation": "Convolutional filters detect various features like edges, textures, and patterns in images."
+        },
+        {
+          "id": 5,
+          "question": "What is an LSTM in deep learning?",
+          "options": [
+            "A type of CNN",
+            "Long Short-Term Memory - handles long-term dependencies in sequences",
+            "A classification method",
+            "A data preprocessing technique"
+          ],
+          "correct": 1,
+          "explanation": "LSTMs are a type of RNN that can learn long-term dependencies in sequential data."
+        },
+        {
+          "id": 6,
+          "question": "What does pooling do in CNNs?",
+          "options": [
+            "Combines data",
+            "Reduces spatial dimensions and extracts important features",
+            "Increases data size",
+            "Adds noise"
+          ],
+          "correct": 1,
+          "explanation": "Pooling reduces the spatial dimensions while preserving important feature information."
+        },
+        {
+          "id": 7,
+          "question": "Which architecture is best for language translation?",
+          "options": [
+            "CNN",
+            "Transformer",
+            "Linear regression",
+            "Decision trees"
+          ],
+          "correct": 1,
+          "explanation": "Transformers (using attention mechanisms) are state-of-the-art for language translation tasks."
+        },
+        {
+          "id": 8,
+          "question": "What is the advantage of using GPUs for deep learning?",
+          "options": [
+            "They store more data",
+            "They can process matrix operations much faster than CPUs",
+            "They reduce model complexity",
+            "They improve accuracy"
+          ],
+          "correct": 1,
+          "explanation": "GPUs excel at parallel processing of matrix operations, significantly speeding up deep learning training."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "topicId": 4,
+      "title": "Natural Language Processing Quiz",
+      "description": "Test your knowledge on NLP, text processing, and language models",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What does NLP stand for?",
+          "options": [
+            "Neural Language Processing",
+            "Natural Language Processing",
+            "Network Learning Process",
+            "Numerical Logic Programming"
+          ],
+          "correct": 1,
+          "explanation": "NLP stands for Natural Language Processing, which deals with human language and text."
+        },
+        {
+          "id": 2,
+          "question": "What is tokenization in NLP?",
+          "options": [
+            "Removing stop words",
+            "Breaking text into individual words or phrases",
+            "Translating text",
+            "Detecting sentiment"
+          ],
+          "correct": 1,
+          "explanation": "Tokenization is the process of breaking text into smaller units like words or sentences."
+        },
+        {
+          "id": 3,
+          "question": "What are stop words in NLP?",
+          "options": [
+            "Words that appear at the end",
+            "Common words like 'the', 'a', 'is' that often don't add meaning",
+            "Words that are difficult to understand",
+            "Technical jargon"
+          ],
+          "correct": 1,
+          "explanation": "Stop words are common words that usually don't carry significant meaning and are often removed."
+        },
+        {
+          "id": 4,
+          "question": "What is sentiment analysis?",
+          "options": [
+            "Counting words in a text",
+            "Determining the emotional tone of text (positive, negative, neutral)",
+            "Correcting spelling errors",
+            "Translating languages"
+          ],
+          "correct": 1,
+          "explanation": "Sentiment analysis identifies and extracts the emotional tone or opinion expressed in text."
+        },
+        {
+          "id": 5,
+          "question": "What does Word2Vec do?",
+          "options": [
+            "Translates words",
+            "Converts words into numerical vectors that capture semantic meaning",
+            "Counts word frequency",
+            "Removes duplicates"
+          ],
+          "correct": 1,
+          "explanation": "Word2Vec converts words into dense vectors where semantically similar words are close together."
+        },
+        {
+          "id": 6,
+          "question": "What is a language model?",
+          "options": [
+            "A grammar checker",
+            "A model that predicts the next word based on previous words",
+            "A dictionary",
+            "A translation tool"
+          ],
+          "correct": 1,
+          "explanation": "Language models predict the probability of sequences of words and can generate text."
+        },
+        {
+          "id": 7,
+          "question": "What is named entity recognition (NER)?",
+          "options": [
+            "Counting entities",
+            "Identifying names, locations, organizations in text",
+            "Removing entities",
+            "Creating entities"
+          ],
+          "correct": 1,
+          "explanation": "NER identifies and classifies named entities like people, places, and organizations in text."
+        },
+        {
+          "id": 8,
+          "question": "What is the purpose of TF-IDF?",
+          "options": [
+            "Fixing spelling errors",
+            "Measuring word importance in documents",
+            "Translating text",
+            "Removing stop words"
+          ],
+          "correct": 1,
+          "explanation": "TF-IDF quantifies how important a word is to a document in a collection of documents."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "topicId": 5,
+      "title": "Computer Vision Quiz",
+      "description": "Test your knowledge on image processing, object detection, and segmentation",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is computer vision?",
+          "options": [
+            "Creating images with code",
+            "Enabling machines to interpret and understand visual information from images",
+            "Displaying images on screens",
+            "Storing image files"
+          ],
+          "correct": 1,
+          "explanation": "Computer vision is the AI field focused on enabling machines to understand visual information."
+        },
+        {
+          "id": 2,
+          "question": "What is object detection?",
+          "options": [
+            "Removing objects from images",
+            "Identifying and locating objects within images",
+            "Storing object data",
+            "Displaying objects"
+          ],
+          "correct": 1,
+          "explanation": "Object detection identifies and locates specific objects within images with bounding boxes."
+        },
+        {
+          "id": 3,
+          "question": "What is image segmentation?",
+          "options": [
+            "Dividing an image into smaller files",
+            "Partitioning an image into meaningful regions or segments",
+            "Storing images",
+            "Compressing images"
+          ],
+          "correct": 1,
+          "explanation": "Image segmentation divides images into regions for more detailed analysis."
+        },
+        {
+          "id": 4,
+          "question": "What does YOLO stand for?",
+          "options": [
+            "You Only Learn Once",
+            "You Only Look Once - a real-time object detection algorithm",
+            "Your Online Learning Opportunity",
+            "Young Object Learning Optimization"
+          ],
+          "correct": 1,
+          "explanation": "YOLO (You Only Look Once) is a popular real-time object detection algorithm."
+        },
+        {
+          "id": 5,
+          "question": "What is edge detection in images?",
+          "options": [
+            "Finding the borders of images",
+            "Identifying boundaries between objects and backgrounds",
+            "Removing image edges",
+            "Storing edge data"
+          ],
+          "correct": 1,
+          "explanation": "Edge detection identifies boundaries between objects and regions in images."
+        },
+        {
+          "id": 6,
+          "question": "What is a convolutional operation in image processing?",
+          "options": [
+            "Converting image formats",
+            "Applying a filter over the image to extract features",
+            "Storing convolutions",
+            "Displaying filters"
+          ],
+          "correct": 1,
+          "explanation": "Convolution applies filters to images to extract local features like edges and textures."
+        },
+        {
+          "id": 7,
+          "question": "What is pose estimation in computer vision?",
+          "options": [
+            "Taking a picture",
+            "Detecting body positions and joint locations of people",
+            "Storing poses",
+            "Displaying images"
+          ],
+          "correct": 1,
+          "explanation": "Pose estimation detects the position and orientation of body parts and joints."
+        },
+        {
+          "id": 8,
+          "question": "What is semantic segmentation?",
+          "options": [
+            "Dividing into equal parts",
+            "Assigning a class label to each pixel in an image",
+            "Storing segments",
+            "Compressing data"
+          ],
+          "correct": 1,
+          "explanation": "Semantic segmentation classifies each pixel into a category for detailed scene understanding."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "topicId": 6,
+      "title": "Reinforcement Learning Quiz",
+      "description": "Test your knowledge on Q-Learning, policy learning, and reward systems",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is reinforcement learning?",
+          "options": [
+            "Learning from labeled data",
+            "Learning through interaction with environment and rewards/penalties",
+            "Learning from images",
+            "Learning from text"
+          ],
+          "correct": 1,
+          "explanation": "Reinforcement learning trains agents to make decisions by rewarding desired behaviors."
+        },
+        {
+          "id": 2,
+          "question": "What is a reward in reinforcement learning?",
+          "options": [
+            "A payment",
+            "A signal indicating the quality of an action taken by the agent",
+            "A bonus point",
+            "Money"
+          ],
+          "correct": 1,
+          "explanation": "Rewards are signals that evaluate how good an action was in a given state."
+        },
+        {
+          "id": 3,
+          "question": "What is Q-Learning?",
+          "options": [
+            "A supervised learning method",
+            "A reinforcement learning algorithm that learns the value of actions",
+            "A classification method",
+            "A data cleaning technique"
+          ],
+          "correct": 1,
+          "explanation": "Q-Learning learns the expected utility of actions in states without requiring a model of the environment."
+        },
+        {
+          "id": 4,
+          "question": "What is an MDP (Markov Decision Process)?",
+          "options": [
+            "A data processing method",
+            "A mathematical framework for modeling decision-making problems",
+            "A machine learning model",
+            "A data storage system"
+          ],
+          "correct": 1,
+          "explanation": "An MDP is a mathematical framework for modeling sequential decision-making problems."
+        },
+        {
+          "id": 5,
+          "question": "What is exploration vs exploitation?",
+          "options": [
+            "Testing vs training",
+            "Trying new actions vs using best known actions",
+            "Reading vs writing",
+            "Input vs output"
+          ],
+          "correct": 1,
+          "explanation": "Exploration tries new actions to discover better strategies, while exploitation uses known good actions."
+        },
+        {
+          "id": 6,
+          "question": "What is the goal of an RL agent?",
+          "options": [
+            "To complete one task",
+            "To maximize cumulative reward over time",
+            "To minimize errors",
+            "To process data"
+          ],
+          "correct": 1,
+          "explanation": "The agent's goal is to maximize the total reward it receives over time."
+        },
+        {
+          "id": 7,
+          "question": "What is a policy in reinforcement learning?",
+          "options": [
+            "A set of rules",
+            "A strategy that maps states to actions",
+            "A law",
+            "A guideline"
+          ],
+          "correct": 1,
+          "explanation": "A policy defines how an agent should act in different states to maximize rewards."
+        },
+        {
+          "id": 8,
+          "question": "What is the discount factor in RL?",
+          "options": [
+            "A price reduction",
+            "A parameter that determines the importance of future rewards",
+            "An interest rate",
+            "A multiplication factor for data"
+          ],
+          "correct": 1,
+          "explanation": "The discount factor weighs immediate rewards more heavily than distant future rewards."
+        }
+      ]
+    }
+  ]
+}
