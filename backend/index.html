@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Learning Labs - Portal</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --accent-color: #38bdf8;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --success: #22c55e;
+            --error: #ef4444;
+            --border: #334155;
+            --sidebar-width: 260px;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Sidebar Styling */
+        .sidebar {
+            width: var(--sidebar-width);
+            background-color: #0b0f19;
+            border-right: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .sidebar h2 { font-size: 1.2rem; color: #fff; margin-bottom: 5px; }
+        .sidebar h3 {
+            color: var(--accent-color);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 15px;
+            margin-top: 20px;
+        }
+
+        .nav-btn {
+            background: none;
+            border: 1px solid transparent;
+            color: var(--text-muted);
+            text-align: left;
+            padding: 10px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+            transition: all 0.2s;
+        }
+
+        .nav-btn:hover { background: rgba(56, 189, 248, 0.1); color: var(--text-main); }
+        .nav-btn.active { background: var(--accent-color); color: #0f172a; font-weight: bold; }
+        
+        .roadmap-btn {
+            background: #475569;
+            color: white;
+            font-weight: bold;
+            border-radius: 6px;
+            padding: 12px;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 10px;
+            transition: 0.2s;
+        }
+        .roadmap-btn:hover { background: var(--accent-color); color: #0f172a; }
+
+        /* Main Content Styling */
+        .main-content {
+            flex: 1;
+            padding: 40px;
+            overflow-y: auto;
+        }
+
+        header { margin-bottom: 30px; border-bottom: 2px solid var(--border); padding-bottom: 15px; }
+        h1 { margin: 0 0 5px 0; font-size: 2rem; color: var(--text-main); }
+        h2 { color: var(--accent-color); border-bottom: 1px solid var(--border); padding-bottom: 8px; margin-top: 0; }
+
+        .section {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 25px;
+        }
+
+        /* Lists and Grids */
+        .video-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; margin-top: 15px; }
+        .video-card { background: #111827; padding: 12px; border-radius: 6px; border-left: 4px solid var(--accent-color); }
+        .video-card a { color: var(--text-main); text-decoration: none; font-weight: bold; display: block; font-size: 0.9rem; }
+        .video-card a:hover { color: var(--accent-color); }
+
+        /* Roadmap Grid */
+        .roadmap-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+        }
+        .roadmap-card {
+            background: #111827;
+            border: 1px solid var(--border);
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .roadmap-card h4 { margin: 0 0 10px 0; color: var(--accent-color); }
+        .roadmap-card p { margin: 0; font-size: 0.85rem; color: var(--text-muted); }
+
+        /* Games & Quizzes */
+        .game-box { background: #111827; border: 1px solid var(--border); border-radius: 8px; padding: 20px; margin-bottom: 20px; }
+        .game-box h3 { color: #fff; margin-top: 0; margin-bottom: 10px; font-size: 1.1rem;}
+        .game-input-container { display: flex; gap: 10px; margin-top: 10px; }
+        .game-input, .select-input { flex: 1; background: #1e293b; border: 1px solid var(--border); color: #fff; padding: 10px; border-radius: 4px; font-family: 'Courier New', Courier, monospace; }
+        .game-btn { background: var(--success); color: white; border: none; padding: 10px 18px; border-radius: 4px; font-weight: bold; cursor: pointer; }
+        .game-btn:hover { opacity: 0.9; }
+        .game-feedback { margin-top: 12px; padding: 10px; border-radius: 4px; font-weight: bold; display: none; }
+
+        .quiz-question { background: #111827; padding: 15px; border-radius: 6px; margin-bottom: 15px; }
+        .quiz-question p { margin-top: 0; font-weight: 600; }
+        .show-btn { background: var(--accent-color); color: #0f172a; border: none; padding: 8px 14px; border-radius: 4px; cursor: pointer; font-weight: bold; }
+        .answer-box { margin-top: 10px; padding: 10px; background: #047857; border-radius: 4px; display: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <!-- SIDEBAR NAVIGATION -->
+    <div class="sidebar">
+        <h2>AI Learning Labs</h2>
+        <p style="color: var(--text-muted); font-size: 0.8rem; margin-top: 0; margin-bottom: 20px;">Course Dashboard</p>
+        
+        <!-- NEW MASTER ROADMAP BUTTON -->
+        <button class="roadmap-btn" onclick="showRoadmap()">🗺️ View All 20 Topics</button>
+        
+        <h3>Topic 1: Foundations</h3>
+        <button class="nav-btn" onclick="loadSubtopic(0, this)">1. Intro to AI</button>
+        <button class="nav-btn" onclick="loadSubtopic(1, this)">2. Intro to ML</button>
+        <button class="nav-btn" onclick="loadSubtopic(2, this)">3. The AI/ML Pipeline</button>
+        <button class="nav-btn" onclick="loadSubtopic(3, this)">4. Historical Timeline</button>
+        <button class="nav-btn" onclick="loadSubtopic(4, this)">5. Types of AI</button>
+        <button class="nav-btn" onclick="loadSubtopic(5, this)">6. Rules vs. Learning</button>
+        <button class="nav-btn" onclick="loadSubtopic(6, this)">7. Role of Data</button>
+        <button class="nav-btn" onclick="loadSubtopic(7, this)">8. Statistical Learning</button>
+        <button class="nav-btn" onclick="loadSubtopic(8, this)">9. Bias & Variance</button>
+        <button class="nav-btn" onclick="loadSubtopic(9, this)">10. Environment Setup</button>
+    </div>
+
+    <!-- MAIN PORTAL -->
+    <div class="main-content">
+        
+        <!-- ROADMAP VIEW (Hidden by default) -->
+        <div id="roadmap-view" style="display: none;">
+            <header>
+                <h1>🗺️ Master Curriculum Roadmap</h1>
+                <p style="color: var(--text-muted); margin: 5px 0 0 0;">All 20 modules planned for the AI-Learning-Labs repository.</p>
+            </header>
+            <div class="section">
+                <h2>The 20-Topic Path to AI Mastery</h2>
+                <div class="roadmap-grid">
+                    <div class="roadmap-card"><h4>1. Foundations of AI & ML</h4><p>✅ Completed (10 Subtopics)</p></div>
+                    <div class="roadmap-card"><h4>2. Mathematics for ML</h4><p>Pending Generation...</p></div>
+                    <div class="roadmap-card"><h4>3. Python for Data Science</h4><p>Pending Generation...</p></div>
+                    <div class="roadmap-card"><h4>4. Data Preprocessing & EDA</h4><p>Pending Generation...</p></div>
+                    <div class="roadmap-card"><h4>5. Supervised: Regression</h4><p>Pending Generation...</p></div>
+                    <div class="roadmap-card"><h4>6. Supervised: Classification</h4><p>Pending Generation...</p></div>
+                    <div class="roadmap-card"><h4>7. Tree-Based Models</h4><p>Pending Generation...</p></div>
+                    <div class="roadmap-card"><h4>8. Unsupervised Learning</h4><p>Pending Generation...</p></div>
+                    <div class="roadmap-card"><h4>9. Model Evaluation</h4><p>Pending Generation...</p></div>
+                    <div class="roadmap-card"><h4>10. Intro to Deep Learning</h4><p>Pending Generation...</p></div>
+                    <div class="roadmap-card"><h4>11. Computer Vision (CV)</h4><p>Pending Generation...</p></div>
+                    <div class="roadmap-card"><h4>12. Nat. Language Processing</h4><p>Pending Generation...</p></div>
+                    <div class="roadmap-card"><h4>13. Transformers & LLMs</h4><p>Pending Generation...</p></div>
+                    <div class="roadmap-card"><h4>14. Generative AI Models</h4><p>Pending Generation...</p></div>
+                    <div class="roadmap-card"><h4>15. Reinforcement Learning</h4><p>Pending Generation...</p></div>
+                    <div class="roadmap-card"><h4>16. MLOps & Production</h4><p>Pending Generation...</p></div>
+                    <div class="roadmap-card"><h4>17. Cloud AI & Deployment</h4><p>Pending Generation...</p></div>
+                    <div class="roadmap-card"><h4>18. AI Ethics & Governance</h4><p>Pending Generation...</p></div>
+                    <div class="roadmap-card"><h4>19. Time Series Analysis</h4><p>Pending Generation...</p></div>
+                    <div class="roadmap-card"><h4>20. Advanced AI Paradigms</h4><p>Pending Generation...</p></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- LESSON VIEW -->
+        <div id="lesson-view">
+            <header>
+                <h1 id="subtopic-title">Loading...</h1>
+                <p id="subtopic-meta" style="color: var(--text-muted); margin: 5px 0 0 0;"></p>
+            </header>
+
+            <div class="section">
+                <h2>📝 Summary</h2>
+                <p id="summary-text"></p>
+            </div>
+
+            <div class="section">
+                <h2>🎥 Curated Video Tutorials</h2>
+                <div class="video-grid" id="video-container"></div>
+            </div>
+
+            <div class="section">
+                <h2>📓 Quick Notes & Cheat Sheet</h2>
+                <ul id="notes-container"></ul>
+            </div>
+
+            <div class="section">
+                <h2>🎮 Interactive Learning Mini-Games</h2>
+                <div id="games-container"></div>
+            </div>
+
+            <div class="section">
+                <h2>🧠 Subtopic Challenge Quiz</h2>
+                <div id="quiz-container"></div>
+            </div>
+        </div>
+
+    </div>
+
+<script src="database.js"></script>
+<script>
+    function showRoadmap() {
+        // Deselect sidebar buttons
+        document.querySelectorAll('.nav-btn').forEach(btn => btn.classList.remove('active'));
+        
+        // Hide lesson view, show roadmap view
+        document.getElementById('lesson-view').style.display = 'none';
+        document.getElementById('roadmap-view').style.display = 'block';
+    }
+
+    function loadSubtopic(index, btnElement) {
+        // Hide roadmap view, show lesson view
+        document.getElementById('roadmap-view').style.display = 'none';
+        document.getElementById('lesson-view').style.display = 'block';
+
+        document.querySelectorAll('.nav-btn').forEach(btn => btn.classList.remove('active'));
+        if(btnElement) btnElement.classList.add('active');
+
+        const currentData = curriculumDatabase[index];
+
+        document.getElementById('subtopic-title').innerText = currentData.title;
+        document.getElementById('subtopic-meta').innerText = currentData.meta;
+        document.getElementById('summary-text').innerText = currentData.summary;
+
+        // Render Videos
+        const videoContainer = document.getElementById('video-container');
+        videoContainer.innerHTML = '';
+        currentData.videos.forEach(v => {
+            videoContainer.innerHTML += `<div class="video-card"><a href="https://www.youtube.com/results?search_query=${v.q}" target="_blank">${v.name}</a></div>`;
+        });
+
+        // Render Notes
+        const notesContainer = document.getElementById('notes-container');
+        notesContainer.innerHTML = '';
+        currentData.notes.forEach(note => {
+            notesContainer.innerHTML += `<li>${note}</li>`;
+        });
+
+        // Render Games
+        const gamesContainer = document.getElementById('games-container');
+        gamesContainer.innerHTML = '';
+        currentData.games.forEach((game, gIdx) => {
+            if(game.type === 'coding') {
+                gamesContainer.innerHTML += `
+                    <div class="game-box">
+                        <h3>${game.title}</h3>
+                        <p style="color: var(--text-muted); font-size:0.9rem;">${game.instruction}</p>
+                        <textarea class="game-input" rows="3" id="game-input-${index}-${gIdx}">${game.placeholder}</textarea>
+                        <div class="game-input-container">
+                            <button class="game-btn" onclick="verifyGameCode('${index}', '${gIdx}', '${game.correctAnswer}')">Run Sandbox Test</button>
+                        </div>
+                        <div class="game-feedback" id="game-feed-${index}-${gIdx}"></div>
+                    </div>
+                `;
+            } else if (game.type === 'simulator') {
+                let optionsHtml = game.options.map(opt => `<option value="${opt}">${opt}</option>`).join('');
+                gamesContainer.innerHTML += `
+                    <div class="game-box">
+                        <h3>${game.title}</h3>
+                        <p style="color: var(--text-muted); font-size:0.9rem;">${game.instruction}</p>
+                        <div class="game-input-container">
+                            <select class="select-input" id="game-input-${index}-${gIdx}">
+                                <option value="">-- Choose Setup Matrix Path --</option>
+                                ${optionsHtml}
+                            </select>
+                            <button class="game-btn" onclick="verifyGameSimulator('${index}', '${gIdx}', '${game.correctAnswer}')">Execute Hyper-Sim</button>
+                        </div>
+                        <div class="game-feedback" id="game-feed-${index}-${gIdx}"></div>
+                    </div>
+                `;
+            }
+        });
+
+        // Render Quizzes
+        const quizContainer = document.getElementById('quiz-container');
+        quizContainer.innerHTML = '';
+        currentData.quiz.forEach((qItem, qIdx) => {
+            quizContainer.innerHTML += `
+                <div class="quiz-question">
+                    <p>${qIdx + 1}. ${qItem.q}</p>
+                    <button class="show-btn" onclick="toggleAnswer('${index}-${qIdx}')">Reveal Answer</button>
+                    <div class="answer-box" id="ans-${index}-${qIdx}">💡 Answer: ${qItem.a}</div>
+                </div>
+            `;
+        });
+    }
+
+    function verifyGameCode(subId, gameId, correctVal) {
+        const inputVal = document.getElementById(`game-input-${subId}-${gameId}`).value;
+        const feedback = document.getElementById(`game-feed-${subId}-${gameId}`);
+        feedback.style.display = 'block';
+        if(inputVal.includes(correctVal)) {
+            feedback.style.backgroundColor = 'var(--success)';
+            feedback.innerText = "🚀 COMPILER SUCCESS: Architecture conditions verified! Concept Unlocked.";
+        } else {
+            feedback.style.backgroundColor = 'var(--error)';
+            feedback.innerText = "❌ SYNTAX ERROR: Evaluation logic missing target runtime values. Retry tracking.";
+        }
+    }
+
+    function verifyGameSimulator(subId, gameId, correctVal) {
+        const inputVal = document.getElementById(`game-input-${subId}-${gameId}`).value;
+        const feedback = document.getElementById(`game-feed-${subId}-${gameId}`);
+        feedback.style.display = 'block';
+        if(inputVal === correctVal) {
+            feedback.style.backgroundColor = 'var(--success)';
+            feedback.innerText = "🎯 SIMULATION STABLE: Parameters optimized cleanly. Accuracy threshold matching standard metrics!";
+        } else {
+            feedback.style.backgroundColor = 'var(--error)';
+            feedback.innerText = "💥 SIMULATION CRASHED: Hyperparameters caused a gradient anomaly. Recalibrate structural alignment.";
+        }
+    }
+
+    function toggleAnswer(elementId) {
+        const box = document.getElementById(`ans-${elementId}`);
+        box.style.display = (box.style.display === 'block') ? 'none' : 'block';
+    }
+
+    // Default to showing the Roadmap on first load!
+    window.onload = function() {
+        showRoadmap();
+    };
+</script>
+
+</body>
+</html>
