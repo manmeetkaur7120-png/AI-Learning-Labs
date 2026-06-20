@@ -7,7 +7,206 @@
       "difficulty": "Beginner",
       "summary": "Machine Learning is a subset of Artificial Intelligence that enables systems to learn and improve from experience without being explicitly programmed. It focuses on developing computer programs that can access data and use it to learn for themselves. ML algorithms build mathematical models based on sample data, known as training data, to make predictions or decisions without being explicitly programmed to perform these tasks. The three main types are supervised learning (learning from labeled data), unsupervised learning (finding patterns in unlabeled data), and reinforcement learning (learning through interaction and rewards). ML is foundational to modern AI applications.",
       "keyPoints": ["Data-driven learning", "Pattern recognition", "Predictive analytics", "Automation", "Continuous improvement"],
-      "prerequisites": []
+      "prerequisites": [],
+      "subtopics": [
+  {
+    "title": "Introduction to Machine Learning",
+    "videos": [
+      "https://www.youtube.com/watch?v=Gv9_4yMHFhI",
+      "https://www.youtube.com/watch?v=ukzFI9rgwfU",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc"
+    ],
+    "summary": "Machine Learning enables systems to learn from data without explicit programming.",
+    "keyPoints": ["Subset of AI", "Learns from data", "Used for prediction"],
+    "cheatSheet": "ML = Data + Algorithm + Learning",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "ML stands for?",
+        "options": ["Machine Learning", "Meta Logic", "Main Loop", "None"],
+        "answer": "Machine Learning"
+      }
+    ]
+  },
+
+  {
+    "title": "Why Machine Learning?",
+    "videos": [
+      "https://www.youtube.com/watch?v=1lwddP0KUEg",
+      "https://www.youtube.com/watch?v=ukzFI9rgwfU",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "ML helps automate decision-making and handle large data.",
+    "keyPoints": ["Automation", "Data handling", "Smart systems"],
+    "cheatSheet": "ML = Smart Automation",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "ML is used for?",
+        "options": ["Automation", "Cooking", "Painting", "None"],
+        "answer": "Automation"
+      }
+    ]
+  },
+
+  {
+    "title": "Real Life Applications",
+    "videos": [
+      "https://www.youtube.com/watch?v=Gv9_4yMHFhI",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=1lwddP0KUEg",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "ML is used in Netflix, Google, healthcare, finance, etc.",
+    "keyPoints": ["Recommendation systems", "Fraud detection", "AI assistants"],
+    "cheatSheet": "ML everywhere",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "ML used in Netflix?",
+        "options": ["Yes", "No"],
+        "answer": "Yes"
+      }
+    ]
+  },
+
+  {
+    "title": "Basic Terminologies",
+    "videos": [
+      "https://www.youtube.com/watch?v=KNAWp2S3w94",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=1lwddP0KUEg",
+      "https://www.youtube.com/watch?v=Gv9_4yMHFhI"
+    ],
+    "summary": "Key ML terms include dataset, model, features, labels.",
+    "keyPoints": ["Dataset", "Model", "Feature", "Label"],
+    "cheatSheet": "Data → Model → Output",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Dataset means?",
+        "options": ["Collection of data", "Code", "Output", "None"],
+        "answer": "Collection of data"
+      }
+    ]
+  },
+
+  {
+    "title": "ML Workflow",
+    "videos": [
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94",
+      "https://www.youtube.com/watch?v=1lwddP0KUEg",
+      "https://www.youtube.com/watch?v=Gv9_4yMHFhI"
+    ],
+    "summary": "Steps include data collection, training, evaluation.",
+    "keyPoints": ["Collect data", "Train model", "Test model"],
+    "cheatSheet": "Data → Train → Test → Deploy",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "First step?",
+        "options": ["Data collection", "Training", "Testing", "None"],
+        "answer": "Data collection"
+      }
+    ]
+  },
+
+  {
+    "title": "Types of Data",
+    "videos": [
+      "https://www.youtube.com/watch?v=1lwddP0KUEg",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94",
+      "https://www.youtube.com/watch?v=Gv9_4yMHFhI"
+    ],
+    "summary": "Structured and unstructured data are used in ML.",
+    "keyPoints": ["Structured", "Unstructured", "Semi-structured"],
+    "cheatSheet": "Data types matter",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Images are?",
+        "options": ["Unstructured", "Structured"],
+        "answer": "Unstructured"
+      }
+    ]
+  },
+
+  {
+    "title": "Training vs Testing",
+    "videos": [
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94",
+      "https://www.youtube.com/watch?v=1lwddP0KUEg",
+      "https://www.youtube.com/watch?v=Gv9_4yMHFhI"
+    ],
+    "summary": "Training builds model, testing checks performance.",
+    "keyPoints": ["Train data", "Test data", "Validation"],
+    "cheatSheet": "Train ≠ Test",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Testing is for?",
+        "options": ["Evaluation", "Training"],
+        "answer": "Evaluation"
+      }
+    ]
+  },
+
+  {
+    "title": "ML Tools and Libraries",
+    "videos": [
+      "https://www.youtube.com/watch?v=Gv9_4yMHFhI",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94",
+      "https://www.youtube.com/watch?v=1lwddP0KUEg"
+    ],
+    "summary": "Popular tools include Python, TensorFlow, Scikit-learn.",
+    "keyPoints": ["Python", "TensorFlow", "Sklearn"],
+    "cheatSheet": "Tools = Power",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Which is ML library?",
+        "options": ["TensorFlow", "HTML"],
+        "answer": "TensorFlow"
+      }
+    ]
+  },
+
+  {
+    "title": "Future of ML",
+    "videos": [
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94",
+      "https://www.youtube.com/watch?v=1lwddP0KUEg",
+      "https://www.youtube.com/watch?v=Gv9_4yMHFhI"
+    ],
+    "summary": "ML is shaping future tech like AI, robotics, automation.",
+    "keyPoints": ["AI growth", "Automation", "Innovation"],
+    "cheatSheet": "ML = Future",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "ML future?",
+        "options": ["Bright", "None"],
+        "answer": "Bright"
+      }
+    ]
+  }
+]
     },
     {
       "id": 2,
@@ -16,7 +215,228 @@
       "difficulty": "Beginner",
       "summary": "Supervised Learning is a machine learning approach where models are trained on labeled datasets. Each training example consists of an input and its corresponding output. The algorithm learns to map inputs to outputs by minimizing prediction errors. Common applications include regression (predicting continuous values) and classification (predicting categories). Examples include linear regression for house price prediction, logistic regression for binary classification, and decision trees for multi-class problems. Supervised learning requires labeled data which can be expensive and time-consuming to obtain, but it generally produces highly accurate models when sufficient quality data is available.",
       "keyPoints": ["Labeled data", "Input-output mapping", "Regression", "Classification", "Error minimization"],
-      "prerequisites": [1]
+      "prerequisites": [],
+      "subtopics": [
+  {
+    "title": "Introduction to Supervised Learning",
+    "videos": [
+      "https://www.youtube.com/watch?v=4qVRBYAdLAo",
+      "https://www.youtube.com/watch?v=OtD8wVaFm6E",
+      "https://www.youtube.com/watch?v=7eh4d6sabA0",
+      "https://www.youtube.com/watch?v=Gv9_4yMHFhI",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc"
+    ],
+    "summary": "Supervised learning uses labeled data to train models.",
+    "keyPoints": ["Labeled data", "Input-output mapping", "Prediction"],
+    "cheatSheet": "Input + Output → Learn",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Supervised learning uses?",
+        "options": ["Labeled data", "Unlabeled data"],
+        "answer": "Labeled data"
+      }
+    ]
+  },
+
+  {
+    "title": "Training Data and Labels",
+    "videos": [
+      "https://www.youtube.com/watch?v=OtD8wVaFm6E",
+      "https://www.youtube.com/watch?v=4qVRBYAdLAo",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Training data contains inputs and correct outputs (labels).",
+    "keyPoints": ["Dataset", "Features", "Labels"],
+    "cheatSheet": "Data = Input + Label",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Labels represent?",
+        "options": ["Output", "Input"],
+        "answer": "Output"
+      }
+    ]
+  },
+
+  {
+    "title": "Regression vs Classification",
+    "videos": [
+      "https://www.youtube.com/watch?v=nk2CQITm_eo",
+      "https://www.youtube.com/watch?v=7eh4d6sabA0",
+      "https://www.youtube.com/watch?v=4qVRBYAdLAo",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4"
+    ],
+    "summary": "Regression predicts numbers, classification predicts categories.",
+    "keyPoints": ["Continuous output", "Discrete output"],
+    "cheatSheet": "Regression = Numbers | Classification = Labels",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Classification predicts?",
+        "options": ["Labels", "Numbers"],
+        "answer": "Labels"
+      }
+    ]
+  },
+
+  {
+    "title": "Linear Regression Basics",
+    "videos": [
+      "https://www.youtube.com/watch?v=nk2CQITm_eo",
+      "https://www.youtube.com/watch?v=PaFPbb66DxQ",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Linear regression models relationship between variables.",
+    "keyPoints": ["Line fitting", "Prediction", "y = mx + c"],
+    "cheatSheet": "Straight line model",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Linear regression predicts?",
+        "options": ["Numbers", "Labels"],
+        "answer": "Numbers"
+      }
+    ]
+  },
+
+  {
+    "title": "Logistic Regression Basics",
+    "videos": [
+      "https://www.youtube.com/watch?v=zM4VZR0px8E",
+      "https://www.youtube.com/watch?v=4qVRBYAdLAo",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Logistic regression predicts probability of classes.",
+    "keyPoints": ["Binary classification", "Sigmoid function"],
+    "cheatSheet": "Output between 0 and 1",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Logistic regression used for?",
+        "options": ["Classification", "Regression"],
+        "answer": "Classification"
+      }
+    ]
+  },
+
+  {
+    "title": "Decision Trees",
+    "videos": [
+      "https://www.youtube.com/watch?v=7VeUPuFGJHk",
+      "https://www.youtube.com/watch?v=4qVRBYAdLAo",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Tree-based model for decision making.",
+    "keyPoints": ["Nodes", "Branches", "Leaves"],
+    "cheatSheet": "Tree = Decisions",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Decision tree structure?",
+        "options": ["Tree", "Graph"],
+        "answer": "Tree"
+      }
+    ]
+  },
+
+  {
+    "title": "Model Training Process",
+    "videos": [
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94",
+      "https://www.youtube.com/watch?v=1lwddP0KUEg",
+      "https://www.youtube.com/watch?v=Gv9_4yMHFhI"
+    ],
+    "summary": "Model learns patterns from training data.",
+    "keyPoints": ["Training", "Learning", "Model fitting"],
+    "cheatSheet": "Train → Learn → Predict",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Training means?",
+        "options": ["Learning", "Testing"],
+        "answer": "Learning"
+      }
+    ]
+  },
+
+  {
+    "title": "Overfitting and Underfitting",
+    "videos": [
+      "https://www.youtube.com/watch?v=EuBBz3bI-aA",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94",
+      "https://www.youtube.com/watch?v=1lwddP0KUEg"
+    ],
+    "summary": "Overfitting memorizes, underfitting fails to learn.",
+    "keyPoints": ["Bias", "Variance"],
+    "cheatSheet": "Balance model complexity",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Overfitting means?",
+        "options": ["Too complex", "Too simple"],
+        "answer": "Too complex"
+      }
+    ]
+  },
+
+  {
+    "title": "Evaluation Metrics",
+    "videos": [
+      "https://www.youtube.com/watch?v=85dtiMz9tSo",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94",
+      "https://www.youtube.com/watch?v=1lwddP0KUEg"
+    ],
+    "summary": "Metrics measure model performance.",
+    "keyPoints": ["Accuracy", "Precision", "Recall"],
+    "cheatSheet": "Performance = Metrics",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Accuracy measures?",
+        "options": ["Correct predictions", "Errors"],
+        "answer": "Correct predictions"
+      }
+    ]
+  },
+
+  {
+    "title": "Real World Applications",
+    "videos": [
+      "https://www.youtube.com/watch?v=Gv9_4yMHFhI",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94",
+      "https://www.youtube.com/watch?v=1lwddP0KUEg"
+    ],
+    "summary": "Used in spam detection, medical diagnosis, etc.",
+    "keyPoints": ["Spam filter", "Healthcare", "Finance"],
+    "cheatSheet": "ML in real life",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Spam detection uses?",
+        "options": ["Supervised learning", "Unsupervised"],
+        "answer": "Supervised learning"
+      }
+    ]
+  }
+]
     },
     {
       "id": 3,
@@ -25,7 +445,228 @@
       "difficulty": "Beginner",
       "summary": "Unsupervised Learning deals with unlabeled data and focuses on discovering hidden patterns, structures, or relationships within the data. Unlike supervised learning, there are no predefined target outputs. Common techniques include clustering (grouping similar data points together) and dimensionality reduction (reducing the number of features while preserving information). K-means clustering, hierarchical clustering, and DBSCAN are popular clustering algorithms. Principal Component Analysis (PCA) is widely used for dimensionality reduction. Unsupervised learning is valuable for exploratory data analysis, customer segmentation, and data preprocessing.",
       "keyPoints": ["Unlabeled data", "Pattern discovery", "Clustering", "Dimensionality reduction", "Exploratory analysis"],
-      "prerequisites": [1]
+      "prerequisites": [],
+      "subtopics": [
+  {
+    "title": "Introduction to Unsupervised Learning",
+    "videos": [
+      "https://www.youtube.com/watch?v=J1vP8u4i2m8",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94",
+      "https://www.youtube.com/watch?v=1lwddP0KUEg"
+    ],
+    "summary": "Unsupervised learning finds hidden patterns in unlabeled data.",
+    "keyPoints": ["No labels", "Pattern discovery", "Clustering"],
+    "cheatSheet": "No Output → Learn Patterns",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Unsupervised learning uses?",
+        "options": ["Unlabeled data", "Labeled data"],
+        "answer": "Unlabeled data"
+      }
+    ]
+  },
+
+  {
+    "title": "Clustering Basics",
+    "videos": [
+      "https://www.youtube.com/watch?v=4b5d3muPQmA",
+      "https://www.youtube.com/watch?v=J1vP8u4i2m8",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Clustering groups similar data points together.",
+    "keyPoints": ["Groups data", "Similarity", "Clusters"],
+    "cheatSheet": "Similar → Same Cluster",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Clustering groups?",
+        "options": ["Similar data", "Random data"],
+        "answer": "Similar data"
+      }
+    ]
+  },
+
+  {
+    "title": "K-Means Clustering",
+    "videos": [
+      "https://www.youtube.com/watch?v=4b5d3muPQmA",
+      "https://www.youtube.com/watch?v=J1vP8u4i2m8",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "K-Means divides data into K clusters.",
+    "keyPoints": ["Centroids", "Iterations", "Clusters"],
+    "cheatSheet": "Choose K → Assign → Update",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "K-Means requires?",
+        "options": ["Number of clusters", "Labels"],
+        "answer": "Number of clusters"
+      }
+    ]
+  },
+
+  {
+    "title": "Hierarchical Clustering",
+    "videos": [
+      "https://www.youtube.com/watch?v=7xHsRkOdVwo",
+      "https://www.youtube.com/watch?v=J1vP8u4i2m8",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Creates a tree of clusters called dendrogram.",
+    "keyPoints": ["Tree structure", "Dendrogram", "Hierarchy"],
+    "cheatSheet": "Merge → Tree",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Hierarchical shows?",
+        "options": ["Tree", "Graph"],
+        "answer": "Tree"
+      }
+    ]
+  },
+
+  {
+    "title": "Dimensionality Reduction",
+    "videos": [
+      "https://www.youtube.com/watch?v=FgakZw6K1QQ",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94",
+      "https://www.youtube.com/watch?v=1lwddP0KUEg"
+    ],
+    "summary": "Reduces number of features while keeping information.",
+    "keyPoints": ["Reduce features", "Simplify data"],
+    "cheatSheet": "Less features → Same info",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Purpose of reduction?",
+        "options": ["Simplify", "Complicate"],
+        "answer": "Simplify"
+      }
+    ]
+  },
+
+  {
+    "title": "PCA (Principal Component Analysis)",
+    "videos": [
+      "https://www.youtube.com/watch?v=FgakZw6K1QQ",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94",
+      "https://www.youtube.com/watch?v=1lwddP0KUEg"
+    ],
+    "summary": "PCA reduces dimensions using variance.",
+    "keyPoints": ["Variance", "Components"],
+    "cheatSheet": "Max variance directions",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "PCA based on?",
+        "options": ["Variance", "Labels"],
+        "answer": "Variance"
+      }
+    ]
+  },
+
+  {
+    "title": "Anomaly Detection",
+    "videos": [
+      "https://www.youtube.com/watch?v=12Xq9OLdQwQ",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94",
+      "https://www.youtube.com/watch?v=1lwddP0KUEg"
+    ],
+    "summary": "Detects unusual patterns in data.",
+    "keyPoints": ["Outliers", "Fraud detection"],
+    "cheatSheet": "Find abnormal",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Anomaly means?",
+        "options": ["Unusual", "Normal"],
+        "answer": "Unusual"
+      }
+    ]
+  },
+
+  {
+    "title": "Association Rule Learning",
+    "videos": [
+      "https://www.youtube.com/watch?v=4k2bC2n1m5w",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94",
+      "https://www.youtube.com/watch?v=1lwddP0KUEg"
+    ],
+    "summary": "Finds relationships between variables.",
+    "keyPoints": ["Market basket", "Rules"],
+    "cheatSheet": "If X → Then Y",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Association finds?",
+        "options": ["Relations", "Numbers"],
+        "answer": "Relations"
+      }
+    ]
+  },
+
+  {
+    "title": "Real World Applications",
+    "videos": [
+      "https://www.youtube.com/watch?v=J1vP8u4i2m8",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94",
+      "https://www.youtube.com/watch?v=1lwddP0KUEg"
+    ],
+    "summary": "Used in recommendation systems, clustering users.",
+    "keyPoints": ["Customer segmentation", "Grouping"],
+    "cheatSheet": "Group users",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Used in Netflix?",
+        "options": ["Yes", "No"],
+        "answer": "Yes"
+      }
+    ]
+  },
+
+  {
+    "title": "Advantages and Limitations",
+    "videos": [
+      "https://www.youtube.com/watch?v=J1vP8u4i2m8",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94",
+      "https://www.youtube.com/watch?v=1lwddP0KUEg"
+    ],
+    "summary": "No labeling needed but harder to evaluate.",
+    "keyPoints": ["No labels", "Complex evaluation"],
+    "cheatSheet": "Easy data, hard results",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Needs labels?",
+        "options": ["No", "Yes"],
+        "answer": "No"
+      }
+    ]
+  }
+]
     },
     {
       "id": 4,
@@ -34,7 +675,228 @@
       "difficulty": "Beginner",
       "summary": "Reinforcement Learning (RL) is a paradigm where an agent learns to make decisions by interacting with an environment. The agent takes actions and receives rewards or penalties based on its performance. The goal is to maximize cumulative rewards over time. Key concepts include states (current situation), actions (choices available), rewards (feedback), and policies (strategy for action selection). RL powers game-playing AIs, robotics, autonomous vehicles, and recommendation systems. Q-learning and Deep Q-Networks (DQN) are fundamental RL algorithms. Unlike supervised learning, RL doesn't require labeled data but instead learns through trial-and-error exploration.",
       "keyPoints": ["Agent-environment interaction", "Reward system", "Policy learning", "Trial and error", "Cumulative reward optimization"],
-      "prerequisites": [1]
+      "prerequisites": [],
+      "subtopics": [
+  {
+    "title": "Introduction to Reinforcement Learning",
+    "videos": [
+      "https://www.youtube.com/watch?v=2pWv7GOvuf0",
+      "https://www.youtube.com/watch?v=JgvyzIkgxF0",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Reinforcement Learning (RL) is about learning by interacting with an environment and receiving rewards.",
+    "keyPoints": ["Agent", "Environment", "Reward"],
+    "cheatSheet": "Action → Reward → Learn",
+    "game": "https://gym.openai.com/",
+    "quiz": [
+      {
+        "question": "RL is based on?",
+        "options": ["Rewards", "Labels"],
+        "answer": "Rewards"
+      }
+    ]
+  },
+
+  {
+    "title": "Agent and Environment",
+    "videos": [
+      "https://www.youtube.com/watch?v=JgvyzIkgxF0",
+      "https://www.youtube.com/watch?v=2pWv7GOvuf0",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Agent interacts with environment to perform actions.",
+    "keyPoints": ["Agent", "Environment interaction"],
+    "cheatSheet": "Agent ↔ Environment",
+    "game": "https://gym.openai.com/",
+    "quiz": [
+      {
+        "question": "Agent does?",
+        "options": ["Acts", "Sleeps"],
+        "answer": "Acts"
+      }
+    ]
+  },
+
+  {
+    "title": "States and Actions",
+    "videos": [
+      "https://www.youtube.com/watch?v=2pWv7GOvuf0",
+      "https://www.youtube.com/watch?v=JgvyzIkgxF0",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "State represents situation, action is decision.",
+    "keyPoints": ["State", "Action"],
+    "cheatSheet": "State → Action",
+    "game": "https://gym.openai.com/",
+    "quiz": [
+      {
+        "question": "Action means?",
+        "options": ["Decision", "State"],
+        "answer": "Decision"
+      }
+    ]
+  },
+
+  {
+    "title": "Reward System",
+    "videos": [
+      "https://www.youtube.com/watch?v=JgvyzIkgxF0",
+      "https://www.youtube.com/watch?v=2pWv7GOvuf0",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Rewards guide learning process.",
+    "keyPoints": ["Positive reward", "Negative reward"],
+    "cheatSheet": "Reward = Feedback",
+    "game": "https://gym.openai.com/",
+    "quiz": [
+      {
+        "question": "Reward is?",
+        "options": ["Feedback", "Input"],
+        "answer": "Feedback"
+      }
+    ]
+  },
+
+  {
+    "title": "Policy and Value Function",
+    "videos": [
+      "https://www.youtube.com/watch?v=JgvyzIkgxF0",
+      "https://www.youtube.com/watch?v=2pWv7GOvuf0",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Policy defines actions, value measures goodness.",
+    "keyPoints": ["Policy", "Value"],
+    "cheatSheet": "Policy = Strategy",
+    "game": "https://gym.openai.com/",
+    "quiz": [
+      {
+        "question": "Policy means?",
+        "options": ["Strategy", "Reward"],
+        "answer": "Strategy"
+      }
+    ]
+  },
+
+  {
+    "title": "Exploration vs Exploitation",
+    "videos": [
+      "https://www.youtube.com/watch?v=mo96Nqlo1L8",
+      "https://www.youtube.com/watch?v=JgvyzIkgxF0",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Balancing new actions vs known actions.",
+    "keyPoints": ["Explore", "Exploit"],
+    "cheatSheet": "Try vs Use",
+    "game": "https://gym.openai.com/",
+    "quiz": [
+      {
+        "question": "Exploration means?",
+        "options": ["Trying new", "Repeating"],
+        "answer": "Trying new"
+      }
+    ]
+  },
+
+  {
+    "title": "Q-Learning",
+    "videos": [
+      "https://www.youtube.com/watch?v=OtD8wVaFm6E",
+      "https://www.youtube.com/watch?v=JgvyzIkgxF0",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Q-Learning learns optimal actions.",
+    "keyPoints": ["Q-table", "Optimal policy"],
+    "cheatSheet": "Q = Value of action",
+    "game": "https://gym.openai.com/",
+    "quiz": [
+      {
+        "question": "Q-learning uses?",
+        "options": ["Q-table", "Dataset"],
+        "answer": "Q-table"
+      }
+    ]
+  },
+
+  {
+    "title": "Deep Q Networks (DQN)",
+    "videos": [
+      "https://www.youtube.com/watch?v=JgvyzIkgxF0",
+      "https://www.youtube.com/watch?v=2pWv7GOvuf0",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "DQN uses neural networks for RL.",
+    "keyPoints": ["Deep learning", "Q-values"],
+    "cheatSheet": "NN + Q-learning",
+    "game": "https://gym.openai.com/",
+    "quiz": [
+      {
+        "question": "DQN uses?",
+        "options": ["Neural networks", "Trees"],
+        "answer": "Neural networks"
+      }
+    ]
+  },
+
+  {
+    "title": "Applications of RL",
+    "videos": [
+      "https://www.youtube.com/watch?v=2pWv7GOvuf0",
+      "https://www.youtube.com/watch?v=JgvyzIkgxF0",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Used in robotics, games, AI agents.",
+    "keyPoints": ["Games", "Robotics", "Automation"],
+    "cheatSheet": "Learn by doing",
+    "game": "https://gym.openai.com/",
+    "quiz": [
+      {
+        "question": "RL used in?",
+        "options": ["Games", "Books"],
+        "answer": "Games"
+      }
+    ]
+  },
+
+  {
+    "title": "Advantages and Limitations",
+    "videos": [
+      "https://www.youtube.com/watch?v=JgvyzIkgxF0",
+      "https://www.youtube.com/watch?v=2pWv7GOvuf0",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "RL is powerful but requires time and data.",
+    "keyPoints": ["Trial and error", "Time consuming"],
+    "cheatSheet": "Powerful but slow",
+    "game": "https://gym.openai.com/",
+    "quiz": [
+      {
+        "question": "RL is?",
+        "options": ["Time consuming", "Instant"],
+        "answer": "Time consuming"
+      }
+    ]
+  }
+]
     },
     {
       "id": 5,
@@ -43,7 +905,228 @@
       "difficulty": "Beginner",
       "summary": "Data preprocessing is the crucial first step in any ML pipeline. It involves cleaning raw data, handling missing values, removing outliers, and normalizing features. Feature engineering is the process of selecting, transforming, and creating features that improve model performance. Techniques include scaling (standardization and normalization), encoding categorical variables, creating polynomial features, and feature selection. Data quality directly impacts model performance; garbage in means garbage out. Proper preprocessing can improve model accuracy by 10-30%. This phase often takes 60-70% of a data scientist's time but is essential for building robust ML systems.",
       "keyPoints": ["Data cleaning", "Missing value handling", "Feature scaling", "Categorical encoding", "Feature selection"],
-      "prerequisites": [1]
+      "prerequisites": [],
+      "subtopics": [
+  {
+    "title": "Introduction to Data Preprocessing",
+    "videos": [
+      "https://www.youtube.com/watch?v=0xVqLJe9_CY",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94",
+      "https://www.youtube.com/watch?v=1lwddP0KUEg"
+    ],
+    "summary": "Data preprocessing prepares raw data for machine learning.",
+    "keyPoints": ["Cleaning", "Formatting", "Preparation"],
+    "cheatSheet": "Raw → Clean → Ready",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Preprocessing means?",
+        "options": ["Cleaning data", "Deleting data"],
+        "answer": "Cleaning data"
+      }
+    ]
+  },
+
+  {
+    "title": "Handling Missing Data",
+    "videos": [
+      "https://www.youtube.com/watch?v=6q2JzHcsu7M",
+      "https://www.youtube.com/watch?v=0xVqLJe9_CY",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Missing values can be filled or removed.",
+    "keyPoints": ["Imputation", "Deletion"],
+    "cheatSheet": "Fill or Drop",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Missing data handled by?",
+        "options": ["Fill", "Ignore"],
+        "answer": "Fill"
+      }
+    ]
+  },
+
+  {
+    "title": "Data Cleaning",
+    "videos": [
+      "https://www.youtube.com/watch?v=0xVqLJe9_CY",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94",
+      "https://www.youtube.com/watch?v=1lwddP0KUEg"
+    ],
+    "summary": "Removes noise, duplicates, and errors.",
+    "keyPoints": ["Duplicates", "Noise removal"],
+    "cheatSheet": "Clean = Accurate",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Cleaning removes?",
+        "options": ["Errors", "Features"],
+        "answer": "Errors"
+      }
+    ]
+  },
+
+  {
+    "title": "Feature Scaling",
+    "videos": [
+      "https://www.youtube.com/watch?v=7R7H9Yv5l6U",
+      "https://www.youtube.com/watch?v=0xVqLJe9_CY",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Scaling normalizes feature values.",
+    "keyPoints": ["Normalization", "Standardization"],
+    "cheatSheet": "Same scale = Better model",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Scaling helps?",
+        "options": ["Model", "UI"],
+        "answer": "Model"
+      }
+    ]
+  },
+
+  {
+    "title": "Encoding Categorical Data",
+    "videos": [
+      "https://www.youtube.com/watch?v=0xVqLJe9_CY",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94",
+      "https://www.youtube.com/watch?v=1lwddP0KUEg"
+    ],
+    "summary": "Converts categories into numbers.",
+    "keyPoints": ["One-hot", "Label encoding"],
+    "cheatSheet": "Text → Numbers",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Encoding converts?",
+        "options": ["Text to numbers", "Numbers to text"],
+        "answer": "Text to numbers"
+      }
+    ]
+  },
+
+  {
+    "title": "Feature Selection",
+    "videos": [
+      "https://www.youtube.com/watch?v=0xVqLJe9_CY",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94",
+      "https://www.youtube.com/watch?v=1lwddP0KUEg"
+    ],
+    "summary": "Selects important features for model.",
+    "keyPoints": ["Reduce features", "Improve accuracy"],
+    "cheatSheet": "Less but important",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Selection improves?",
+        "options": ["Accuracy", "Noise"],
+        "answer": "Accuracy"
+      }
+    ]
+  },
+
+  {
+    "title": "Feature Engineering",
+    "videos": [
+      "https://www.youtube.com/watch?v=0xVqLJe9_CY",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94",
+      "https://www.youtube.com/watch?v=1lwddP0KUEg"
+    ],
+    "summary": "Creates new useful features.",
+    "keyPoints": ["Transform", "Create features"],
+    "cheatSheet": "Better features = Better model",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Feature engineering does?",
+        "options": ["Create features", "Delete data"],
+        "answer": "Create features"
+      }
+    ]
+  },
+
+  {
+    "title": "Handling Outliers",
+    "videos": [
+      "https://www.youtube.com/watch?v=6q2JzHcsu7M",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94",
+      "https://www.youtube.com/watch?v=1lwddP0KUEg"
+    ],
+    "summary": "Outliers are extreme values in data.",
+    "keyPoints": ["Detect", "Remove"],
+    "cheatSheet": "Extreme = Outlier",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Outliers are?",
+        "options": ["Extreme values", "Normal values"],
+        "answer": "Extreme values"
+      }
+    ]
+  },
+
+  {
+    "title": "Data Transformation",
+    "videos": [
+      "https://www.youtube.com/watch?v=0xVqLJe9_CY",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94",
+      "https://www.youtube.com/watch?v=1lwddP0KUEg"
+    ],
+    "summary": "Transforms data into suitable format.",
+    "keyPoints": ["Log transform", "Scaling"],
+    "cheatSheet": "Transform → Improve",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Transformation helps?",
+        "options": ["Model", "UI"],
+        "answer": "Model"
+      }
+    ]
+  },
+
+  {
+    "title": "Real World Applications",
+    "videos": [
+      "https://www.youtube.com/watch?v=0xVqLJe9_CY",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94",
+      "https://www.youtube.com/watch?v=1lwddP0KUEg"
+    ],
+    "summary": "Used in all ML pipelines before training.",
+    "keyPoints": ["Essential step", "Improves accuracy"],
+    "cheatSheet": "No preprocessing = Bad model",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Preprocessing is?",
+        "options": ["Essential", "Optional"],
+        "answer": "Essential"
+      }
+    ]
+  }
+]
     },
     {
       "id": 6,
@@ -52,7 +1135,228 @@
       "difficulty": "Beginner",
       "summary": "Model evaluation is essential to understand how well your machine learning model performs. Different metrics are appropriate for different problems. For regression tasks, common metrics include Mean Squared Error (MSE), Root Mean Squared Error (RMSE), and Mean Absolute Error (MAE). For classification, accuracy, precision, recall, F1-score, and ROC-AUC are widely used. Cross-validation techniques help assess model generalization. Confusion matrices provide detailed classification performance breakdown. Overfitting occurs when a model learns training data too well but fails on new data; underfitting is when a model is too simple. Understanding these concepts is crucial for building reliable ML systems.",
       "keyPoints": ["Accuracy metrics", "Precision and recall", "Cross-validation", "Confusion matrix", "Overfitting prevention"],
-      "prerequisites": [1, 2]
+      "prerequisites": [],
+      "subtopics": [
+  {
+    "title": "Introduction to Model Evaluation",
+    "videos": [
+      "https://www.youtube.com/watch?v=85dtiMz9tSo",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94",
+      "https://www.youtube.com/watch?v=1lwddP0KUEg"
+    ],
+    "summary": "Model evaluation measures how well a model performs.",
+    "keyPoints": ["Performance check", "Accuracy"],
+    "cheatSheet": "Good model = Good metrics",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Evaluation means?",
+        "options": ["Performance check", "Training"],
+        "answer": "Performance check"
+      }
+    ]
+  },
+
+  {
+    "title": "Train Test Split",
+    "videos": [
+      "https://www.youtube.com/watch?v=0xVqLJe9_CY",
+      "https://www.youtube.com/watch?v=85dtiMz9tSo",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Splitting data into training and testing sets.",
+    "keyPoints": ["Training set", "Testing set"],
+    "cheatSheet": "Train ≠ Test",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Test data used for?",
+        "options": ["Evaluation", "Training"],
+        "answer": "Evaluation"
+      }
+    ]
+  },
+
+  {
+    "title": "Accuracy",
+    "videos": [
+      "https://www.youtube.com/watch?v=85dtiMz9tSo",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94",
+      "https://www.youtube.com/watch?v=1lwddP0KUEg"
+    ],
+    "summary": "Accuracy measures correct predictions.",
+    "keyPoints": ["Correct/Total"],
+    "cheatSheet": "Accuracy = Correct / Total",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Accuracy formula?",
+        "options": ["Correct/Total", "Wrong/Total"],
+        "answer": "Correct/Total"
+      }
+    ]
+  },
+
+  {
+    "title": "Precision and Recall",
+    "videos": [
+      "https://www.youtube.com/watch?v=85dtiMz9tSo",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94",
+      "https://www.youtube.com/watch?v=1lwddP0KUEg"
+    ],
+    "summary": "Precision and recall evaluate classification quality.",
+    "keyPoints": ["Precision", "Recall"],
+    "cheatSheet": "Precision = Correct positive / Predicted positive",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Precision measures?",
+        "options": ["Correct positives", "All data"],
+        "answer": "Correct positives"
+      }
+    ]
+  },
+
+  {
+    "title": "F1 Score",
+    "videos": [
+      "https://www.youtube.com/watch?v=85dtiMz9tSo",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94",
+      "https://www.youtube.com/watch?v=1lwddP0KUEg"
+    ],
+    "summary": "F1 score balances precision and recall.",
+    "keyPoints": ["Harmonic mean"],
+    "cheatSheet": "F1 = Balance",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "F1 combines?",
+        "options": ["Precision & Recall", "Accuracy"],
+        "answer": "Precision & Recall"
+      }
+    ]
+  },
+
+  {
+    "title": "Confusion Matrix",
+    "videos": [
+      "https://www.youtube.com/watch?v=85dtiMz9tSo",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94",
+      "https://www.youtube.com/watch?v=1lwddP0KUEg"
+    ],
+    "summary": "Shows prediction results in table form.",
+    "keyPoints": ["TP", "FP", "FN", "TN"],
+    "cheatSheet": "Matrix of results",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "TP means?",
+        "options": ["True Positive", "False Positive"],
+        "answer": "True Positive"
+      }
+    ]
+  },
+
+  {
+    "title": "Cross Validation",
+    "videos": [
+      "https://www.youtube.com/watch?v=85dtiMz9tSo",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94",
+      "https://www.youtube.com/watch?v=1lwddP0KUEg"
+    ],
+    "summary": "Validates model using multiple splits.",
+    "keyPoints": ["K-fold", "Validation"],
+    "cheatSheet": "Multiple testing",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Cross validation uses?",
+        "options": ["Multiple splits", "Single split"],
+        "answer": "Multiple splits"
+      }
+    ]
+  },
+
+  {
+    "title": "Overfitting vs Underfitting",
+    "videos": [
+      "https://www.youtube.com/watch?v=EuBBz3bI-aA",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94",
+      "https://www.youtube.com/watch?v=1lwddP0KUEg"
+    ],
+    "summary": "Overfitting memorizes, underfitting fails.",
+    "keyPoints": ["Bias", "Variance"],
+    "cheatSheet": "Balance needed",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Overfitting is?",
+        "options": ["Too complex", "Too simple"],
+        "answer": "Too complex"
+      }
+    ]
+  },
+
+  {
+    "title": "ROC Curve and AUC",
+    "videos": [
+      "https://www.youtube.com/watch?v=4jRBRDbJemM",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94",
+      "https://www.youtube.com/watch?v=1lwddP0KUEg"
+    ],
+    "summary": "ROC shows performance across thresholds.",
+    "keyPoints": ["AUC", "Curve"],
+    "cheatSheet": "Higher AUC = Better",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "AUC means?",
+        "options": ["Area under curve", "Accuracy"],
+        "answer": "Area under curve"
+      }
+    ]
+  },
+
+  {
+    "title": "Real World Evaluation",
+    "videos": [
+      "https://www.youtube.com/watch?v=85dtiMz9tSo",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94",
+      "https://www.youtube.com/watch?v=1lwddP0KUEg"
+    ],
+    "summary": "Used in real systems to validate models.",
+    "keyPoints": ["Testing", "Deployment"],
+    "cheatSheet": "Test before deploy",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Evaluation used before?",
+        "options": ["Deployment", "Training"],
+        "answer": "Deployment"
+      }
+    ]
+  }
+]
     },
     {
       "id": 7,
@@ -61,7 +1365,228 @@
       "difficulty": "Intermediate",
       "summary": "Linear Regression is a fundamental supervised learning algorithm used for predicting continuous numerical values. It models the linear relationship between input features and output by fitting a straight line (or hyperplane in multiple dimensions) through the data. The model minimizes the sum of squared errors between predicted and actual values. Simple linear regression has one input variable, while multiple linear regression has several. Key concepts include slope, intercept, and the least squares method. Linear regression assumes a linear relationship exists in the data. Despite its simplicity, it remains widely used in business forecasting, trend analysis, and as a baseline for more complex models.",
       "keyPoints": ["Linear relationships", "Least squares method", "Coefficients", "Residuals", "Simple vs multiple regression"],
-      "prerequisites": [2, 5]
+      "prerequisites": [],
+      "subtopics": [
+  {
+    "title": "Introduction to Linear Regression",
+    "videos": [
+      "https://www.youtube.com/watch?v=nk2CQITm_eo",
+      "https://www.youtube.com/watch?v=PaFPbb66DxQ",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Linear regression predicts continuous values using a straight line.",
+    "keyPoints": ["Continuous output", "Line fitting"],
+    "cheatSheet": "y = mx + c",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Linear regression predicts?",
+        "options": ["Numbers", "Labels"],
+        "answer": "Numbers"
+      }
+    ]
+  },
+
+  {
+    "title": "Simple vs Multiple Linear Regression",
+    "videos": [
+      "https://www.youtube.com/watch?v=nk2CQITm_eo",
+      "https://www.youtube.com/watch?v=PaFPbb66DxQ",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Simple uses one variable, multiple uses many.",
+    "keyPoints": ["Single feature", "Multiple features"],
+    "cheatSheet": "1 vs many inputs",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Multiple regression uses?",
+        "options": ["Many features", "One feature"],
+        "answer": "Many features"
+      }
+    ]
+  },
+
+  {
+    "title": "Equation of Line",
+    "videos": [
+      "https://www.youtube.com/watch?v=nk2CQITm_eo",
+      "https://www.youtube.com/watch?v=PaFPbb66DxQ",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Equation y = mx + c defines relationship.",
+    "keyPoints": ["Slope", "Intercept"],
+    "cheatSheet": "m = slope, c = intercept",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Slope is?",
+        "options": ["m", "c"],
+        "answer": "m"
+      }
+    ]
+  },
+
+  {
+    "title": "Cost Function",
+    "videos": [
+      "https://www.youtube.com/watch?v=PaFPbb66DxQ",
+      "https://www.youtube.com/watch?v=nk2CQITm_eo",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Cost function measures error in predictions.",
+    "keyPoints": ["Error", "Minimization"],
+    "cheatSheet": "Lower cost = Better model",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Cost function measures?",
+        "options": ["Error", "Accuracy"],
+        "answer": "Error"
+      }
+    ]
+  },
+
+  {
+    "title": "Gradient Descent",
+    "videos": [
+      "https://www.youtube.com/watch?v=sDv4f4s2SB8",
+      "https://www.youtube.com/watch?v=PaFPbb66DxQ",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Gradient descent minimizes cost function.",
+    "keyPoints": ["Learning rate", "Optimization"],
+    "cheatSheet": "Step by step minimize error",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Gradient descent does?",
+        "options": ["Minimize error", "Maximize error"],
+        "answer": "Minimize error"
+      }
+    ]
+  },
+
+  {
+    "title": "Assumptions of Linear Regression",
+    "videos": [
+      "https://www.youtube.com/watch?v=nk2CQITm_eo",
+      "https://www.youtube.com/watch?v=PaFPbb66DxQ",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Model assumes linear relationship and no noise.",
+    "keyPoints": ["Linearity", "No multicollinearity"],
+    "cheatSheet": "Linear assumptions",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Assumes relationship?",
+        "options": ["Linear", "Random"],
+        "answer": "Linear"
+      }
+    ]
+  },
+
+  {
+    "title": "Evaluation Metrics",
+    "videos": [
+      "https://www.youtube.com/watch?v=85dtiMz9tSo",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94",
+      "https://www.youtube.com/watch?v=1lwddP0KUEg"
+    ],
+    "summary": "Measures model performance using MSE, RMSE.",
+    "keyPoints": ["MSE", "RMSE"],
+    "cheatSheet": "Lower error = Better",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "MSE measures?",
+        "options": ["Error", "Accuracy"],
+        "answer": "Error"
+      }
+    ]
+  },
+
+  {
+    "title": "Overfitting and Underfitting",
+    "videos": [
+      "https://www.youtube.com/watch?v=EuBBz3bI-aA",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94",
+      "https://www.youtube.com/watch?v=1lwddP0KUEg"
+    ],
+    "summary": "Too complex or too simple model issues.",
+    "keyPoints": ["Bias", "Variance"],
+    "cheatSheet": "Balance complexity",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Overfitting means?",
+        "options": ["Too complex", "Too simple"],
+        "answer": "Too complex"
+      }
+    ]
+  },
+
+  {
+    "title": "Real World Applications",
+    "videos": [
+      "https://www.youtube.com/watch?v=nk2CQITm_eo",
+      "https://www.youtube.com/watch?v=PaFPbb66DxQ",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Used in price prediction, sales forecasting.",
+    "keyPoints": ["Forecasting", "Prediction"],
+    "cheatSheet": "Predict numbers",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Used for?",
+        "options": ["Prediction", "Design"],
+        "answer": "Prediction"
+      }
+    ]
+  },
+
+  {
+    "title": "Advantages and Limitations",
+    "videos": [
+      "https://www.youtube.com/watch?v=nk2CQITm_eo",
+      "https://www.youtube.com/watch?v=PaFPbb66DxQ",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Simple but limited to linear relationships.",
+    "keyPoints": ["Easy", "Limited"],
+    "cheatSheet": "Simple but basic",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Limitation?",
+        "options": ["Only linear", "Any relation"],
+        "answer": "Only linear"
+      }
+    ]
+  }
+]
     },
     {
       "id": 8,
@@ -70,7 +1595,228 @@
       "difficulty": "Intermediate",
       "summary": "Logistic Regression is a classification algorithm despite having 'regression' in its name. It predicts the probability of a binary outcome (0 or 1, yes or no, true or false). The algorithm uses the logistic function (sigmoid) to map any input to a probability between 0 and 1. When the probability exceeds a threshold (typically 0.5), it predicts the positive class. Logistic regression is interpretable, computationally efficient, and works well for linearly separable data. It forms the foundation for many neural network architectures. Applications include email spam detection, disease diagnosis, credit approval, and customer churn prediction. Multi-class logistic regression extends it to multiple categories.",
       "keyPoints": ["Binary classification", "Sigmoid function", "Probability modeling", "Decision boundary", "Interpretability"],
-      "prerequisites": [2, 5]
+      "prerequisites": [],
+      "subtopics": [
+  {
+    "title": "Introduction to Logistic Regression",
+    "videos": [
+      "https://www.youtube.com/watch?v=zM4VZR0px8E",
+      "https://www.youtube.com/watch?v=4qVRBYAdLAo",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Logistic regression is used for classification problems.",
+    "keyPoints": ["Classification", "Probability"],
+    "cheatSheet": "Output = 0 or 1",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Logistic regression is used for?",
+        "options": ["Classification", "Regression"],
+        "answer": "Classification"
+      }
+    ]
+  },
+
+  {
+    "title": "Sigmoid Function",
+    "videos": [
+      "https://www.youtube.com/watch?v=zM4VZR0px8E",
+      "https://www.youtube.com/watch?v=4qVRBYAdLAo",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Sigmoid function converts values into probabilities.",
+    "keyPoints": ["Range 0-1", "Probability curve"],
+    "cheatSheet": "S-shaped curve",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Sigmoid output range?",
+        "options": ["0 to 1", "-1 to 1"],
+        "answer": "0 to 1"
+      }
+    ]
+  },
+
+  {
+    "title": "Binary Classification",
+    "videos": [
+      "https://www.youtube.com/watch?v=4qVRBYAdLAo",
+      "https://www.youtube.com/watch?v=zM4VZR0px8E",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Classifies data into two categories.",
+    "keyPoints": ["Yes/No", "0/1"],
+    "cheatSheet": "Two classes",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Binary means?",
+        "options": ["Two classes", "Many classes"],
+        "answer": "Two classes"
+      }
+    ]
+  },
+
+  {
+    "title": "Decision Boundary",
+    "videos": [
+      "https://www.youtube.com/watch?v=zM4VZR0px8E",
+      "https://www.youtube.com/watch?v=4qVRBYAdLAo",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Separates classes in feature space.",
+    "keyPoints": ["Boundary line", "Separation"],
+    "cheatSheet": "Divide classes",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Boundary separates?",
+        "options": ["Classes", "Numbers"],
+        "answer": "Classes"
+      }
+    ]
+  },
+
+  {
+    "title": "Cost Function",
+    "videos": [
+      "https://www.youtube.com/watch?v=zM4VZR0px8E",
+      "https://www.youtube.com/watch?v=4qVRBYAdLAo",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Measures prediction error using log loss.",
+    "keyPoints": ["Log loss", "Error"],
+    "cheatSheet": "Lower loss = Better",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Cost function measures?",
+        "options": ["Error", "Accuracy"],
+        "answer": "Error"
+      }
+    ]
+  },
+
+  {
+    "title": "Gradient Descent",
+    "videos": [
+      "https://www.youtube.com/watch?v=sDv4f4s2SB8",
+      "https://www.youtube.com/watch?v=zM4VZR0px8E",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Used to optimize logistic regression.",
+    "keyPoints": ["Optimization", "Learning rate"],
+    "cheatSheet": "Minimize loss",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Gradient descent does?",
+        "options": ["Minimize loss", "Maximize loss"],
+        "answer": "Minimize loss"
+      }
+    ]
+  },
+
+  {
+    "title": "Evaluation Metrics",
+    "videos": [
+      "https://www.youtube.com/watch?v=85dtiMz9tSo",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94",
+      "https://www.youtube.com/watch?v=1lwddP0KUEg"
+    ],
+    "summary": "Measures classification performance.",
+    "keyPoints": ["Accuracy", "Precision", "Recall"],
+    "cheatSheet": "Check performance",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Precision measures?",
+        "options": ["Correct positives", "All data"],
+        "answer": "Correct positives"
+      }
+    ]
+  },
+
+  {
+    "title": "Multiclass Classification",
+    "videos": [
+      "https://www.youtube.com/watch?v=zM4VZR0px8E",
+      "https://www.youtube.com/watch?v=4qVRBYAdLAo",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Extends logistic regression to multiple classes.",
+    "keyPoints": ["Softmax", "Multiple classes"],
+    "cheatSheet": "More than 2 classes",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Multiclass means?",
+        "options": ["More than 2 classes", "2 classes"],
+        "answer": "More than 2 classes"
+      }
+    ]
+  },
+
+  {
+    "title": "Real World Applications",
+    "videos": [
+      "https://www.youtube.com/watch?v=zM4VZR0px8E",
+      "https://www.youtube.com/watch?v=4qVRBYAdLAo",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Used in spam detection, disease prediction.",
+    "keyPoints": ["Spam filter", "Healthcare"],
+    "cheatSheet": "Classify data",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Used in spam detection?",
+        "options": ["Yes", "No"],
+        "answer": "Yes"
+      }
+    ]
+  },
+
+  {
+    "title": "Advantages and Limitations",
+    "videos": [
+      "https://www.youtube.com/watch?v=zM4VZR0px8E",
+      "https://www.youtube.com/watch?v=4qVRBYAdLAo",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Simple but limited to linear boundaries.",
+    "keyPoints": ["Simple", "Limited"],
+    "cheatSheet": "Easy but basic",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Limitation?",
+        "options": ["Linear boundary", "Non-linear"],
+        "answer": "Linear boundary"
+      }
+    ]
+  }
+]
     },
     {
       "id": 9,
@@ -79,7 +1825,228 @@
       "difficulty": "Intermediate",
       "summary": "Decision Trees are versatile algorithms that can handle both classification and regression tasks. They recursively partition the data by asking yes/no questions about features, creating a tree-like structure. Each node represents a feature, edges represent decision rules, and leaves represent outcomes. Decision trees are easy to understand and interpret, even for non-technical stakeholders. They require no data preprocessing and handle non-linear relationships well. However, they can overfit easily. Tree depth, minimum sample splits, and minimum leaf sizes are important hyperparameters. Random Forests and Gradient Boosting improve upon single decision trees by combining multiple trees. Decision trees form the basis of ensemble methods.",
       "keyPoints": ["Recursive partitioning", "Feature splitting", "Leaf nodes", "Tree depth", "Interpretability"],
-      "prerequisites": [2, 5]
+      "prerequisites": [],
+      "subtopics": [
+  {
+    "title": "Introduction to Decision Trees",
+    "videos": [
+      "https://www.youtube.com/watch?v=7VeUPuFGJHk",
+      "https://www.youtube.com/watch?v=4qVRBYAdLAo",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Decision Trees are models that make decisions using a tree-like structure.",
+    "keyPoints": ["Tree structure", "Decision making"],
+    "cheatSheet": "Root → Branch → Leaf",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Decision tree looks like?",
+        "options": ["Tree", "Graph"],
+        "answer": "Tree"
+      }
+    ]
+  },
+
+  {
+    "title": "Structure of Tree",
+    "videos": [
+      "https://www.youtube.com/watch?v=7VeUPuFGJHk",
+      "https://www.youtube.com/watch?v=4qVRBYAdLAo",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Tree consists of root, nodes, and leaves.",
+    "keyPoints": ["Root", "Node", "Leaf"],
+    "cheatSheet": "Start → Split → Result",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Leaf represents?",
+        "options": ["Final output", "Input"],
+        "answer": "Final output"
+      }
+    ]
+  },
+
+  {
+    "title": "Splitting Criteria",
+    "videos": [
+      "https://www.youtube.com/watch?v=7VeUPuFGJHk",
+      "https://www.youtube.com/watch?v=4qVRBYAdLAo",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Splitting is based on feature selection.",
+    "keyPoints": ["Best feature", "Split"],
+    "cheatSheet": "Choose best split",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Split is based on?",
+        "options": ["Features", "Labels"],
+        "answer": "Features"
+      }
+    ]
+  },
+
+  {
+    "title": "Entropy and Information Gain",
+    "videos": [
+      "https://www.youtube.com/watch?v=9r7H5tR6V7A",
+      "https://www.youtube.com/watch?v=7VeUPuFGJHk",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Entropy measures randomness, information gain selects best split.",
+    "keyPoints": ["Entropy", "Information gain"],
+    "cheatSheet": "Less entropy = better",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Entropy measures?",
+        "options": ["Randomness", "Accuracy"],
+        "answer": "Randomness"
+      }
+    ]
+  },
+
+  {
+    "title": "Gini Index",
+    "videos": [
+      "https://www.youtube.com/watch?v=7VeUPuFGJHk",
+      "https://www.youtube.com/watch?v=4qVRBYAdLAo",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Gini index measures impurity of data.",
+    "keyPoints": ["Impurity", "Split quality"],
+    "cheatSheet": "Lower Gini = better",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Gini measures?",
+        "options": ["Impurity", "Accuracy"],
+        "answer": "Impurity"
+      }
+    ]
+  },
+
+  {
+    "title": "Tree Depth and Pruning",
+    "videos": [
+      "https://www.youtube.com/watch?v=7VeUPuFGJHk",
+      "https://www.youtube.com/watch?v=EuBBz3bI-aA",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Pruning reduces overfitting by trimming tree.",
+    "keyPoints": ["Depth", "Pruning"],
+    "cheatSheet": "Cut extra branches",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Pruning prevents?",
+        "options": ["Overfitting", "Training"],
+        "answer": "Overfitting"
+      }
+    ]
+  },
+
+  {
+    "title": "Overfitting in Trees",
+    "videos": [
+      "https://www.youtube.com/watch?v=EuBBz3bI-aA",
+      "https://www.youtube.com/watch?v=7VeUPuFGJHk",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Trees can memorize data if too deep.",
+    "keyPoints": ["Overfitting", "Complex model"],
+    "cheatSheet": "Deep tree = risk",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Deep trees cause?",
+        "options": ["Overfitting", "Underfitting"],
+        "answer": "Overfitting"
+      }
+    ]
+  },
+
+  {
+    "title": "Advantages of Decision Trees",
+    "videos": [
+      "https://www.youtube.com/watch?v=7VeUPuFGJHk",
+      "https://www.youtube.com/watch?v=4qVRBYAdLAo",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Easy to understand and interpret.",
+    "keyPoints": ["Simple", "Visual"],
+    "cheatSheet": "Easy model",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Advantage?",
+        "options": ["Easy to understand", "Hard"],
+        "answer": "Easy to understand"
+      }
+    ]
+  },
+
+  {
+    "title": "Limitations of Decision Trees",
+    "videos": [
+      "https://www.youtube.com/watch?v=7VeUPuFGJHk",
+      "https://www.youtube.com/watch?v=4qVRBYAdLAo",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Can overfit and unstable with small data.",
+    "keyPoints": ["Overfitting", "Variance"],
+    "cheatSheet": "Simple but unstable",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Limitation?",
+        "options": ["Overfitting", "Accuracy"],
+        "answer": "Overfitting"
+      }
+    ]
+  },
+
+  {
+    "title": "Real World Applications",
+    "videos": [
+      "https://www.youtube.com/watch?v=7VeUPuFGJHk",
+      "https://www.youtube.com/watch?v=4qVRBYAdLAo",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Used in finance, healthcare, and decision systems.",
+    "keyPoints": ["Decision making", "Prediction"],
+    "cheatSheet": "Tree = decisions",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Used in?",
+        "options": ["Healthcare", "Cooking"],
+        "answer": "Healthcare"
+      }
+    ]
+  }
+]
     },
     {
       "id": 10,
@@ -88,7 +2055,228 @@
       "difficulty": "Intermediate",
       "summary": "Random Forest is an ensemble learning method that combines multiple decision trees to improve performance and reduce overfitting. It creates random subsets of data and features, trains separate decision trees on each subset, and combines predictions through voting (classification) or averaging (regression). This randomness and averaging significantly reduce variance compared to single trees. Random Forests are robust, handle missing values well, and provide feature importance rankings. They're widely used in industry for both classification and regression tasks. The algorithm is less interpretable than single trees but more powerful. Key hyperparameters include the number of trees, tree depth, and minimum sample splits.",
       "keyPoints": ["Ensemble learning", "Bootstrap aggregating", "Feature randomness", "Variance reduction", "Feature importance"],
-      "prerequisites": [9]
+      "prerequisites": [],
+      "subtopics": [
+  {
+    "title": "Introduction to Random Forest",
+    "videos": [
+      "https://www.youtube.com/watch?v=J4Wdy0Wc_xQ",
+      "https://www.youtube.com/watch?v=7VeUPuFGJHk",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Random Forest is an ensemble method using multiple decision trees.",
+    "keyPoints": ["Ensemble", "Multiple trees"],
+    "cheatSheet": "Many trees = Strong model",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Random Forest uses?",
+        "options": ["Multiple trees", "Single tree"],
+        "answer": "Multiple trees"
+      }
+    ]
+  },
+
+  {
+    "title": "Ensemble Learning",
+    "videos": [
+      "https://www.youtube.com/watch?v=J4Wdy0Wc_xQ",
+      "https://www.youtube.com/watch?v=7VeUPuFGJHk",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Combines multiple models for better performance.",
+    "keyPoints": ["Combine models", "Better accuracy"],
+    "cheatSheet": "Group > Individual",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Ensemble means?",
+        "options": ["Many models", "One model"],
+        "answer": "Many models"
+      }
+    ]
+  },
+
+  {
+    "title": "Bagging Technique",
+    "videos": [
+      "https://www.youtube.com/watch?v=J4Wdy0Wc_xQ",
+      "https://www.youtube.com/watch?v=7VeUPuFGJHk",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Bagging creates multiple datasets using sampling.",
+    "keyPoints": ["Bootstrap", "Sampling"],
+    "cheatSheet": "Sample → Train → Combine",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Bagging uses?",
+        "options": ["Sampling", "Sorting"],
+        "answer": "Sampling"
+      }
+    ]
+  },
+
+  {
+    "title": "Bootstrap Sampling",
+    "videos": [
+      "https://www.youtube.com/watch?v=J4Wdy0Wc_xQ",
+      "https://www.youtube.com/watch?v=7VeUPuFGJHk",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Sampling with replacement to create datasets.",
+    "keyPoints": ["Random sampling", "Replacement"],
+    "cheatSheet": "Pick randomly with repeat",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Bootstrap means?",
+        "options": ["Sampling with replacement", "Without replacement"],
+        "answer": "Sampling with replacement"
+      }
+    ]
+  },
+
+  {
+    "title": "Feature Randomness",
+    "videos": [
+      "https://www.youtube.com/watch?v=J4Wdy0Wc_xQ",
+      "https://www.youtube.com/watch?v=7VeUPuFGJHk",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Random subset of features used for each split.",
+    "keyPoints": ["Random features", "Better diversity"],
+    "cheatSheet": "Random features → Strong model",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Random forest uses?",
+        "options": ["Random features", "Same features"],
+        "answer": "Random features"
+      }
+    ]
+  },
+
+  {
+    "title": "Voting and Averaging",
+    "videos": [
+      "https://www.youtube.com/watch?v=J4Wdy0Wc_xQ",
+      "https://www.youtube.com/watch?v=7VeUPuFGJHk",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Combines predictions from all trees.",
+    "keyPoints": ["Voting", "Averaging"],
+    "cheatSheet": "Majority wins",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Classification uses?",
+        "options": ["Voting", "Average"],
+        "answer": "Voting"
+      }
+    ]
+  },
+
+  {
+    "title": "Overfitting Reduction",
+    "videos": [
+      "https://www.youtube.com/watch?v=EuBBz3bI-aA",
+      "https://www.youtube.com/watch?v=J4Wdy0Wc_xQ",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Random Forest reduces overfitting of single trees.",
+    "keyPoints": ["Less variance", "Better generalization"],
+    "cheatSheet": "Many trees = Less overfit",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "RF reduces?",
+        "options": ["Overfitting", "Underfitting"],
+        "answer": "Overfitting"
+      }
+    ]
+  },
+
+  {
+    "title": "Feature Importance",
+    "videos": [
+      "https://www.youtube.com/watch?v=J4Wdy0Wc_xQ",
+      "https://www.youtube.com/watch?v=7VeUPuFGJHk",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Shows importance of each feature.",
+    "keyPoints": ["Ranking features", "Importance"],
+    "cheatSheet": "Know key features",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Feature importance shows?",
+        "options": ["Important features", "All features"],
+        "answer": "Important features"
+      }
+    ]
+  },
+
+  {
+    "title": "Real World Applications",
+    "videos": [
+      "https://www.youtube.com/watch?v=J4Wdy0Wc_xQ",
+      "https://www.youtube.com/watch?v=7VeUPuFGJHk",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Used in finance, healthcare, and predictions.",
+    "keyPoints": ["Prediction", "Classification"],
+    "cheatSheet": "Strong real-world model",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Used in?",
+        "options": ["Finance", "Cooking"],
+        "answer": "Finance"
+      }
+    ]
+  },
+
+  {
+    "title": "Advantages and Limitations",
+    "videos": [
+      "https://www.youtube.com/watch?v=J4Wdy0Wc_xQ",
+      "https://www.youtube.com/watch?v=7VeUPuFGJHk",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Powerful but slower than single models.",
+    "keyPoints": ["Accurate", "Complex"],
+    "cheatSheet": "Powerful but heavy",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Limitation?",
+        "options": ["Slow", "Fast"],
+        "answer": "Slow"
+      }
+    ]
+  }
+]
     },
     {
       "id": 11,
@@ -97,7 +2285,228 @@
       "difficulty": "Intermediate",
       "summary": "Support Vector Machines (SVM) are powerful supervised learning algorithms for classification and regression. SVMs find the optimal hyperplane that maximally separates classes while maximizing the margin (distance to nearest data points). For non-linearly separable data, kernel functions (linear, RBF, polynomial) transform data into higher dimensions. SVMs work well on high-dimensional data and with small to medium-sized datasets. They're memory-efficient and effective for both binary and multi-class problems. SVMs require careful feature scaling and hyperparameter tuning (C, gamma). While computationally expensive on very large datasets, they remain powerful and popular in practical applications.",
       "keyPoints": ["Maximum margin", "Support vectors", "Kernel tricks", "Hyperplane optimization", "Non-linear separation"],
-      "prerequisites": [2, 5]
+      "prerequisites": [],
+      "subtopics": [
+  {
+    "title": "Introduction to SVM",
+    "videos": [
+      "https://www.youtube.com/watch?v=efR1C6CvhmE",
+      "https://www.youtube.com/watch?v=3liCbRZPrZA",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "SVM is a supervised algorithm used for classification and regression.",
+    "keyPoints": ["Classification", "Hyperplane"],
+    "cheatSheet": "Find best boundary",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "SVM used for?",
+        "options": ["Classification", "Sorting"],
+        "answer": "Classification"
+      }
+    ]
+  },
+
+  {
+    "title": "Hyperplane Concept",
+    "videos": [
+      "https://www.youtube.com/watch?v=efR1C6CvhmE",
+      "https://www.youtube.com/watch?v=3liCbRZPrZA",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Hyperplane separates data into classes.",
+    "keyPoints": ["Decision boundary", "Separation"],
+    "cheatSheet": "Line/plane divides data",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Hyperplane does?",
+        "options": ["Separates data", "Combines data"],
+        "answer": "Separates data"
+      }
+    ]
+  },
+
+  {
+    "title": "Margin and Support Vectors",
+    "videos": [
+      "https://www.youtube.com/watch?v=efR1C6CvhmE",
+      "https://www.youtube.com/watch?v=3liCbRZPrZA",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Margin is distance between classes; support vectors define boundary.",
+    "keyPoints": ["Margin", "Support vectors"],
+    "cheatSheet": "Max margin = best model",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Support vectors are?",
+        "options": ["Closest points", "Random points"],
+        "answer": "Closest points"
+      }
+    ]
+  },
+
+  {
+    "title": "Linear vs Non-linear SVM",
+    "videos": [
+      "https://www.youtube.com/watch?v=3liCbRZPrZA",
+      "https://www.youtube.com/watch?v=efR1C6CvhmE",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Linear SVM handles straight separation, non-linear uses kernels.",
+    "keyPoints": ["Linear", "Non-linear"],
+    "cheatSheet": "Straight vs curved boundary",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Non-linear uses?",
+        "options": ["Kernel", "Line"],
+        "answer": "Kernel"
+      }
+    ]
+  },
+
+  {
+    "title": "Kernel Trick",
+    "videos": [
+      "https://www.youtube.com/watch?v=3liCbRZPrZA",
+      "https://www.youtube.com/watch?v=efR1C6CvhmE",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Kernel transforms data into higher dimension.",
+    "keyPoints": ["Transformation", "Higher dimension"],
+    "cheatSheet": "Map → Solve",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Kernel does?",
+        "options": ["Transform data", "Delete data"],
+        "answer": "Transform data"
+      }
+    ]
+  },
+
+  {
+    "title": "Types of Kernels",
+    "videos": [
+      "https://www.youtube.com/watch?v=3liCbRZPrZA",
+      "https://www.youtube.com/watch?v=efR1C6CvhmE",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Common kernels include linear, polynomial, RBF.",
+    "keyPoints": ["Linear", "Polynomial", "RBF"],
+    "cheatSheet": "Different kernels for different data",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "RBF is?",
+        "options": ["Kernel", "Dataset"],
+        "answer": "Kernel"
+      }
+    ]
+  },
+
+  {
+    "title": "Regularization (C Parameter)",
+    "videos": [
+      "https://www.youtube.com/watch?v=efR1C6CvhmE",
+      "https://www.youtube.com/watch?v=3liCbRZPrZA",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "C controls margin and error tradeoff.",
+    "keyPoints": ["Regularization", "Tradeoff"],
+    "cheatSheet": "High C = less error",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "C controls?",
+        "options": ["Error vs margin", "Speed"],
+        "answer": "Error vs margin"
+      }
+    ]
+  },
+
+  {
+    "title": "Evaluation Metrics",
+    "videos": [
+      "https://www.youtube.com/watch?v=85dtiMz9tSo",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94",
+      "https://www.youtube.com/watch?v=1lwddP0KUEg"
+    ],
+    "summary": "Evaluate SVM using accuracy, precision, recall.",
+    "keyPoints": ["Accuracy", "Precision"],
+    "cheatSheet": "Check performance",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Metric measures?",
+        "options": ["Performance", "Speed"],
+        "answer": "Performance"
+      }
+    ]
+  },
+
+  {
+    "title": "Real World Applications",
+    "videos": [
+      "https://www.youtube.com/watch?v=efR1C6CvhmE",
+      "https://www.youtube.com/watch?v=3liCbRZPrZA",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Used in image classification, text classification.",
+    "keyPoints": ["Images", "Text"],
+    "cheatSheet": "Powerful classifier",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Used in?",
+        "options": ["Image classification", "Cooking"],
+        "answer": "Image classification"
+      }
+    ]
+  },
+
+  {
+    "title": "Advantages and Limitations",
+    "videos": [
+      "https://www.youtube.com/watch?v=efR1C6CvhmE",
+      "https://www.youtube.com/watch?v=3liCbRZPrZA",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Effective but computationally expensive.",
+    "keyPoints": ["Accurate", "Slow"],
+    "cheatSheet": "Powerful but heavy",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Limitation?",
+        "options": ["Slow", "Fast"],
+        "answer": "Slow"
+      }
+    ]
+  }
+]
     },
     {
       "id": 12,
@@ -106,7 +2515,228 @@
       "difficulty": "Intermediate",
       "summary": "K-Means is a popular unsupervised learning algorithm for clustering data into K distinct groups. The algorithm iteratively assigns data points to the nearest cluster center and updates centers as the mean of assigned points. It's simple, scalable, and computationally efficient. K-Means is widely used for customer segmentation, image compression, and document clustering. Key challenges include choosing the optimal number of clusters K and sensitivity to initialization. The Elbow Method helps determine K by plotting within-cluster sum of squares. K-Means assumes spherical clusters of similar sizes. Variations like K-Means++ improve initialization and stability.",
       "keyPoints": ["Cluster centers", "Iterative assignment", "Within-cluster sum of squares", "Elbow method", "Centroid updates"],
-      "prerequisites": [3, 5]
+      "prerequisites": [],
+      "subtopics": [
+  {
+    "title": "Introduction to K-Means",
+    "videos": [
+      "https://www.youtube.com/watch?v=4b5d3muPQmA",
+      "https://www.youtube.com/watch?v=J1vP8u4i2m8",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "K-Means is an unsupervised algorithm used to group data into clusters.",
+    "keyPoints": ["Clustering", "Unsupervised learning"],
+    "cheatSheet": "Group similar data",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "K-Means is?",
+        "options": ["Clustering", "Classification"],
+        "answer": "Clustering"
+      }
+    ]
+  },
+
+  {
+    "title": "How K-Means Works",
+    "videos": [
+      "https://www.youtube.com/watch?v=4b5d3muPQmA",
+      "https://www.youtube.com/watch?v=J1vP8u4i2m8",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "K-Means assigns data points to clusters and updates centroids.",
+    "keyPoints": ["Assign", "Update"],
+    "cheatSheet": "Assign → Update → Repeat",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "K-Means repeats?",
+        "options": ["Yes", "No"],
+        "answer": "Yes"
+      }
+    ]
+  },
+
+  {
+    "title": "Choosing K Value",
+    "videos": [
+      "https://www.youtube.com/watch?v=4b5d3muPQmA",
+      "https://www.youtube.com/watch?v=J1vP8u4i2m8",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "K is number of clusters.",
+    "keyPoints": ["Cluster count"],
+    "cheatSheet": "K = number of groups",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "K means?",
+        "options": ["Clusters", "Features"],
+        "answer": "Clusters"
+      }
+    ]
+  },
+
+  {
+    "title": "Elbow Method",
+    "videos": [
+      "https://www.youtube.com/watch?v=4b5d3muPQmA",
+      "https://www.youtube.com/watch?v=J1vP8u4i2m8",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Used to find optimal K value.",
+    "keyPoints": ["Elbow curve"],
+    "cheatSheet": "Find bend point",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Elbow finds?",
+        "options": ["Best K", "Best model"],
+        "answer": "Best K"
+      }
+    ]
+  },
+
+  {
+    "title": "Centroids",
+    "videos": [
+      "https://www.youtube.com/watch?v=4b5d3muPQmA",
+      "https://www.youtube.com/watch?v=J1vP8u4i2m8",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Centroids are center points of clusters.",
+    "keyPoints": ["Center", "Cluster mean"],
+    "cheatSheet": "Center of group",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Centroid is?",
+        "options": ["Center", "Edge"],
+        "answer": "Center"
+      }
+    ]
+  },
+
+  {
+    "title": "Distance Metrics",
+    "videos": [
+      "https://www.youtube.com/watch?v=4b5d3muPQmA",
+      "https://www.youtube.com/watch?v=J1vP8u4i2m8",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Distance determines cluster assignment.",
+    "keyPoints": ["Euclidean distance"],
+    "cheatSheet": "Closer → Same cluster",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Distance used?",
+        "options": ["Euclidean", "Binary"],
+        "answer": "Euclidean"
+      }
+    ]
+  },
+
+  {
+    "title": "Convergence",
+    "videos": [
+      "https://www.youtube.com/watch?v=4b5d3muPQmA",
+      "https://www.youtube.com/watch?v=J1vP8u4i2m8",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Algorithm stops when clusters stop changing.",
+    "keyPoints": ["Stable clusters"],
+    "cheatSheet": "No change = stop",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Convergence means?",
+        "options": ["Stop", "Start"],
+        "answer": "Stop"
+      }
+    ]
+  },
+
+  {
+    "title": "Advantages of K-Means",
+    "videos": [
+      "https://www.youtube.com/watch?v=4b5d3muPQmA",
+      "https://www.youtube.com/watch?v=J1vP8u4i2m8",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Simple and fast clustering algorithm.",
+    "keyPoints": ["Fast", "Easy"],
+    "cheatSheet": "Simple model",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Advantage?",
+        "options": ["Fast", "Slow"],
+        "answer": "Fast"
+      }
+    ]
+  },
+
+  {
+    "title": "Limitations of K-Means",
+    "videos": [
+      "https://www.youtube.com/watch?v=4b5d3muPQmA",
+      "https://www.youtube.com/watch?v=J1vP8u4i2m8",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Sensitive to initial values and K selection.",
+    "keyPoints": ["Sensitive", "Needs K"],
+    "cheatSheet": "Choose K carefully",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Limitation?",
+        "options": ["Needs K", "No input"],
+        "answer": "Needs K"
+      }
+    ]
+  },
+
+  {
+    "title": "Real World Applications",
+    "videos": [
+      "https://www.youtube.com/watch?v=4b5d3muPQmA",
+      "https://www.youtube.com/watch?v=J1vP8u4i2m8",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Used in customer segmentation and data grouping.",
+    "keyPoints": ["Segmentation", "Clustering"],
+    "cheatSheet": "Group users",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Used in?",
+        "options": ["Customer segmentation", "Cooking"],
+        "answer": "Customer segmentation"
+      }
+    ]
+  }
+]
     },
     {
       "id": 13,
@@ -115,7 +2745,228 @@
       "difficulty": "Intermediate",
       "summary": "Hierarchical Clustering creates a tree-like hierarchy of clusters, allowing analysis at multiple levels of granularity. There are two approaches: agglomerative (bottom-up, starting with individual points and merging) and divisive (top-down, starting with all points and splitting). Dendrograms visualize the hierarchical structure, showing how clusters merge or split. Linkage methods (single, complete, average, Ward) determine how cluster similarity is measured. Unlike K-Means, hierarchical clustering doesn't require specifying the number of clusters in advance. It's interpretable and useful for exploratory analysis. Drawbacks include higher computational complexity and sensitivity to outliers.",
       "keyPoints": ["Dendrogram", "Agglomerative approach", "Linkage methods", "Distance metrics", "Multi-level analysis"],
-      "prerequisites": [3, 5]
+      "prerequisites": [],
+      "subtopics": [
+  {
+    "title": "Introduction to Hierarchical Clustering",
+    "videos": [
+      "https://www.youtube.com/watch?v=7xHsRkOdVwo",
+      "https://www.youtube.com/watch?v=J1vP8u4i2m8",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Hierarchical clustering builds clusters in a tree-like structure.",
+    "keyPoints": ["Tree structure", "Clustering"],
+    "cheatSheet": "Clusters in hierarchy",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Hierarchical clustering forms?",
+        "options": ["Tree", "Line"],
+        "answer": "Tree"
+      }
+    ]
+  },
+
+  {
+    "title": "Agglomerative Clustering",
+    "videos": [
+      "https://www.youtube.com/watch?v=7xHsRkOdVwo",
+      "https://www.youtube.com/watch?v=J1vP8u4i2m8",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Bottom-up approach merging clusters.",
+    "keyPoints": ["Merge clusters"],
+    "cheatSheet": "Start small → merge",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Agglomerative means?",
+        "options": ["Merging", "Splitting"],
+        "answer": "Merging"
+      }
+    ]
+  },
+
+  {
+    "title": "Divisive Clustering",
+    "videos": [
+      "https://www.youtube.com/watch?v=7xHsRkOdVwo",
+      "https://www.youtube.com/watch?v=J1vP8u4i2m8",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Top-down approach splitting clusters.",
+    "keyPoints": ["Split clusters"],
+    "cheatSheet": "Start big → split",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Divisive means?",
+        "options": ["Splitting", "Merging"],
+        "answer": "Splitting"
+      }
+    ]
+  },
+
+  {
+    "title": "Dendrogram",
+    "videos": [
+      "https://www.youtube.com/watch?v=7xHsRkOdVwo",
+      "https://www.youtube.com/watch?v=J1vP8u4i2m8",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Tree diagram representing clusters.",
+    "keyPoints": ["Visualization"],
+    "cheatSheet": "Tree chart",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Dendrogram is?",
+        "options": ["Tree diagram", "Graph"],
+        "answer": "Tree diagram"
+      }
+    ]
+  },
+
+  {
+    "title": "Distance Metrics",
+    "videos": [
+      "https://www.youtube.com/watch?v=7xHsRkOdVwo",
+      "https://www.youtube.com/watch?v=J1vP8u4i2m8",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Distance determines similarity between points.",
+    "keyPoints": ["Euclidean", "Manhattan"],
+    "cheatSheet": "Closer = similar",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Distance shows?",
+        "options": ["Similarity", "Speed"],
+        "answer": "Similarity"
+      }
+    ]
+  },
+
+  {
+    "title": "Linkage Methods",
+    "videos": [
+      "https://www.youtube.com/watch?v=7xHsRkOdVwo",
+      "https://www.youtube.com/watch?v=J1vP8u4i2m8",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Defines how clusters are merged.",
+    "keyPoints": ["Single", "Complete", "Average"],
+    "cheatSheet": "Merge rules",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Linkage defines?",
+        "options": ["Merging rule", "Splitting"],
+        "answer": "Merging rule"
+      }
+    ]
+  },
+
+  {
+    "title": "Advantages of Hierarchical Clustering",
+    "videos": [
+      "https://www.youtube.com/watch?v=7xHsRkOdVwo",
+      "https://www.youtube.com/watch?v=J1vP8u4i2m8",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Does not require predefined number of clusters.",
+    "keyPoints": ["Flexible", "Visual"],
+    "cheatSheet": "No need for K",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Advantage?",
+        "options": ["No K needed", "Needs K"],
+        "answer": "No K needed"
+      }
+    ]
+  },
+
+  {
+    "title": "Limitations",
+    "videos": [
+      "https://www.youtube.com/watch?v=7xHsRkOdVwo",
+      "https://www.youtube.com/watch?v=J1vP8u4i2m8",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Computationally expensive and slow.",
+    "keyPoints": ["Slow", "Complex"],
+    "cheatSheet": "Heavy computation",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Limitation?",
+        "options": ["Slow", "Fast"],
+        "answer": "Slow"
+      }
+    ]
+  },
+
+  {
+    "title": "Comparison with K-Means",
+    "videos": [
+      "https://www.youtube.com/watch?v=7xHsRkOdVwo",
+      "https://www.youtube.com/watch?v=J1vP8u4i2m8",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Hierarchical vs K-Means differences.",
+    "keyPoints": ["Tree vs clusters"],
+    "cheatSheet": "Hierarchical ≠ K-Means",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Hierarchical uses?",
+        "options": ["Tree", "Centroids"],
+        "answer": "Tree"
+      }
+    ]
+  },
+
+  {
+    "title": "Real World Applications",
+    "videos": [
+      "https://www.youtube.com/watch?v=7xHsRkOdVwo",
+      "https://www.youtube.com/watch?v=J1vP8u4i2m8",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Used in biology, marketing segmentation.",
+    "keyPoints": ["Grouping", "Analysis"],
+    "cheatSheet": "Group similar",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Used in?",
+        "options": ["Biology", "Cooking"],
+        "answer": "Biology"
+      }
+    ]
+  }
+]
     },
     {
       "id": 14,
@@ -124,7 +2975,228 @@
       "difficulty": "Intermediate",
       "summary": "Principal Component Analysis (PCA) is a dimensionality reduction technique that transforms high-dimensional data into a lower-dimensional space while preserving maximum variance. It identifies principal components—new uncorrelated features that capture the most important patterns in data. PCA is useful for visualization, noise reduction, and speeding up training of other algorithms. The first principal component explains the most variance, the second captures the next most, and so on. PCA assumes linear relationships and is sensitive to feature scaling, requiring standardization. Applications include face recognition, image compression, and exploratory data analysis. Explained variance ratio helps determine how many components to keep.",
       "keyPoints": ["Variance maximization", "Eigenvectors", "Covariance matrix", "Explained variance", "Feature transformation"],
-      "prerequisites": [3, 5]
+      "prerequisites": [],
+      "subtopics": [
+  {
+    "title": "Introduction to PCA",
+    "videos": [
+      "https://www.youtube.com/watch?v=FgakZw6K1QQ",
+      "https://www.youtube.com/watch?v=HMOI_lkzW08",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "PCA is a technique for reducing dimensions of data.",
+    "keyPoints": ["Dimensionality reduction", "Feature transformation"],
+    "cheatSheet": "Reduce dimensions",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "PCA is used for?",
+        "options": ["Reduction", "Classification"],
+        "answer": "Reduction"
+      }
+    ]
+  },
+
+  {
+    "title": "Why PCA?",
+    "videos": [
+      "https://www.youtube.com/watch?v=FgakZw6K1QQ",
+      "https://www.youtube.com/watch?v=HMOI_lkzW08",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Used to simplify data and remove redundancy.",
+    "keyPoints": ["Simplify data", "Remove noise"],
+    "cheatSheet": "Less data → Same info",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "PCA helps in?",
+        "options": ["Simplifying data", "Complicating"],
+        "answer": "Simplifying data"
+      }
+    ]
+  },
+
+  {
+    "title": "Variance Concept",
+    "videos": [
+      "https://www.youtube.com/watch?v=FgakZw6K1QQ",
+      "https://www.youtube.com/watch?v=HMOI_lkzW08",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "PCA selects features with maximum variance.",
+    "keyPoints": ["Variance", "Spread"],
+    "cheatSheet": "More variance = more info",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "PCA focuses on?",
+        "options": ["Variance", "Labels"],
+        "answer": "Variance"
+      }
+    ]
+  },
+
+  {
+    "title": "Principal Components",
+    "videos": [
+      "https://www.youtube.com/watch?v=FgakZw6K1QQ",
+      "https://www.youtube.com/watch?v=HMOI_lkzW08",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "New features created by PCA.",
+    "keyPoints": ["Components", "Transformation"],
+    "cheatSheet": "New axes",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Principal components are?",
+        "options": ["New features", "Old data"],
+        "answer": "New features"
+      }
+    ]
+  },
+
+  {
+    "title": "Eigenvalues and Eigenvectors",
+    "videos": [
+      "https://www.youtube.com/watch?v=PFDu9oVAE-g",
+      "https://www.youtube.com/watch?v=FgakZw6K1QQ",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Used to compute principal components.",
+    "keyPoints": ["Eigenvalues", "Eigenvectors"],
+    "cheatSheet": "Math behind PCA",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Eigenvalues represent?",
+        "options": ["Variance", "Labels"],
+        "answer": "Variance"
+      }
+    ]
+  },
+
+  {
+    "title": "Covariance Matrix",
+    "videos": [
+      "https://www.youtube.com/watch?v=FgakZw6K1QQ",
+      "https://www.youtube.com/watch?v=HMOI_lkzW08",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Shows relationships between variables.",
+    "keyPoints": ["Correlation", "Matrix"],
+    "cheatSheet": "Relation matrix",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Covariance shows?",
+        "options": ["Relation", "Speed"],
+        "answer": "Relation"
+      }
+    ]
+  },
+
+  {
+    "title": "Dimensionality Reduction",
+    "videos": [
+      "https://www.youtube.com/watch?v=FgakZw6K1QQ",
+      "https://www.youtube.com/watch?v=HMOI_lkzW08",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Reduces number of features while keeping important info.",
+    "keyPoints": ["Reduce features", "Keep info"],
+    "cheatSheet": "Less but useful",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Reduction means?",
+        "options": ["Less features", "More features"],
+        "answer": "Less features"
+      }
+    ]
+  },
+
+  {
+    "title": "Advantages of PCA",
+    "videos": [
+      "https://www.youtube.com/watch?v=FgakZw6K1QQ",
+      "https://www.youtube.com/watch?v=HMOI_lkzW08",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Simplifies data and speeds up models.",
+    "keyPoints": ["Fast", "Efficient"],
+    "cheatSheet": "Simplify data",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Advantage?",
+        "options": ["Faster models", "Slower"],
+        "answer": "Faster models"
+      }
+    ]
+  },
+
+  {
+    "title": "Limitations of PCA",
+    "videos": [
+      "https://www.youtube.com/watch?v=FgakZw6K1QQ",
+      "https://www.youtube.com/watch?v=HMOI_lkzW08",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "May lose important information.",
+    "keyPoints": ["Data loss", "Interpretation difficulty"],
+    "cheatSheet": "Loss possible",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Limitation?",
+        "options": ["Data loss", "Accuracy gain"],
+        "answer": "Data loss"
+      }
+    ]
+  },
+
+  {
+    "title": "Real World Applications",
+    "videos": [
+      "https://www.youtube.com/watch?v=FgakZw6K1QQ",
+      "https://www.youtube.com/watch?v=HMOI_lkzW08",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Used in image compression and data visualization.",
+    "keyPoints": ["Compression", "Visualization"],
+    "cheatSheet": "Reduce & visualize",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Used in?",
+        "options": ["Image compression", "Cooking"],
+        "answer": "Image compression"
+      }
+    ]
+  }
+]
     },
     {
       "id": 15,
@@ -133,7 +3205,228 @@
       "difficulty": "Intermediate",
       "summary": "Naive Bayes is a probabilistic classification algorithm based on Bayes' theorem. It assumes independence between features (the 'naive' assumption, which is often violated in practice but doesn't prevent good performance). The algorithm calculates the probability of each class given the input features and selects the class with highest probability. Naive Bayes is fast, requires little training data, and works well for text classification, spam detection, and sentiment analysis. Variations include Multinomial Naive Bayes (for counts), Gaussian Naive Bayes (for continuous features), and Bernoulli Naive Bayes (for binary features). Despite its simplistic assumptions, Naive Bayes often performs surprisingly well and serves as an effective baseline.",
       "keyPoints": ["Bayes theorem", "Conditional probability", "Feature independence", "Text classification", "Computational efficiency"],
-      "prerequisites": [2, 5]
+      "prerequisites": [],
+      "subtopics": [
+  {
+    "title": "Introduction to Naive Bayes",
+    "videos": [
+      "https://www.youtube.com/watch?v=O2L2Uv9pdDA",
+      "https://www.youtube.com/watch?v=CPqOCI0ahss",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Naive Bayes is a probabilistic classifier based on Bayes theorem.",
+    "keyPoints": ["Probability", "Classification"],
+    "cheatSheet": "Probability-based model",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Naive Bayes is?",
+        "options": ["Classifier", "Cluster"],
+        "answer": "Classifier"
+      }
+    ]
+  },
+
+  {
+    "title": "Bayes Theorem",
+    "videos": [
+      "https://www.youtube.com/watch?v=HZGCoVF3YvM",
+      "https://www.youtube.com/watch?v=O2L2Uv9pdDA",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Bayes theorem calculates conditional probability.",
+    "keyPoints": ["Prior", "Posterior"],
+    "cheatSheet": "P(A|B) formula",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Bayes theorem finds?",
+        "options": ["Probability", "Distance"],
+        "answer": "Probability"
+      }
+    ]
+  },
+
+  {
+    "title": "Conditional Probability",
+    "videos": [
+      "https://www.youtube.com/watch?v=HZGCoVF3YvM",
+      "https://www.youtube.com/watch?v=O2L2Uv9pdDA",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Probability of event given another event.",
+    "keyPoints": ["Dependent probability"],
+    "cheatSheet": "P(A|B)",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Conditional means?",
+        "options": ["Given condition", "Independent"],
+        "answer": "Given condition"
+      }
+    ]
+  },
+
+  {
+    "title": "Naive Assumption",
+    "videos": [
+      "https://www.youtube.com/watch?v=O2L2Uv9pdDA",
+      "https://www.youtube.com/watch?v=CPqOCI0ahss",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Assumes features are independent.",
+    "keyPoints": ["Independence"],
+    "cheatSheet": "Features independent",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Naive assumes?",
+        "options": ["Independence", "Dependence"],
+        "answer": "Independence"
+      }
+    ]
+  },
+
+  {
+    "title": "Types of Naive Bayes",
+    "videos": [
+      "https://www.youtube.com/watch?v=CPqOCI0ahss",
+      "https://www.youtube.com/watch?v=O2L2Uv9pdDA",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Gaussian, Multinomial, and Bernoulli types.",
+    "keyPoints": ["Gaussian", "Multinomial", "Bernoulli"],
+    "cheatSheet": "Different data types",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Types include?",
+        "options": ["Gaussian", "Tree"],
+        "answer": "Gaussian"
+      }
+    ]
+  },
+
+  {
+    "title": "Working of Naive Bayes",
+    "videos": [
+      "https://www.youtube.com/watch?v=O2L2Uv9pdDA",
+      "https://www.youtube.com/watch?v=CPqOCI0ahss",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Calculates probability for each class and selects highest.",
+    "keyPoints": ["Probability comparison"],
+    "cheatSheet": "Max probability wins",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Prediction based on?",
+        "options": ["Max probability", "Random"],
+        "answer": "Max probability"
+      }
+    ]
+  },
+
+  {
+    "title": "Advantages of Naive Bayes",
+    "videos": [
+      "https://www.youtube.com/watch?v=O2L2Uv9pdDA",
+      "https://www.youtube.com/watch?v=CPqOCI0ahss",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Simple, fast, and works well with text data.",
+    "keyPoints": ["Fast", "Efficient"],
+    "cheatSheet": "Simple model",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Advantage?",
+        "options": ["Fast", "Slow"],
+        "answer": "Fast"
+      }
+    ]
+  },
+
+  {
+    "title": "Limitations",
+    "videos": [
+      "https://www.youtube.com/watch?v=O2L2Uv9pdDA",
+      "https://www.youtube.com/watch?v=CPqOCI0ahss",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Assumption of independence is often unrealistic.",
+    "keyPoints": ["Independence issue"],
+    "cheatSheet": "Naive assumption problem",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Limitation?",
+        "options": ["Independence assumption", "Speed"],
+        "answer": "Independence assumption"
+      }
+    ]
+  },
+
+  {
+    "title": "Applications",
+    "videos": [
+      "https://www.youtube.com/watch?v=O2L2Uv9pdDA",
+      "https://www.youtube.com/watch?v=CPqOCI0ahss",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Used in spam detection, sentiment analysis.",
+    "keyPoints": ["Text classification"],
+    "cheatSheet": "Works well with text",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Used in?",
+        "options": ["Spam detection", "Cooking"],
+        "answer": "Spam detection"
+      }
+    ]
+  },
+
+  {
+    "title": "Real World Example",
+    "videos": [
+      "https://www.youtube.com/watch?v=O2L2Uv9pdDA",
+      "https://www.youtube.com/watch?v=CPqOCI0ahss",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Email spam filtering is a common example.",
+    "keyPoints": ["Spam filter"],
+    "cheatSheet": "Classify emails",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Spam filter uses?",
+        "options": ["Naive Bayes", "Sorting"],
+        "answer": "Naive Bayes"
+      }
+    ]
+  }
+]
     },
     {
       "id": 16,
@@ -142,7 +3435,228 @@
       "difficulty": "Intermediate",
       "summary": "Neural Networks are computing systems inspired by biological brains, consisting of interconnected layers of neurons (nodes). Each neuron receives inputs, applies weights and bias, and passes through an activation function. The input layer receives data, hidden layers process information, and the output layer produces predictions. Backpropagation trains networks by computing gradients and updating weights. Neural networks can model complex non-linear relationships and are universal function approximators. They require substantial training data and computational power. Key concepts include weights, biases, activation functions, loss functions, and optimization algorithms. Neural networks form the foundation of deep learning and power modern AI applications.",
       "keyPoints": ["Neurons and layers", "Weights and biases", "Activation functions", "Backpropagation", "Loss functions"],
-      "prerequisites": [1, 5]
+      "prerequisites": [],
+      "subtopics": [
+  {
+    "title": "Introduction to Neural Networks",
+    "videos": [
+      "https://www.youtube.com/watch?v=aircAruvnKk",
+      "https://www.youtube.com/watch?v=BFdMrDOxwq0",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Neural networks are inspired by the human brain and used in deep learning.",
+    "keyPoints": ["Artificial neurons", "Deep learning"],
+    "cheatSheet": "Brain-inspired model",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Neural networks are inspired by?",
+        "options": ["Human brain", "Computer"],
+        "answer": "Human brain"
+      }
+    ]
+  },
+
+  {
+    "title": "Neuron Model",
+    "videos": [
+      "https://www.youtube.com/watch?v=aircAruvnKk",
+      "https://www.youtube.com/watch?v=BFdMrDOxwq0",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Basic unit that takes input, processes, and outputs result.",
+    "keyPoints": ["Inputs", "Weights", "Output"],
+    "cheatSheet": "Input → Weight → Output",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Neuron does?",
+        "options": ["Process input", "Store data"],
+        "answer": "Process input"
+      }
+    ]
+  },
+
+  {
+    "title": "Layers in Neural Network",
+    "videos": [
+      "https://www.youtube.com/watch?v=aircAruvnKk",
+      "https://www.youtube.com/watch?v=BFdMrDOxwq0",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Includes input, hidden, and output layers.",
+    "keyPoints": ["Input layer", "Hidden layer", "Output layer"],
+    "cheatSheet": "3 main layers",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Hidden layer is?",
+        "options": ["Middle layer", "Output"],
+        "answer": "Middle layer"
+      }
+    ]
+  },
+
+  {
+    "title": "Activation Functions",
+    "videos": [
+      "https://www.youtube.com/watch?v=aircAruvnKk",
+      "https://www.youtube.com/watch?v=BFdMrDOxwq0",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Activation functions decide output of neuron.",
+    "keyPoints": ["ReLU", "Sigmoid", "Tanh"],
+    "cheatSheet": "Activate output",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "ReLU is?",
+        "options": ["Activation function", "Loss"],
+        "answer": "Activation function"
+      }
+    ]
+  },
+
+  {
+    "title": "Forward Propagation",
+    "videos": [
+      "https://www.youtube.com/watch?v=aircAruvnKk",
+      "https://www.youtube.com/watch?v=BFdMrDOxwq0",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Data flows from input to output layer.",
+    "keyPoints": ["Forward pass"],
+    "cheatSheet": "Input → Output",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Forward means?",
+        "options": ["Input to output", "Output to input"],
+        "answer": "Input to output"
+      }
+    ]
+  },
+
+  {
+    "title": "Backpropagation",
+    "videos": [
+      "https://www.youtube.com/watch?v=Ilg3gGewQ5U",
+      "https://www.youtube.com/watch?v=aircAruvnKk",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Updates weights based on error.",
+    "keyPoints": ["Error correction"],
+    "cheatSheet": "Output → adjust weights",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Backpropagation does?",
+        "options": ["Update weights", "Predict"],
+        "answer": "Update weights"
+      }
+    ]
+  },
+
+  {
+    "title": "Loss Function",
+    "videos": [
+      "https://www.youtube.com/watch?v=Ilg3gGewQ5U",
+      "https://www.youtube.com/watch?v=aircAruvnKk",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Measures error between prediction and actual.",
+    "keyPoints": ["Error measure"],
+    "cheatSheet": "Lower loss = better",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Loss measures?",
+        "options": ["Error", "Accuracy"],
+        "answer": "Error"
+      }
+    ]
+  },
+
+  {
+    "title": "Gradient Descent",
+    "videos": [
+      "https://www.youtube.com/watch?v=sDv4f4s2SB8",
+      "https://www.youtube.com/watch?v=Ilg3gGewQ5U",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Optimizes weights to minimize loss.",
+    "keyPoints": ["Optimization"],
+    "cheatSheet": "Minimize loss",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Gradient descent does?",
+        "options": ["Minimize loss", "Maximize loss"],
+        "answer": "Minimize loss"
+      }
+    ]
+  },
+
+  {
+    "title": "Applications of Neural Networks",
+    "videos": [
+      "https://www.youtube.com/watch?v=aircAruvnKk",
+      "https://www.youtube.com/watch?v=BFdMrDOxwq0",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Used in image recognition, NLP, etc.",
+    "keyPoints": ["Images", "Text"],
+    "cheatSheet": "Deep learning applications",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Used in?",
+        "options": ["Image recognition", "Cooking"],
+        "answer": "Image recognition"
+      }
+    ]
+  },
+
+  {
+    "title": "Advantages and Limitations",
+    "videos": [
+      "https://www.youtube.com/watch?v=aircAruvnKk",
+      "https://www.youtube.com/watch?v=BFdMrDOxwq0",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Powerful but needs large data and computation.",
+    "keyPoints": ["Accurate", "Expensive"],
+    "cheatSheet": "Powerful but heavy",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Limitation?",
+        "options": ["Needs data", "No data"],
+        "answer": "Needs data"
+      }
+    ]
+  }
+]
     },
     {
       "id": 17,
@@ -151,7 +3665,228 @@
       "difficulty": "Intermediate",
       "summary": "Convolutional Neural Networks (CNNs) are specialized neural networks for processing grid-like data, particularly images. They use convolutional layers with learnable filters (kernels) that slide across the input to detect local patterns. Pooling layers reduce spatial dimensions and computational cost. CNNs have fewer parameters than fully-connected networks due to weight sharing and local connectivity. They've achieved state-of-the-art performance in image classification, object detection, and semantic segmentation. Famous architectures include LeNet, AlexNet, VGG, ResNet, and MobileNet. CNNs automatically learn hierarchical features: early layers detect edges and textures, deeper layers identify objects. They revolutionized computer vision.",
       "keyPoints": ["Convolutional layers", "Filters and kernels", "Pooling", "Feature hierarchy", "Image processing"],
-      "prerequisites": [16]
+      "prerequisites": [],
+      "subtopics": [
+  {
+    "title": "Introduction to Deep Learning",
+    "videos": [
+      "https://www.youtube.com/watch?v=6M5VXKLf4D4",
+      "https://www.youtube.com/watch?v=aircAruvnKk",
+      "https://www.youtube.com/watch?v=BFdMrDOxwq0",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc"
+    ],
+    "summary": "Deep learning is a subset of ML using multi-layer neural networks.",
+    "keyPoints": ["Neural networks", "Multiple layers"],
+    "cheatSheet": "Deep = Many layers",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Deep learning uses?",
+        "options": ["Neural networks", "Trees"],
+        "answer": "Neural networks"
+      }
+    ]
+  },
+
+  {
+    "title": "Difference between ML and DL",
+    "videos": [
+      "https://www.youtube.com/watch?v=6M5VXKLf4D4",
+      "https://www.youtube.com/watch?v=aircAruvnKk",
+      "https://www.youtube.com/watch?v=BFdMrDOxwq0",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc"
+    ],
+    "summary": "DL uses deep networks, ML uses simpler models.",
+    "keyPoints": ["Depth", "Complexity"],
+    "cheatSheet": "DL ⊂ ML",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "DL is part of?",
+        "options": ["ML", "AI only"],
+        "answer": "ML"
+      }
+    ]
+  },
+
+  {
+    "title": "Deep Neural Networks (DNN)",
+    "videos": [
+      "https://www.youtube.com/watch?v=aircAruvnKk",
+      "https://www.youtube.com/watch?v=BFdMrDOxwq0",
+      "https://www.youtube.com/watch?v=6M5VXKLf4D4",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc"
+    ],
+    "summary": "Neural networks with many hidden layers.",
+    "keyPoints": ["Multiple layers", "Deep architecture"],
+    "cheatSheet": "More layers = deep",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "DNN means?",
+        "options": ["Deep neural network", "Data network"],
+        "answer": "Deep neural network"
+      }
+    ]
+  },
+
+  {
+    "title": "Convolutional Neural Networks (CNN)",
+    "videos": [
+      "https://www.youtube.com/watch?v=YRhxdVk_sIs",
+      "https://www.youtube.com/watch?v=aircAruvnKk",
+      "https://www.youtube.com/watch?v=BFdMrDOxwq0",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc"
+    ],
+    "summary": "CNNs are used for image processing tasks.",
+    "keyPoints": ["Images", "Filters"],
+    "cheatSheet": "Best for images",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "CNN used for?",
+        "options": ["Images", "Text"],
+        "answer": "Images"
+      }
+    ]
+  },
+
+  {
+    "title": "Recurrent Neural Networks (RNN)",
+    "videos": [
+      "https://www.youtube.com/watch?v=UNmqTiOnRfg",
+      "https://www.youtube.com/watch?v=6M5VXKLf4D4",
+      "https://www.youtube.com/watch?v=BFdMrDOxwq0",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc"
+    ],
+    "summary": "RNNs handle sequential data like text and time series.",
+    "keyPoints": ["Sequence data", "Memory"],
+    "cheatSheet": "Data with order",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "RNN handles?",
+        "options": ["Sequence", "Images"],
+        "answer": "Sequence"
+      }
+    ]
+  },
+
+  {
+    "title": "Activation Functions in DL",
+    "videos": [
+      "https://www.youtube.com/watch?v=aircAruvnKk",
+      "https://www.youtube.com/watch?v=BFdMrDOxwq0",
+      "https://www.youtube.com/watch?v=6M5VXKLf4D4",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc"
+    ],
+    "summary": "Functions like ReLU, Sigmoid, and Tanh are used.",
+    "keyPoints": ["ReLU", "Sigmoid", "Tanh"],
+    "cheatSheet": "Activate neurons",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "ReLU is?",
+        "options": ["Activation function", "Loss"],
+        "answer": "Activation function"
+      }
+    ]
+  },
+
+  {
+    "title": "Overfitting in Deep Learning",
+    "videos": [
+      "https://www.youtube.com/watch?v=EuBBz3bI-aA",
+      "https://www.youtube.com/watch?v=6M5VXKLf4D4",
+      "https://www.youtube.com/watch?v=BFdMrDOxwq0",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc"
+    ],
+    "summary": "Deep models can overfit large datasets.",
+    "keyPoints": ["Overfitting", "Generalization"],
+    "cheatSheet": "Too complex = overfit",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Overfitting means?",
+        "options": ["Memorizing", "Learning"],
+        "answer": "Memorizing"
+      }
+    ]
+  },
+
+  {
+    "title": "Regularization Techniques",
+    "videos": [
+      "https://www.youtube.com/watch?v=6M5VXKLf4D4",
+      "https://www.youtube.com/watch?v=EuBBz3bI-aA",
+      "https://www.youtube.com/watch?v=BFdMrDOxwq0",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc"
+    ],
+    "summary": "Techniques like dropout prevent overfitting.",
+    "keyPoints": ["Dropout", "Regularization"],
+    "cheatSheet": "Control overfitting",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Dropout used for?",
+        "options": ["Reduce overfitting", "Increase error"],
+        "answer": "Reduce overfitting"
+      }
+    ]
+  },
+
+  {
+    "title": "Applications of Deep Learning",
+    "videos": [
+      "https://www.youtube.com/watch?v=6M5VXKLf4D4",
+      "https://www.youtube.com/watch?v=YRhxdVk_sIs",
+      "https://www.youtube.com/watch?v=UNmqTiOnRfg",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc"
+    ],
+    "summary": "Used in AI, vision, NLP, robotics.",
+    "keyPoints": ["AI", "Vision", "NLP"],
+    "cheatSheet": "Powering modern AI",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Used in?",
+        "options": ["AI systems", "Cooking"],
+        "answer": "AI systems"
+      }
+    ]
+  },
+
+  {
+    "title": "Advantages and Limitations",
+    "videos": [
+      "https://www.youtube.com/watch?v=6M5VXKLf4D4",
+      "https://www.youtube.com/watch?v=aircAruvnKk",
+      "https://www.youtube.com/watch?v=BFdMrDOxwq0",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc"
+    ],
+    "summary": "Very powerful but needs large data and computation.",
+    "keyPoints": ["High accuracy", "Expensive"],
+    "cheatSheet": "Powerful but costly",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Limitation?",
+        "options": ["Needs data", "No data"],
+        "answer": "Needs data"
+      }
+    ]
+  }
+]
     },
     {
       "id": 18,
@@ -160,7 +3895,228 @@
       "difficulty": "Intermediate",
       "summary": "Recurrent Neural Networks (RNNs) are designed to process sequential data where the order matters. They maintain hidden states that capture information from previous time steps, allowing them to have 'memory'. RNNs are powerful for sequence modeling tasks like natural language processing, time series prediction, and speech recognition. However, vanilla RNNs suffer from vanishing/exploding gradients during backpropagation through time (BPTT). This limits their ability to capture long-range dependencies. Long Short-Term Memory (LSTM) and Gated Recurrent Units (GRU) solve this problem with gating mechanisms. Modern architectures like Transformers have largely replaced RNNs but understanding them is foundational.",
       "keyPoints": ["Sequence processing", "Hidden states", "BPTT", "LSTM", "GRU"],
-      "prerequisites": [16]
+      "prerequisites": [],
+      "subtopics": [
+  {
+    "title": "Introduction to NLP",
+    "videos": [
+      "https://www.youtube.com/watch?v=fOvTtapxa9c",
+      "https://www.youtube.com/watch?v=CMrHM8a3hqw",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "NLP enables machines to understand human language.",
+    "keyPoints": ["Language processing", "AI"],
+    "cheatSheet": "Text → Meaning",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "NLP stands for?",
+        "options": ["Natural Language Processing", "Neural Logic Process"],
+        "answer": "Natural Language Processing"
+      }
+    ]
+  },
+
+  {
+    "title": "Text Preprocessing",
+    "videos": [
+      "https://www.youtube.com/watch?v=CMrHM8a3hqw",
+      "https://www.youtube.com/watch?v=fOvTtapxa9c",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Cleaning and preparing text data.",
+    "keyPoints": ["Tokenization", "Cleaning"],
+    "cheatSheet": "Clean text",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Preprocessing does?",
+        "options": ["Clean text", "Delete text"],
+        "answer": "Clean text"
+      }
+    ]
+  },
+
+  {
+    "title": "Tokenization",
+    "videos": [
+      "https://www.youtube.com/watch?v=fOvTtapxa9c",
+      "https://www.youtube.com/watch?v=CMrHM8a3hqw",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Breaking text into words or tokens.",
+    "keyPoints": ["Words", "Tokens"],
+    "cheatSheet": "Sentence → Words",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Tokenization splits?",
+        "options": ["Text", "Images"],
+        "answer": "Text"
+      }
+    ]
+  },
+
+  {
+    "title": "Stop Words Removal",
+    "videos": [
+      "https://www.youtube.com/watch?v=CMrHM8a3hqw",
+      "https://www.youtube.com/watch?v=fOvTtapxa9c",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Removing common words like 'the', 'is'.",
+    "keyPoints": ["Remove noise"],
+    "cheatSheet": "Remove common words",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Stop words are?",
+        "options": ["Common words", "Important words"],
+        "answer": "Common words"
+      }
+    ]
+  },
+
+  {
+    "title": "Stemming and Lemmatization",
+    "videos": [
+      "https://www.youtube.com/watch?v=CMrHM8a3hqw",
+      "https://www.youtube.com/watch?v=fOvTtapxa9c",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Reducing words to base form.",
+    "keyPoints": ["Root words"],
+    "cheatSheet": "Running → run",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Stemming does?",
+        "options": ["Reduce word", "Expand word"],
+        "answer": "Reduce word"
+      }
+    ]
+  },
+
+  {
+    "title": "Bag of Words",
+    "videos": [
+      "https://www.youtube.com/watch?v=CMrHM8a3hqw",
+      "https://www.youtube.com/watch?v=fOvTtapxa9c",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Represents text as word frequency.",
+    "keyPoints": ["Frequency", "Vector"],
+    "cheatSheet": "Count words",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "BoW represents?",
+        "options": ["Word count", "Images"],
+        "answer": "Word count"
+      }
+    ]
+  },
+
+  {
+    "title": "TF-IDF",
+    "videos": [
+      "https://www.youtube.com/watch?v=4vZ3G7i0x6o",
+      "https://www.youtube.com/watch?v=CMrHM8a3hqw",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Measures importance of words.",
+    "keyPoints": ["Term frequency", "Inverse document frequency"],
+    "cheatSheet": "Important words score",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "TF-IDF measures?",
+        "options": ["Importance", "Length"],
+        "answer": "Importance"
+      }
+    ]
+  },
+
+  {
+    "title": "Sentiment Analysis",
+    "videos": [
+      "https://www.youtube.com/watch?v=CMrHM8a3hqw",
+      "https://www.youtube.com/watch?v=fOvTtapxa9c",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Detects emotions in text.",
+    "keyPoints": ["Positive", "Negative"],
+    "cheatSheet": "Emotion detection",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Sentiment detects?",
+        "options": ["Emotion", "Numbers"],
+        "answer": "Emotion"
+      }
+    ]
+  },
+
+  {
+    "title": "Applications of NLP",
+    "videos": [
+      "https://www.youtube.com/watch?v=fOvTtapxa9c",
+      "https://www.youtube.com/watch?v=CMrHM8a3hqw",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Used in chatbots, translation, voice assistants.",
+    "keyPoints": ["Chatbots", "Translation"],
+    "cheatSheet": "AI talks",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Used in?",
+        "options": ["Chatbots", "Cooking"],
+        "answer": "Chatbots"
+      }
+    ]
+  },
+
+  {
+    "title": "Advantages and Limitations",
+    "videos": [
+      "https://www.youtube.com/watch?v=fOvTtapxa9c",
+      "https://www.youtube.com/watch?v=CMrHM8a3hqw",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Powerful but struggles with ambiguity.",
+    "keyPoints": ["Complex language", "Context issues"],
+    "cheatSheet": "Hard for machines",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Limitation?",
+        "options": ["Ambiguity", "Speed"],
+        "answer": "Ambiguity"
+      }
+    ]
+  }
+]
     },
     {
       "id": 19,
@@ -169,7 +4125,228 @@
       "difficulty": "Advanced",
       "summary": "Long Short-Term Memory (LSTM) networks address the vanishing gradient problem in RNNs with sophisticated gating mechanisms. LSTMs have three gates—forget, input, and output—that control information flow. The forget gate decides what information to discard, the input gate determines what new information to add, and the output gate controls what to output. A cell state carries information across time steps, allowing LSTM to maintain and modify long-term dependencies. LSTMs significantly improved performance on tasks requiring learning long-range patterns like language modeling, machine translation, and time series forecasting. Despite being somewhat replaced by Transformers, LSTMs remain valuable for certain applications and serve as educational milestones for understanding sequence models.",
       "keyPoints": ["Forget gate", "Input gate", "Output gate", "Cell state", "Long-range dependencies"],
-      "prerequisites": [18]
+      "prerequisites": [],
+      "subtopics": [
+  {
+    "title": "Introduction to Computer Vision",
+    "videos": [
+      "https://www.youtube.com/watch?v=oXlwWbU8l2o",
+      "https://www.youtube.com/watch?v=2g0t6f4V0XQ",
+      "https://www.youtube.com/watch?v=YRhxdVk_sIs",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc"
+    ],
+    "summary": "Computer Vision enables machines to interpret visual data.",
+    "keyPoints": ["Images", "Video processing"],
+    "cheatSheet": "Image → Understanding",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Computer Vision works on?",
+        "options": ["Images", "Text"],
+        "answer": "Images"
+      }
+    ]
+  },
+
+  {
+    "title": "Image Representation",
+    "videos": [
+      "https://www.youtube.com/watch?v=oXlwWbU8l2o",
+      "https://www.youtube.com/watch?v=2g0t6f4V0XQ",
+      "https://www.youtube.com/watch?v=YRhxdVk_sIs",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc"
+    ],
+    "summary": "Images are represented as pixels and matrices.",
+    "keyPoints": ["Pixels", "Matrix"],
+    "cheatSheet": "Image = pixel grid",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Image is?",
+        "options": ["Matrix", "Text"],
+        "answer": "Matrix"
+      }
+    ]
+  },
+
+  {
+    "title": "Color Models (RGB, Grayscale)",
+    "videos": [
+      "https://www.youtube.com/watch?v=oXlwWbU8l2o",
+      "https://www.youtube.com/watch?v=2g0t6f4V0XQ",
+      "https://www.youtube.com/watch?v=YRhxdVk_sIs",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc"
+    ],
+    "summary": "Different ways to represent colors in images.",
+    "keyPoints": ["RGB", "Grayscale"],
+    "cheatSheet": "Colors = channels",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "RGB stands for?",
+        "options": ["Red Green Blue", "Random Green Blue"],
+        "answer": "Red Green Blue"
+      }
+    ]
+  },
+
+  {
+    "title": "Image Preprocessing",
+    "videos": [
+      "https://www.youtube.com/watch?v=2g0t6f4V0XQ",
+      "https://www.youtube.com/watch?v=oXlwWbU8l2o",
+      "https://www.youtube.com/watch?v=YRhxdVk_sIs",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc"
+    ],
+    "summary": "Preparing images for processing.",
+    "keyPoints": ["Resize", "Normalize"],
+    "cheatSheet": "Clean image data",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Preprocessing does?",
+        "options": ["Prepare image", "Delete image"],
+        "answer": "Prepare image"
+      }
+    ]
+  },
+
+  {
+    "title": "Edge Detection",
+    "videos": [
+      "https://www.youtube.com/watch?v=2g0t6f4V0XQ",
+      "https://www.youtube.com/watch?v=oXlwWbU8l2o",
+      "https://www.youtube.com/watch?v=YRhxdVk_sIs",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc"
+    ],
+    "summary": "Detects boundaries in images.",
+    "keyPoints": ["Edges", "Boundaries"],
+    "cheatSheet": "Find outlines",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Edge detection finds?",
+        "options": ["Boundaries", "Colors"],
+        "answer": "Boundaries"
+      }
+    ]
+  },
+
+  {
+    "title": "Image Filtering",
+    "videos": [
+      "https://www.youtube.com/watch?v=2g0t6f4V0XQ",
+      "https://www.youtube.com/watch?v=oXlwWbU8l2o",
+      "https://www.youtube.com/watch?v=YRhxdVk_sIs",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc"
+    ],
+    "summary": "Applies filters to images for enhancement.",
+    "keyPoints": ["Blur", "Sharpen"],
+    "cheatSheet": "Enhance image",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Filtering used for?",
+        "options": ["Enhancement", "Deletion"],
+        "answer": "Enhancement"
+      }
+    ]
+  },
+
+  {
+    "title": "Object Detection",
+    "videos": [
+      "https://www.youtube.com/watch?v=YRhxdVk_sIs",
+      "https://www.youtube.com/watch?v=oXlwWbU8l2o",
+      "https://www.youtube.com/watch?v=2g0t6f4V0XQ",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc"
+    ],
+    "summary": "Detects objects in images.",
+    "keyPoints": ["Bounding box", "Recognition"],
+    "cheatSheet": "Find objects",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Object detection does?",
+        "options": ["Find objects", "Count pixels"],
+        "answer": "Find objects"
+      }
+    ]
+  },
+
+  {
+    "title": "Image Classification",
+    "videos": [
+      "https://www.youtube.com/watch?v=YRhxdVk_sIs",
+      "https://www.youtube.com/watch?v=oXlwWbU8l2o",
+      "https://www.youtube.com/watch?v=2g0t6f4V0XQ",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc"
+    ],
+    "summary": "Classifies images into categories.",
+    "keyPoints": ["Labels", "Prediction"],
+    "cheatSheet": "Image → Label",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Classification gives?",
+        "options": ["Label", "Pixel"],
+        "answer": "Label"
+      }
+    ]
+  },
+
+  {
+    "title": "Applications of Computer Vision",
+    "videos": [
+      "https://www.youtube.com/watch?v=YRhxdVk_sIs",
+      "https://www.youtube.com/watch?v=oXlwWbU8l2o",
+      "https://www.youtube.com/watch?v=2g0t6f4V0XQ",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc"
+    ],
+    "summary": "Used in self-driving cars, face recognition.",
+    "keyPoints": ["Autonomous cars", "Face detection"],
+    "cheatSheet": "Vision in real life",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Used in?",
+        "options": ["Self-driving cars", "Typing"],
+        "answer": "Self-driving cars"
+      }
+    ]
+  },
+
+  {
+    "title": "Advantages and Limitations",
+    "videos": [
+      "https://www.youtube.com/watch?v=oXlwWbU8l2o",
+      "https://www.youtube.com/watch?v=2g0t6f4V0XQ",
+      "https://www.youtube.com/watch?v=YRhxdVk_sIs",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc"
+    ],
+    "summary": "Powerful but requires high computation.",
+    "keyPoints": ["Accurate", "Expensive"],
+    "cheatSheet": "Powerful but heavy",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Limitation?",
+        "options": ["High computation", "Low cost"],
+        "answer": "High computation"
+      }
+    ]
+  }
+]
     },
     {
       "id": 20,
@@ -178,187 +4355,228 @@
       "difficulty": "Advanced",
       "summary": "Transformers revolutionized deep learning by introducing attention mechanisms that allow models to focus on relevant parts of input. Self-attention computes relationships between all positions in a sequence simultaneously, unlike RNNs which process sequentially. The multi-head attention mechanism allows the model to attend to different representation subspaces. Transformers are highly parallelizable, scalable, and achieve state-of-the-art performance on NLP tasks. Key components include embeddings, positional encoding, self-attention, feed-forward networks, and layer normalization. Famous transformer models include BERT, GPT, and T5. Transformers have become foundational to modern NLP, powering systems like ChatGPT. They've also been adapted for vision (Vision Transformers) and multimodal tasks.",
       "keyPoints": ["Self-attention", "Multi-head attention", "Positional encoding", "Parallel processing", "State-of-the-art NLP"],
-      "prerequisites": [16, 18]
-    },
-    {
-      "id": 21,
-      "title": "Generative Adversarial Networks (GANs)",
-      "category": "Deep Learning",
-      "difficulty": "Advanced",
-      "summary": "Generative Adversarial Networks (GANs) consist of two neural networks—a generator and a discriminator—that compete in a game-theoretic framework. The generator creates fake samples trying to fool the discriminator, while the discriminator tries to distinguish real from fake samples. This adversarial process drives both networks to improve iteratively. GANs can generate remarkably realistic synthetic images, videos, and data. Applications include image synthesis, style transfer, data augmentation, and anomaly detection. Training GANs is notoriously unstable and requires careful hyperparameter tuning. Variants like DCGAN, StyleGAN, and CycleGAN improve stability and quality. GANs represent a major breakthrough in generative modeling.",
-      "keyPoints": ["Generator network", "Discriminator network", "Adversarial training", "Min-max game", "Synthetic generation"],
-      "prerequisites": [16, 17]
-    },
-    {
-      "id": 22,
-      "title": "Variational Autoencoders (VAE)",
-      "category": "Deep Learning",
-      "difficulty": "Advanced",
-      "summary": "Variational Autoencoders (VAEs) are generative models that learn to encode data into a latent (hidden) space and decode it back. Unlike standard autoencoders, VAEs enforce a probabilistic structure on the latent space, typically a Gaussian distribution. The encoder outputs mean and variance parameters; samples are drawn from this distribution. The decoder reconstructs data from these samples. VAEs balance reconstruction accuracy (via reconstruction loss) with matching the latent distribution to a prior (via KL divergence). This enables generating new samples by sampling from the latent space. VAEs are more stable than GANs but produce less sharp images. Applications include data generation, anomaly detection, and disentangled representations.",
-      "keyPoints": ["Encoder", "Latent space", "KL divergence", "Reconstruction loss", "Probabilistic modeling"],
-      "prerequisites": [16]
-    },
-    {
-      "id": 23,
-      "title": "Transfer Learning",
-      "category": "Deep Learning",
-      "difficulty": "Intermediate",
-      "summary": "Transfer Learning leverages knowledge learned from one task or domain to improve performance on another related task. Pre-trained models trained on large datasets (like ImageNet for images or Wikipedia for text) capture generalizable features that transfer well to smaller datasets. Fine-tuning involves adapting pre-trained models to new tasks by training on task-specific data, usually with lower learning rates. Transfer learning dramatically reduces training time and data requirements. It's especially valuable when task-specific data is limited. Applications include domain adaptation, multi-task learning, and few-shot learning. Pre-trained models like BERT, GPT, and ResNet enable practitioners without massive computational resources to build state-of-the-art applications.",
-      "keyPoints": ["Pre-trained models", "Fine-tuning", "Feature extraction", "Domain adaptation", "Reduced data requirements"],
-      "prerequisites": [16, 17]
-    },
-    {
-      "id": 24,
-      "title": "Natural Language Processing Fundamentals",
-      "category": "Specialized Domains",
-      "difficulty": "Intermediate",
-      "summary": "Natural Language Processing (NLP) is a subfield of AI focused on understanding and processing human language. Key tasks include text classification, sentiment analysis, named entity recognition, machine translation, and question answering. Fundamental concepts include tokenization (splitting text into words/sentences), word embeddings (representing words as vectors), and language models (predicting next words). Modern NLP is dominated by transformer-based models like BERT and GPT. Challenges include handling ambiguity, context dependency, and linguistic variations across languages. NLP powers applications like chatbots, virtual assistants, translation services, and content recommendation. Understanding linguistic concepts and probability is foundational for NLP.",
-      "keyPoints": ["Tokenization", "Word embeddings", "Language models", "Text classification", "Sentiment analysis"],
-      "prerequisites": [1, 16]
-    },
-    {
-      "id": 25,
-      "title": "Word Embeddings and Word2Vec",
-      "category": "Specialized Domains",
-      "difficulty": "Intermediate",
-      "summary": "Word Embeddings represent words as dense numerical vectors in a high-dimensional space where semantically similar words are close together. Word2Vec, developed by Google, is a widely-used technique that learns embeddings through predicting context words (Skip-gram) or predicting a word from context (CBOW). The intuition is that words appearing in similar contexts have similar meanings. Word2Vec embeddings are fast to compute and capture semantic relationships—famously, 'king' - 'man' + 'woman' ≈ 'queen'. Other embedding techniques include GloVe, FastText, and more recently, contextual embeddings like ELMo and BERT which generate different embeddings based on context. Word embeddings are foundational for modern NLP applications.",
-      "keyPoints": ["Dense vectors", "Skip-gram", "CBOW", "Semantic relationships", "Word similarity"],
-      "prerequisites": [24]
-    },
-    {
-      "id": 26,
-      "title": "Computer Vision Basics",
-      "category": "Specialized Domains",
-      "difficulty": "Intermediate",
-      "summary": "Computer Vision is the field that enables computers to understand and interpret visual information from images and videos. Core tasks include image classification (categorizing images), object detection (locating and identifying objects), semantic segmentation (labeling each pixel), instance segmentation, and pose estimation. Computer vision uses deep learning, especially CNNs, to achieve state-of-the-art performance. Key concepts include image preprocessing, feature extraction, and model architecture selection. Applications span healthcare (medical imaging), autonomous vehicles, surveillance, augmented reality, and social media. Challenges include handling variations in lighting, viewpoint, occlusion, and scale. Modern pre-trained models enable accessible computer vision applications.",
-      "keyPoints": ["Image classification", "Object detection", "Segmentation", "CNN architectures", "Image preprocessing"],
-      "prerequisites": [1, 17]
-    },
-    {
-      "id": 27,
-      "title": "Object Detection",
-      "category": "Specialized Domains",
-      "difficulty": "Advanced",
-      "summary": "Object Detection goes beyond image classification to locate multiple objects within an image and identify their categories. Key challenges include handling objects of different scales, aspect ratios, and positions. Famous architectures include R-CNN (and variants Fast R-CNN, Faster R-CNN), YOLO (You Only Look Once), and SSD (Single Shot MultiBox Detector). YOLO frames detection as a regression problem, enabling real-time performance. Faster R-CNN uses region proposals and is highly accurate. Detection requires data with bounding box annotations. Evaluation metrics include mAP (mean Average Precision). Applications include autonomous driving, surveillance, medical imaging, and augmented reality. Modern models achieve impressive speed and accuracy trade-offs.",
-      "keyPoints": ["Bounding boxes", "Region proposals", "YOLO", "Faster R-CNN", "Real-time detection"],
-      "prerequisites": [26]
-    },
-    {
-      "id": 28,
-      "title": "Semantic Segmentation",
-      "category": "Specialized Domains",
-      "difficulty": "Advanced",
-      "summary": "Semantic Segmentation classifies each pixel in an image into predefined categories. Unlike object detection which locates objects with bounding boxes, segmentation provides pixel-level precision. Architectures like FCN (Fully Convolutional Networks), U-Net, and DeepLab achieve state-of-the-art performance. U-Net's encoder-decoder structure with skip connections is particularly effective for medical image segmentation. Key components include downsampling (to extract features) and upsampling (to restore spatial resolution). Challenges include class imbalance and maintaining fine spatial details. Applications include medical image analysis, autonomous driving, satellite image analysis, and scene understanding. Semantic segmentation requires pixel-level annotations, which are labor-intensive to create.",
-      "keyPoints": ["Pixel-level classification", "Encoder-decoder", "U-Net", "Upsampling", "Spatial precision"],
-      "prerequisites": [26]
-    },
-    {
-      "id": 29,
-      "title": "Reinforcement Learning Applications",
-      "category": "Specialized Domains",
-      "difficulty": "Advanced",
-      "summary": "Reinforcement Learning powers game-playing AIs, robotics, autonomous systems, and recommendation engines. AlphaGo demonstrated RL's potential by defeating world champions at Go through self-play and tree search. Deep Q-Learning enables agents to learn complex tasks from high-dimensional inputs like images. Policy gradient methods directly optimize the action selection policy. Actor-Critic methods combine value-based and policy-based approaches. Challenges include sample efficiency (requiring millions of interactions), exploration-exploitation trade-off, and credit assignment. Applications include robotic control, resource allocation, traffic management, and personalized recommendations. RL agents learn through interaction, making them adaptable to new environments.",
-      "keyPoints": ["Deep Q-Networks", "Policy gradients", "Actor-Critic", "Self-play", "Credit assignment"],
-      "prerequisites": [4, 16]
-    },
-    {
-      "id": 30,
-      "title": "Optimization Algorithms",
-      "category": "Fundamentals",
-      "difficulty": "Intermediate",
-      "summary": "Optimization algorithms minimize loss functions during neural network training. Gradient Descent updates weights in the direction opposite to gradients, reducing loss. Variants include Batch GD (all data), Stochastic GD (single samples), and Mini-batch GD (balance). Momentum adds inertia to accelerate convergence and navigate plateaus. Adaptive methods like Adam combine momentum with per-parameter learning rates, adapting to each parameter's gradient history. RMSprop and AdaGrad are other important adaptive optimizers. Choosing the right optimizer and learning rate significantly impacts training speed and final performance. Modern practice often defaults to Adam, though SGD with momentum remains popular. Understanding optimization is crucial for effectively training deep learning models.",
-      "keyPoints": ["Gradient descent", "Learning rate", "Momentum", "Adam optimizer", "Convergence"],
-      "prerequisites": [16]
-    },
-    {
-      "id": 31,
-      "title": "Regularization Techniques",
-      "category": "Fundamentals",
-      "difficulty": "Intermediate",
-      "summary": "Regularization prevents overfitting by constraining model complexity or penalizing large weights. L1 regularization (Lasso) encourages sparse models with feature selection. L2 regularization (Ridge) penalizes large weights, encouraging smaller weights. Elastic Net combines both L1 and L2. Dropout randomly deactivates neurons during training, preventing co-adaptation and improving generalization. Early stopping halts training when validation performance plateaus, preventing overfitting. Data augmentation increases effective dataset size through transformations. Batch normalization normalizes layer inputs, stabilizing training and allowing higher learning rates. Combining multiple regularization techniques improves model robustness. Regularization is essential for building models that generalize well to unseen data.",
-      "keyPoints": ["L1 and L2 regularization", "Dropout", "Early stopping", "Data augmentation", "Batch normalization"],
-      "prerequisites": [16]
-    },
-    {
-      "id": 32,
-      "title": "Hyperparameter Tuning",
-      "category": "Fundamentals",
-      "difficulty": "Intermediate",
-      "summary": "Hyperparameters are configuration settings set before training (unlike weights learned during training). They include learning rate, batch size, number of epochs, network architecture, dropout rate, and regularization strength. Suboptimal hyperparameters hurt performance significantly. Grid Search systematically tests combinations but is computationally expensive. Random Search samples randomly and often finds good hyperparameters efficiently. Bayesian Optimization builds a probabilistic model of the objective and intelligently samples promising regions. Hyperband allocates resources adaptively to promising trials. AutoML tools automate hyperparameter optimization. Best practice: start with established defaults, then fine-tune based on validation performance. Hyperparameter importance varies by problem.",
-      "keyPoints": ["Learning rate", "Batch size", "Grid search", "Random search", "Bayesian optimization"],
-      "prerequisites": [16, 30]
-    },
-    {
-      "id": 33,
-      "title": "Ensemble Methods",
-      "category": "Fundamentals",
-      "difficulty": "Intermediate",
-      "summary": "Ensemble methods combine multiple models to achieve better performance than any single model. Bagging (Bootstrap Aggregating) trains models on random subsets with replacement and averages predictions. Random Forests are powerful bagging ensembles. Boosting sequentially trains models on errors from previous models, progressively focusing on hard examples. AdaBoost, Gradient Boosting, and XGBoost are famous boosting algorithms. Stacking trains a meta-learner on predictions from base models. Blending divides data and trains models on different splits. Ensembles reduce variance and bias, improving generalization. They're widely used in kaggle competitions and real-world applications. The key principle: diverse models make better collective decisions.",
-      "keyPoints": ["Bagging", "Boosting", "Stacking", "Diversity", "Aggregation"],
-      "prerequisites": [9, 10]
-    },
-    {
-      "id": 34,
-      "title": "Time Series Forecasting",
-      "category": "Specialized Domains",
-      "difficulty": "Intermediate",
-      "summary": "Time Series Forecasting predicts future values based on historical observations where temporal order matters. Traditional methods include ARIMA (AutoRegressive Integrated Moving Average) which models temporal dependencies. Exponential Smoothing assigns exponentially decreasing weights to older observations. Modern deep learning approaches use RNNs and LSTMs to capture temporal patterns. Transformers with self-attention have also shown promise for time series. Key concepts include trend (long-term direction), seasonality (repeating patterns), and stationarity (statistical properties over time). Challenges include handling concept drift, missing values, and making accurate long-horizon predictions. Applications include stock prices, weather forecasting, demand prediction, and network traffic.",
-      "keyPoints": ["Trend and seasonality", "ARIMA", "LSTM", "Stationarity", "Autocorrelation"],
-      "prerequisites": [18, 24]
-    },
-    {
-      "id": 35,
-      "title": "Anomaly Detection",
-      "category": "Specialized Domains",
-      "difficulty": "Intermediate",
-      "summary": "Anomaly Detection identifies unusual patterns or outliers that deviate from normal behavior. Applications include fraud detection, network intrusion detection, equipment failure prediction, and health monitoring. Statistical methods assume normal data follows a known distribution and flag deviations. Distance-based methods (Isolation Forest, LOF) identify points far from others. Reconstruction-based methods (Autoencoders, One-class SVM) model normal data and flag high reconstruction errors. Time series anomaly detection uses LSTM autoencoders to detect temporal anomalies. Challenges include defining 'normal', handling concept drift, and balancing sensitivity/specificity. Labeled anomalies are often scarce, making unsupervised methods valuable.",
-      "keyPoints": ["Outlier detection", "Isolation Forest", "Autoencoders", "One-class SVM", "Reconstruction error"],
-      "prerequisites": [3, 16]
-    },
-    {
-      "id": 36,
-      "title": "Recommendation Systems",
-      "category": "Specialized Domains",
-      "difficulty": "Intermediate",
-      "summary": "Recommendation Systems predict user preferences to suggest items. Collaborative Filtering learns from user-item interactions; similar users like similar items. Content-based filtering recommends items similar to those users previously liked. Matrix Factorization decomposes user-item matrices into low-rank factors. Deep learning approaches use neural networks to model complex user-item relationships. Hybrid systems combine multiple approaches. Challenges include cold-start problems (new users/items), data sparsity, and computational scalability. Evaluation metrics include precision@k, recall@k, and NDCG. Applications power Netflix suggestions, Amazon recommendations, and Spotify playlists. Personalization significantly improves user experience and business metrics.",
-      "keyPoints": ["Collaborative filtering", "Content-based", "Matrix factorization", "Cold-start", "Personalization"],
-      "prerequisites": [1, 3]
-    },
-    {
-      "id": 37,
-      "title": "Model Interpretability and Explainability",
-      "category": "Advanced Topics",
-      "difficulty": "Advanced",
-      "summary": "Model Interpretability helps understand how machine learning models make predictions. This is crucial for high-stakes domains like healthcare and finance. Linear models are inherently interpretable. Tree-based models show decision paths. Black-box models (deep neural networks) require explanation techniques. LIME (Local Interpretable Model-agnostic Explanations) approximates local model behavior with interpretable models. SHAP (SHapley Additive exPlanations) uses game theory to compute feature contributions. Feature importance ranking shows which inputs most influence predictions. Attention visualization shows what model focuses on. Saliency maps highlight important image regions. Understanding model predictions builds trust, aids debugging, and satisfies regulatory requirements.",
-      "keyPoints": ["LIME", "SHAP", "Feature importance", "Attention mechanisms", "Trust and compliance"],
-      "prerequisites": [1, 16]
-    },
-    {
-      "id": 38,
-      "title": "Federated Learning",
-      "category": "Advanced Topics",
-      "difficulty": "Advanced",
-      "summary": "Federated Learning trains models across decentralized data sources without centralizing data. Each participant trains locally, then shares model updates with a central server which aggregates them. This preserves privacy and security while benefiting from collective data. Challenges include communication efficiency (high bandwidth requirements), statistical heterogeneity (non-IID data), and system heterogeneity (diverse devices). Differential privacy adds noise to protect individual privacy. Applications include training keyboard prediction on phones and medical AI on sensitive patient data. Federated Learning is crucial for regulatory compliance (GDPR, HIPAA). The approach is gaining importance as privacy concerns increase and regulations tighten.",
-      "keyPoints": ["Decentralized training", "Privacy preservation", "Model aggregation", "Differential privacy", "Regulatory compliance"],
-      "prerequisites": [1, 16]
-    },
-    {
-      "id": 39,
-      "title": "Meta-Learning (Learning to Learn)",
-      "category": "Advanced Topics",
-      "difficulty": "Advanced",
-      "summary": "Meta-Learning trains models to quickly adapt to new tasks with limited data. Few-shot learning learns from only a handful of examples. Model-Agnostic Meta-Learning (MAML) learns initial weights that adapt quickly through gradient descent. Prototypical Networks learn metric spaces where similar classes cluster together. Memory-augmented networks store task knowledge. Applications include quickly adapting to new characters in handwriting recognition or new languages. Meta-learning mimics how humans learn—leveraging past experience to learn new concepts quickly. Challenges include designing appropriate task distributions and computational efficiency. Meta-learning is valuable for robotics, adaptive AI systems, and scenarios with limited task-specific data.",
-      "keyPoints": ["Few-shot learning", "MAML", "Task adaptation", "Quick convergence", "Limited data learning"],
-      "prerequisites": [1, 16, 23]
-    },
-    {
-      "id": 40,
-      "title": "AI Ethics and Responsible AI",
-      "category": "Advanced Topics",
-      "difficulty": "Advanced",
-      "summary": "AI Ethics addresses fairness, accountability, transparency, and societal impact of AI systems. Bias in training data leads to discriminatory predictions affecting hiring, lending, and criminal justice. Fairness metrics quantify disparate impact across demographic groups. Adversarial robustness ensures models resist adversarial attacks. Transparency helps stakeholders understand model decisions. Data privacy protects individual information. Environmental impact of training large models is increasingly important. Responsible AI requires cross-disciplinary collaboration between ML engineers, domain experts, ethicists, and policymakers. Regulatory frameworks like GDPR and AI Act increasingly mandate compliance. Organizations adopting ethical AI practices build trust and reduce legal/reputational risks. Ethical considerations must be integrated throughout the ML pipeline.",
-      "keyPoints": ["Bias and fairness", "Adversarial robustness", "Transparency", "Privacy", "Sustainability"],
-      "prerequisites": [1, 6, 37]
+      "prerequisites": [],
+      "subtopics": [
+  {
+    "title": "Introduction to AI Ethics",
+    "videos": [
+      "https://www.youtube.com/watch?v=9i1WlcCudpU",
+      "https://www.youtube.com/watch?v=2ePf9rue1Ao",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "AI ethics deals with responsible use of AI.",
+    "keyPoints": ["Responsibility", "Fairness"],
+    "cheatSheet": "Use AI responsibly",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "AI ethics focuses on?",
+        "options": ["Responsible AI", "Faster AI"],
+        "answer": "Responsible AI"
+      }
+    ]
+  },
+
+  {
+    "title": "Bias in AI",
+    "videos": [
+      "https://www.youtube.com/watch?v=2ePf9rue1Ao",
+      "https://www.youtube.com/watch?v=9i1WlcCudpU",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "AI can inherit bias from data.",
+    "keyPoints": ["Data bias", "Fairness"],
+    "cheatSheet": "Bad data = biased AI",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Bias comes from?",
+        "options": ["Data", "Hardware"],
+        "answer": "Data"
+      }
+    ]
+  },
+
+  {
+    "title": "Fairness and Transparency",
+    "videos": [
+      "https://www.youtube.com/watch?v=2ePf9rue1Ao",
+      "https://www.youtube.com/watch?v=9i1WlcCudpU",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "AI systems should be fair and explainable.",
+    "keyPoints": ["Explainability", "Fairness"],
+    "cheatSheet": "Transparent AI",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Transparency means?",
+        "options": ["Explainable", "Hidden"],
+        "answer": "Explainable"
+      }
+    ]
+  },
+
+  {
+    "title": "Privacy and Security",
+    "videos": [
+      "https://www.youtube.com/watch?v=9i1WlcCudpU",
+      "https://www.youtube.com/watch?v=2ePf9rue1Ao",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Protecting user data in AI systems.",
+    "keyPoints": ["Data privacy", "Security"],
+    "cheatSheet": "Protect data",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Privacy protects?",
+        "options": ["User data", "Code"],
+        "answer": "User data"
+      }
+    ]
+  },
+
+  {
+    "title": "Accountability",
+    "videos": [
+      "https://www.youtube.com/watch?v=2ePf9rue1Ao",
+      "https://www.youtube.com/watch?v=9i1WlcCudpU",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Who is responsible for AI decisions.",
+    "keyPoints": ["Responsibility", "Ownership"],
+    "cheatSheet": "Who is responsible?",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Accountability means?",
+        "options": ["Responsibility", "Speed"],
+        "answer": "Responsibility"
+      }
+    ]
+  },
+
+  {
+    "title": "AI Regulations",
+    "videos": [
+      "https://www.youtube.com/watch?v=9i1WlcCudpU",
+      "https://www.youtube.com/watch?v=2ePf9rue1Ao",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Rules governing AI usage.",
+    "keyPoints": ["Policies", "Laws"],
+    "cheatSheet": "AI rules",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Regulations are?",
+        "options": ["Rules", "Games"],
+        "answer": "Rules"
+      }
+    ]
+  },
+
+  {
+    "title": "Ethical AI Design",
+    "videos": [
+      "https://www.youtube.com/watch?v=2ePf9rue1Ao",
+      "https://www.youtube.com/watch?v=9i1WlcCudpU",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "Designing AI systems ethically.",
+    "keyPoints": ["Ethical design", "Fair systems"],
+    "cheatSheet": "Build responsibly",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "Ethical design ensures?",
+        "options": ["Fairness", "Bias"],
+        "answer": "Fairness"
+      }
+    ]
+  },
+
+  {
+    "title": "Future of AI",
+    "videos": [
+      "https://www.youtube.com/watch?v=2ePf9rue1Ao",
+      "https://www.youtube.com/watch?v=9i1WlcCudpU",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "AI will shape industries and society.",
+    "keyPoints": ["Innovation", "Automation"],
+    "cheatSheet": "AI future = big impact",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "AI future is?",
+        "options": ["Growing", "Ending"],
+        "answer": "Growing"
+      }
+    ]
+  },
+
+  {
+    "title": "AI in Society",
+    "videos": [
+      "https://www.youtube.com/watch?v=9i1WlcCudpU",
+      "https://www.youtube.com/watch?v=2ePf9rue1Ao",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "AI impacts jobs, economy, and daily life.",
+    "keyPoints": ["Jobs", "Impact"],
+    "cheatSheet": "AI everywhere",
+    "game": "https://quickdraw.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "AI impacts?",
+        "options": ["Society", "Nothing"],
+        "answer": "Society"
+      }
+    ]
+  },
+
+  {
+    "title": "Advantages and Challenges",
+    "videos": [
+      "https://www.youtube.com/watch?v=2ePf9rue1Ao",
+      "https://www.youtube.com/watch?v=9i1WlcCudpU",
+      "https://www.youtube.com/watch?v=IpGxLWOIZy4",
+      "https://www.youtube.com/watch?v=NWONeJKn6kc",
+      "https://www.youtube.com/watch?v=KNAWp2S3w94"
+    ],
+    "summary": "AI has benefits but also risks.",
+    "keyPoints": ["Benefits", "Risks"],
+    "cheatSheet": "Power + Responsibility",
+    "game": "https://teachablemachine.withgoogle.com/",
+    "quiz": [
+      {
+        "question": "AI has?",
+        "options": ["Both benefits and risks", "Only benefits"],
+        "answer": "Both benefits and risks"
+      }
+    ]
+  }
+]
     }
   ]
 }
